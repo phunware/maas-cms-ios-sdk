@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWPagination.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWPagination</TokenIdentifier>
+			<Abstract type="html">PWPagination objects encapsulate all pagination details associated with fetching an array of content objects.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setFromResultIndex:</TokenIdentifier>
+			<Abstract type="html">The starting index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger fromResultIndex</Declaration>
+			
+			
+			<Anchor>//api/name/fromResultIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/fromResultIndex</TokenIdentifier>
+			<Abstract type="html">The starting index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger fromResultIndex</Declaration>
+			
+			
+			<Anchor>//api/name/fromResultIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setToResultIndex:</TokenIdentifier>
+			<Abstract type="html">The ending index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger toResultIndex</Declaration>
+			
+			
+			<Anchor>//api/name/toResultIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/toResultIndex</TokenIdentifier>
+			<Abstract type="html">The ending index for the returned results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger toResultIndex</Declaration>
+			
+			
+			<Anchor>//api/name/toResultIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setTotalResults:</TokenIdentifier>
+			<Abstract type="html">The total number of available results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger totalResults</Declaration>
+			
+			
+			<Anchor>//api/name/totalResults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/totalResults</TokenIdentifier>
+			<Abstract type="html">The total number of available results.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger totalResults</Declaration>
+			
+			
+			<Anchor>//api/name/totalResults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setCurrentPage:</TokenIdentifier>
+			<Abstract type="html">The current results page.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
+			
+			
+			<Anchor>//api/name/currentPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/currentPage</TokenIdentifier>
+			<Abstract type="html">The current results page.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger currentPage</Declaration>
+			
+			
+			<Anchor>//api/name/currentPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWPagination/setNumberOfPages:</TokenIdentifier>
+			<Abstract type="html">The total number of results pages available.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfPages</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfPages</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWPagination/numberOfPages</TokenIdentifier>
+			<Abstract type="html">The total number of results pages available.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger numberOfPages</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfPages</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWPagination/unpack:</TokenIdentifier>
+			<Abstract type="html">Convenience method to instantiate a PWPagination object from a properly formatted NSDictionary object.</Abstract>
+			<DeclaredIn>PWPagination.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">The dictionary from which to instantiate the PWPagination object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unpack:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
