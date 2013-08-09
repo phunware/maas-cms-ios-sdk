@@ -1,0 +1,244 @@
+//
+//  MaaSCMS.h
+//  MaaSCMS
+//
+//  Copyright (c) 2013 Phunware Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#import "PWContainer.h"
+#import "PWSchema.h"
+#import "PWSchemaField.h"
+#import "PWStructure.h"
+#import "PWPagination.h"
+
+extern NSInteger const kMaaSCMSDepthFullHierarchy;
+extern NSInteger const PWCMSUnused;
+
+/**
+ `MaaSCMS` provides a full-featured Content Management Solution, allowing you to deliver engaging content to your users.
+
+ */
+
+/*
+ Container ID: String
+ Schema ID: String
+ Content ID: String
+ Structure ID: Int
+ */
+
+@interface MaaSCMS : NSObject
+
+///-----------------------
+/// @name Container Methods
+///-----------------------
+
+/**
+ Returns a list of the available containers.
+ @param success A block object to be executed when `getAllContainersWithSuccess:failure:` succeeds. This block has no return value and takes one argument: The containers received from the server, an `NSArray` object that contains `PWContainer` objects.
+ @param failure A block object to be executed when `getAllContainersWithSuccess:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getAllContainersWithSuccess:(void(^)(NSArray *containers))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Returns a `PWContainer` object for the specified container ID.
+@param containerID The requested container ID.
+ @param success A block object to be executed when `getContainerWithContainerID:success:failure:` succeeds. This block has no return value and takes one argument: The container received from the server.
+ @param failure A block object to be executed when `getContainerWithContainerID:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getContainerWithContainerID:(NSString *)containerID success:(void(^)(PWContainer *container))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Returns a list of the available containers filtered by the specified tags. Only one of the tag array arguments is required.
+ @param anyTags (Optional) Each matching result must contain at least one of the tags in the specified array.
+ @param allTags (Optional) Each matching result must contain all of the tags in this array.
+ @param success A block object to be executed when `getContainersContainingAnyTags:containingAllTags:success:failure:` succeeds. This block has no return value and takes one argument: The containers received from the server, an `NSArray` object that contains `PWContainer` objects.
+ @param failure A block object to be executed when `getContainersContainingAnyTags:containingAllTags:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getContainersContainingAnyTags:(NSArray *)anyTags containingAllTags:(NSArray *)allTags success:(void(^)(NSArray *containers))success failure:(void (^)(NSError *error))failure;
+
+///-----------------------
+/// @name Schema Methods
+///-----------------------
+
+/**
+ Returns a list of the available containers.
+ @param success A block object to be executed when `getAllSchemasForContainerID:success:failure:` succeeds. This block has no return value and takes one argument: The schemas received from the server, an `NSArray` object that contains `PWSchema` objects.
+ @param failure A block object to be executed when `getAllSchemasForContainerID:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
+ */
++ (void)getAllSchemasWithSuccess:(void(^)(NSArray *schemas))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Returns a `PWSchema` object for the specified schema ID.
+ @param schemaID The requested schema ID.
+ @param success A block object to be executed when `getSchemaWithSchemaID:success:failure:` succeeds. This block has no return value and takes one argument: The schema received from the server.
+ @param failure A block object to be executed when `getSchemaWithSchemaID:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
+ */
++ (void)getSchemaWithSchemaID:(NSString *)schemaID success:(void(^)(PWSchema *schema))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Returns a list of the available schemas filtered by the specified tags. Only one of the tag array arguments is required.
+ @param anyTags (Optional) Each matching result must contain at least one of the tags in the specified array.
+ @param allTags (Optional) Each matching result must contain all of the tags in this array.
+ @param success A block object to be executed when `getSchemasContainingAnyTags:success:failure:` succeeds. This block has no return value and takes one argument: The containers received from the server, an `NSArray` object that contains `PWContainer` objects.
+ @param failure A block object to be executed when `getSchemasContainingAnyTags:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getSchemasContainingAnyTags:(NSArray *)anyTags containingAllTags:(NSArray *)allTags success:(void(^)(NSArray *schemas))success failure:(void (^)(NSError *error))failure;
+
+///-----------------------
+/// @name Structure Methods
+///-----------------------
+
+/**
+ This method is used to get a structure. Depending on the request parameters, this may return a multi-level structure, or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified id.
+ @param containerID The ID of the container to get the structures for.
+ @param depth The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use `kMaaSCMSDepthFullHierarchy`. Be careful when using this value for large structures.
+ @param schema If `YES` then the schema will be returned for structures that have one.
+ @param success A block object to be executed when `getStructureForContainerID:depth:includeSchema:success:failure:` succeeds. This block has no return value and takes one argument: The structure received from the server.
+ @param failure A block object to be executed when `getStructureForContainerID:depth:includeSchema:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getStructuresForContainerID:(NSString *)containerID depth:(NSInteger)depth includeSchema:(BOOL)schema success:(void(^)(NSArray *structures))success failure:(void (^)(NSError *error))failure;
+
+/**
+ This method is used to get a structure for a specified structure ID. Depending on the request parameters, this may return a multi-level structure, or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified :id.
+ @param structureID The ID of the structure.
+ @param containerID The ID of the container.
+ @param depth The depth to traverse into child structures. If the depth is set to 0 (default) then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use `kMaaSCMSDepthFullHierarchy`. Be careful when using this value for large structures.
+ @param schema If `YES` then the schema will be returned for structures that have one.
+ @param success A block object to be executed when `getStructureForContainerID:depth:includeSchema:success:failure:` succeeds. This block has no return value and takes one argument: The structure received from the server.
+ @param failure A block object to be executed when `getStructureForContainerID:depth:includeSchema:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getStructureWithID:(NSUInteger)structureID containerID:(NSString *)containerID depth:(NSInteger)depth includeSchema:(BOOL)schema success:(void(^)(PWStructure *structure))success failure:(void (^)(NSError *error))failure;
+
+///-----------------------
+/// @name Content Methods
+///-----------------------
+
+/**
+ Gets the content based on the structure hierarchy and schemas. The structure of the response data for this method relies completely on the structure of the structures and schemas. Content will be retrieved starting from the root level.
+ @param contentID The content ID to fetch.
+ @param containerID The ID of the container to get the content for.
+ @param structureID The ID of the structure item to start at. If no structure ID is specified then the content will be retrieved starting from the root level. Otherwise, the content will be retrieved starting at the level in the structure hierarchy that the specified structure item resides.
+ @param parentID The ID of the parent content item. This is used to filter to appropriate child content for a specific branch in the content hierarchy.
+ @param limit Specifies the number of results to return. This is useful for pagination. Default value is 10, maximum value is 100. NOTE: This parameter is only used when the structure_id references a structure item of type array.
+ @param offset Specifies the number of results to offset. This is useful for pagination. Default value is 0. NOTE: This parameter is only used when the structure_id references a structure item of type array.
+ @param success A block object to be executed when `getContentForContainerID:success:failure:` succeeds. This block has no return value and takes one argument: The content received from the server. The structure of the response data for this method relies completely on the structure of the structures and schemas.
+ @param failure A block object to be executed when `getContentForContainerID:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID parentID:(NSString *)parentID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSDictionary *contents))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Gets the content for the specified content ID and container ID. The structure of the response data for this method relies completely on the structures and schemas.
+ @param contentID The content ID to fetch.
+ @param containerID The ID of the container to get the content for.
+ @param structureID The ID of the structure item to start at.
+ @param success A block object to be executed when `getContentForContentID:containerID:success:failure:` succeeds. This block has no return value and takes one argument: The content received from the server. The structure of the response data for this method relies completely on the structure of the structures and schemas.
+ @param failure A block object to be executed when `getContentForContentID:containerID:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID success:(void(^)(NSDictionary *content))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.
+ @param containerID The ID of the container to get the content for.
+ @param limit Specifies the number of results to return. This is useful for pagination. Default value is 10, maximum value is 100.
+ @param offset Specifies the number of results to offset. This is useful for pagination. Default value is 0.
+ @param success A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: The content received from the server, a `PWPagination` object that details content pagination information, and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
+ @param failure A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getAllContentsForContainerID:(NSString *)containerID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Gets all content for a specific container ID and structure ID. The structure of the content data for this method relies completely on the structure and schemas.
+ @param containerID The ID of the container to get the content for.
+ @param structureID The ID of the structure to get the content for.
+ @param limit Specifies the number of results to return. This is useful for pagination. Default value is 10, maximum value is 100.
+ @param offset Specifies the number of results to offset. This is useful for pagination. Default value is 0.
+ @param success A block object to be executed when `getContentsForContainerID:structureID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: The content received from the server, a `PWPagination` object that details content pagination information, and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
+ @param failure A block object to be executed when `getContentsForContainerID:structureID:limit:offset:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getContentsForContainerID:(NSString *)containerID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Gets all content for a specific container ID, parent ID, and structure ID. The structure of the content data for this method relies completely on the structure and schemas.
+ @param containerID The ID of the container to get the content for.
+ @param parentID The ID of the parent content to get the content for.
+ @param structureID The ID of the structure to get the content for.
+ @param limit Specifies the number of results to return. This is useful for pagination. Default value is 10, maximum value is 100.
+ @param offset Specifies the number of results to offset. This is useful for pagination. Default value is 0.
+ @param success A block object to be executed when `getContentsForContainerID:structureID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: The content received from the server, a `PWPagination` object that details content pagination information, and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
+ @param failure A block object to be executed when `getContentsForContainerID:structureID:limit:offset:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)getContentsForContainerID:(NSString *)containerID parentID:(NSString *)parentID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
+
+/**
+ This method is used to save new content. If no parent content exists you should use `addContent:structureID:success:failure:`.
+ @param content The content to save.
+ @param containerID The ID of the container to add the content to.
+ @param structureID The ID of the structure the content is associated to.
+ @param parentContentID The ID of the parent content item. This is used to link up any dynamic children of this structure item that may have already been created, when the associated structure is itself within a dynamic structure item. When this is the case, the only way to know which child content path is associated with this parent content data is to supply the parent to this content item.
+ @param success A block object to be executed when `addContent:structureID:parentContentID:success:failure:` succeeds. This block has no return value and takes no arguments.
+ @param failure A block object to be executed when `addContent:structureID:parentContentID:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)addContent:(NSDictionary *)content containerID:(NSString *)containerID structureID:(NSUInteger)structureID parentContentID:(NSString *)parentContentID success:(void (^)(NSString *newContentID))success failure:(void (^)(NSError *error))failure;
+
+/**
+ This method is used to save new content. If parent content exists you should use `addContent:structureID:parentContentID:success:failure:`.
+ @param content The content to save.
+ @param containerID The ID of the container to add the content to.
+ @param structureID The ID of the structure the content is associated to.
+ @param success A block object to be executed when `addContent:structureID:success:failure:` succeeds. This block has no return value and takes no arguments.
+ @param failure A block object to be executed when `addContent:structureID:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)addContent:(NSDictionary *)content containerID:(NSString *)containerID structureID:(NSUInteger)structureID success:(void (^)(NSString *newContentID))success failure:(void (^)(NSError *error))failure;
+
+/**
+ This method is used to update existing content.
+ @param contentID The specified content ID.
+ @param containerID The ID of the container where the content resides.
+ @param structureID The specified structure ID.
+ @param updatedContent The updated content. If a parameter IS NOT specified, it will retain its current value. If a parameter IS specified, but with an empty value, then the value will be cleared.
+ @param success A block object to be executed when `updateContentForContentID:strucureID:updatedContent:success:failure:` succeeds. This block has no return value and takes no arguments.
+ @param failure A block object to be executed when `updateContentForContentID:structureID:updatedContent:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)updateContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSUInteger)structureID updatedContent:(NSDictionary *)updatedContent success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
+
+/**
+ This method is used to update existing content.
+ @param contentID The specified content ID.
+ @param containerID The ID of the container where the content resides.
+ @param structureID The specified structure ID.
+ @param updatedContent The updated content. If a parameter IS NOT specified, it will retain its current value. If a parameter IS specified, but with an empty value, then the value will be cleared.
+ @param parentContentID The specified parent content ID.
+ @param success A block object to be executed when `updateContentForContentID:updatedContent:structureID:parentContentID:success:failure:` succeeds. This block has no return value and takes no arguments.
+ @param failure A block object to be executed when `updateContentForContentID:updatedContent:structureID:parentContentID:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)updateContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSUInteger)structureID parentContentID:(NSString *)parentContentID updatedContent:(NSDictionary *)updatedContent success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
+
+/**
+ This method is used to delete a specific content item. If the associated structure for the content is a dynamic object structure residing in a parent array structure then all child content will be deleted as well. However, if the associated structure for the content is a static structure item then only the specified content will be deleted.
+ @param contentID The specified content ID.
+ @param traverse If `YES` then child content will be deleted as well. This parameter is only useful when the content ID is associated to a static structure item. In that case, the content for the static structure item will be deleted, along with any content within that structure item.
+ @param success A block object to be executed when `deleteContentForContentID:traverse:success:failure:` succeeds. This block has no return value and takes no arguments.
+ @param failure A block object to be executed when `deleteContentForContentID:traverse:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)deleteContentForContentID:(NSString *)contentID traverse:(BOOL)traverse success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
+
+/**
+ This method is used to delete all child elements within an array structure item.
+ @param contentID The specified content ID.
+ @param success A block object to be executed when `deleteContentChildrenForContentID:success:failure:` succeeds. This block has no return value and takes no arguments.
+ @param failure A block object to be executed when `deleteContentChildrenForContentID:success:failure:` fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.
+ */
++ (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
+
+///-----------------------
+/// @name Other Methods
+///-----------------------
+
+/**
+ Returns 'MaaSCMS'.
+ */
++ (NSString *)serviceName;
+
+@end
