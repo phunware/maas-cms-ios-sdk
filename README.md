@@ -57,7 +57,7 @@ The MaaSCMS SDK allows developers to fetch and manage the various pieces of data
 
 ### Content
 
-The structure of the **Content** object relies completely on the structure of the menus and schemas.
+The structure of the **Content** object relies completely on the layout of structures and schemas.
 
 
 
