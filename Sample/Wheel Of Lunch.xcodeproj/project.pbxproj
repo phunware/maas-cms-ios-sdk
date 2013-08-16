@@ -193,8 +193,6 @@
 				B01404AE17BBCE5800F3D703 /* View Controllers */,
 				B014046F17BBC79C00F3D703 /* PWAppDelegate.h */,
 				B014047017BBC79C00F3D703 /* PWAppDelegate.m */,
-				B014047817BBC79C00F3D703 /* PWMainViewController.h */,
-				B014047917BBC79C00F3D703 /* PWMainViewController.m */,
 				B014046717BBC79B00F3D703 /* Supporting Files */,
 			);
 			name = Classes;
@@ -264,6 +262,8 @@
 		B01404AE17BBCE5800F3D703 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B014047817BBC79C00F3D703 /* PWMainViewController.h */,
+				B014047917BBC79C00F3D703 /* PWMainViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";

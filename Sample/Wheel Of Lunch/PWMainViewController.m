@@ -44,7 +44,7 @@
     [self.view addSubview:activityIndicator];
     self.activityIndicator = activityIndicator;
     
-    [self fetchLunchOptionsFromCMS];
+    [self fetchLunchOptions];
 }
 
 - (void)setupCarousel
@@ -79,6 +79,20 @@
     [self.carousel.layer insertSublayer:headerLayer atIndex:0];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.view becomeFirstResponder];
+    
+}
+
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self.view resignFirstResponder];
+}
+
 
 #pragma mark - Memory Management
 
@@ -95,9 +109,30 @@
 }
 
 
-#pragma mark - Network
+#pragma mark - Shake Handling
 
-- (void)fetchLunchOptionsFromCMS
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (event.subtype == UIEventSubtypeMotionShake)
+    {
+        // Shake detected
+        [self spinWheelOfLunch];
+    }
+    
+    if ([super respondsToSelector:@selector(motionEnded:withEvent:)])
+    {
+        [super motionEnded:motion withEvent:event];
+    }
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+#pragma mark - Convenience
+
+- (void)fetchLunchOptions
 {
     __weak __typeof(&*self)weakSelf = self;
     
@@ -112,6 +147,7 @@
         }
         
         [weakSelf.carousel reloadData];
+        
         [weakSelf.activityIndicator stopAnimating];
     } failure:^(NSError *error) {
         NSLog(@"Error: %@", error.localizedDescription);
@@ -119,8 +155,15 @@
     }];
 }
 
+- (void)spinWheelOfLunch
+{
+    // Time to spin the wheel of lucnh!
+    NSInteger randomRestaurantIndex = arc4random_uniform(20) + 1;
+    [self.carousel scrollByNumberOfItems:20+randomRestaurantIndex duration:3];
+}
 
-#pragma mark iCarousel methods
+
+#pragma mark - iCarousel methods
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
