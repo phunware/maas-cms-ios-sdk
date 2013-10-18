@@ -44,6 +44,7 @@
 		B01404F217BC1D8100F3D703 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B01404E717BC1D8100F3D703 /* AFXMLRequestOperation.m */; };
 		B01404F417BC1D8100F3D703 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B01404EA17BC1D8100F3D703 /* UIImageView+AFNetworking.m */; };
 		B01404F617BC1DD700F3D703 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B01404F517BC1DD700F3D703 /* placeholder.png */; };
+		B0F29BAD1811B40D00864DFD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F29BAC1811B40D00864DFD /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		B01404E917BC1D8100F3D703 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		B01404EA17BC1D8100F3D703 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		B01404F517BC1DD700F3D703 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		B0F29BAC1811B40D00864DFD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F29BAD1811B40D00864DFD /* AdSupport.framework in Frameworks */,
 				B01404D117BBF3F900F3D703 /* CoreTelephony.framework in Frameworks */,
 				B01404CF17BBF3F400F3D703 /* MobileCoreServices.framework in Frameworks */,
 				B01404CD17BBF3F000F3D703 /* SystemConfiguration.framework in Frameworks */,
@@ -172,6 +175,7 @@
 		B014045F17BBC79B00F3D703 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0F29BAC1811B40D00864DFD /* AdSupport.framework */,
 				B01404D017BBF3F900F3D703 /* CoreTelephony.framework */,
 				B01404CE17BBF3F400F3D703 /* MobileCoreServices.framework */,
 				B01404CC17BBF3F000F3D703 /* SystemConfiguration.framework */,
