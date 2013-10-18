@@ -1,7 +1,7 @@
 MaaSCMS iOS SDK
 ================
 
-Version 1.0.0
+Version 1.0.1
 
 This is the iOS SDK for the MaaS Content Management System module. Visit http://maas.phunware.com/ for more details and to sign up.
 
