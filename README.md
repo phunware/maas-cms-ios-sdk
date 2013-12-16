@@ -7,6 +7,15 @@ This is the iOS SDK for the MaaS Content Management module. Visit http://maas.ph
 
 
 
+Requirements
+------------
+
+- MaaSCore v1.0.0 or greater
+- iOS 5.0 or greater
+- Xcode 4.4 or greater
+
+
+
 Getting Started
 ---------------
 
@@ -119,7 +128,6 @@ The primary methods in MaaS Content Management revolve fetching, creating, updat
     } failure:^(NSError *error) {
         ...
     }];
-
 ````
 
 ### Containers
@@ -145,7 +153,6 @@ The primary methods in MaaS Content Management revolve fetching, creating, updat
     } failure:^(NSError *error) {
         ...
     }];
-
 ````
 
 ### Schemas
@@ -190,12 +197,3 @@ The primary methods in MaaS Content Management revolve fetching, creating, updat
         ...
     }];
 ````
-
-
-
-Requirements
-------------
-
-- MaaSCore v1.0.0 or greater
-- iOS 5.0 or greater
-- Xcode 4.4 or greater
