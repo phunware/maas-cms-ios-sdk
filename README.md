@@ -10,7 +10,7 @@ This is the iOS SDK for the MaaS Content Management module. Visit http://maas.ph
 Getting Started
 ---------------
 
-- [Download MaaSCMS](https://github.com/phunware/maas-cms-ios-sdk/archive/master.zip) and run the included sample app.
+- [Download MaaS Content Management](https://github.com/phunware/maas-cms-ios-sdk/archive/master.zip) and run the included sample app.
 - Continue reading below for installation and integration instructions.
 - Be sure to read the [documentation](http://phunware.github.io/maas-cms-ios-sdk/) for additional details.
 
@@ -33,7 +33,7 @@ It's recommended that you add the MaaS frameworks to the 'Vendor/Phunware' direc
 Documentation
 ------------
 
-Documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-cms-ios-sdk/
+Documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-content-management-ios-sdk/
 
 
 
