@@ -1,4 +1,4 @@
-MaaSCME iOS SDK
+MaaS Content Management iOS SDK
 ================
 
 Version 1.0.1
