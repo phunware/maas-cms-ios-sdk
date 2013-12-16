@@ -3,7 +3,7 @@ MaaSCME iOS SDK
 
 Version 1.0.1
 
-This is the iOS SDK for the MaaS Content Management Engine module. Visit http://maas.phunware.com/ for more details and to sign up.
+This is the iOS SDK for the MaaS Content Management module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 
 
@@ -40,7 +40,7 @@ Documentation is included in the Documents folder in the repository as both HTML
 Overview
 -----------
 
-The MaaSCMS SDK allows developers to fetch and manage the various pieces of data in the Content Management Engine, including containers, schemas, structure and content. The CME spans across your entire organization so different applications can potentially share the same content.
+The MaaS Content Management SDK allows developers to fetch and manage the various pieces of data in the Content Management module, including containers, schemas, structure and content. Content Management spans across your entire organization, so different applications can potentially share the same content.
 
 
 ### Container
@@ -64,7 +64,7 @@ The structure of the **Content** object relies completely on the structure of th
 Integration
 -----------
 
-The primary methods in MaaSCME revolve fetching, creating, updating and deleting content. You can also get structures, containers and schemas.
+The primary methods in MaaS Content Management revolve fetching, creating, updating and deleting content. You can also get structures, containers and schemas.
 
 ### Getting Content
 
