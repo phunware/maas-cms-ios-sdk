@@ -1,4 +1,4 @@
-MaaS Content Management iOS SDK
+MaaS Content Management SDK for iOS
 ================
 
 Version 1.0.1
