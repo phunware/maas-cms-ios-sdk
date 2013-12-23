@@ -19,9 +19,9 @@ Requirements
 Getting Started
 ---------------
 
-- [Download MaaS Content Management](https://github.com/phunware/maas-cms-ios-sdk/archive/master.zip) and run the included sample app.
+- [Download MaaS Content Management](https://github.com/phunware/maas-content-management-ios-sdk/archive/master.zip) and run the included sample app.
 - Continue reading below for installation and integration instructions.
-- Be sure to read the [documentation](http://phunware.github.io/maas-cms-ios-sdk/) for additional details.
+- Be sure to read the [documentation](http://phunware.github.io/maas-content-management-ios-sdk/) for additional details.
 
 
 
