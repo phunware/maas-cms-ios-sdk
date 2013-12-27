@@ -10,28 +10,28 @@
 @class PWSchema;
 
 /**
- `PWStructure` items are used to build the structure and hierarchy of the data. Each structure item that is defined as an object can also optionally be assigned a schema that defines what content can be saved to those structure items. All values in a `PWStructure` object are immutable on the client. You can modify `PWStructure` values in MaaS Portal. `PWStructure` conforms to the `NSCoding` and `NSCopying` protocol.
+ `PWStructure` items are used to build the structure and hierarchy of the data. Each structure item that is defined as an object can also optionally be assigned a schema that defines what content can be saved to those structure items. All values in a `PWStructure` object are immutable on the client. You can modify `PWStructure` values in the MaaS portal. `PWStructure` conforms to the `NSCoding` and `NSCopying` protocol.
  */
 
 @interface PWStructure : NSObject <NSCoding, NSCopying>
 
 /**
- An integer that is used to identify the structure ID.
+ An integer that is used to identify the Structure ID.
  */
 @property (nonatomic, readonly) NSUInteger structureID;
 
 /**
- An integer that is used to identify the parent ID.
+ An integer that is used to identify the Parent ID.
  */
 @property (nonatomic, readonly) NSUInteger parentID;
 
 /**
- A string that is used to identify the container ID.
+ A string that is used to identify the Container ID.
  */
 @property (nonatomic, readonly) NSString *containerID;
 
 /**
- A string that is used to identify the schema ID.
+ A string that is used to identify the Schema ID.
  */
 @property (nonatomic, readonly) NSString *schemaID;
 
@@ -61,7 +61,7 @@
 @property (nonatomic, readonly) NSUInteger sortOrder;
 
 /**
- An boolean that is used to identify the parent ID.
+ An boolean that is used to identify the Parent ID.
  */
 @property (nonatomic, readonly) BOOL isActive;
 
@@ -71,7 +71,7 @@
 @property (nonatomic, readonly) NSDate *creationDate;
 
 /**
- The last update date for the structure.
+ The date of the last update for the structure.
  */
 @property (nonatomic, readonly) NSDate *lastUpdated;
 

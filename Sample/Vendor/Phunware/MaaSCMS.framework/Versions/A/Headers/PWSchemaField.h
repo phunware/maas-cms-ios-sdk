@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- `PWSchemaField` objects define the fields that are specified for a `PWSchema` object. A `PWSchemaField` object has a few base parameters and can be extended to support additional key:value pairs. Additional key:value pairs are available in the `customKeys` property. You can modify `PWSchemaField` values in MaaS Portal. `PWSchemaField` conforms to the `NSCoding` and `NSCopying` protocol.
+ `PWSchemaField` objects define the fields that are specified for a `PWSchema` object. A `PWSchemaField` object has a few base parameters and can be extended to support additional key:value pairs. Additional key:value pairs are available in the `customKeys` property. You can modify `PWSchemaField` values in the MaaS portal. `PWSchemaField` conforms to the `NSCoding` and `NSCopying` protocol.
 */
 
 @interface PWSchemaField : NSObject <NSCoding, NSCopying>
@@ -39,7 +39,7 @@
 @property (nonatomic, readonly) NSString *fieldDescription;
 
 /**
- Additional keys are based on the type and can be modified in MaaS Portal
+ Additional keys are based on the type and can be modified in the MaaS portal.
  */
 @property (nonatomic, readonly) NSDictionary *customKeys;
 

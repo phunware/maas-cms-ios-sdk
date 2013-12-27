@@ -8,13 +8,13 @@
 #import <Foundation/Foundation.h>
 
 /**
- Containers hold a single structure. All values in a `PWContainer` object are immutable on the client. You can modify `PWContainer` values in MaaS Portal. `PWContainer` conforms to the `NSCoding` and `NSCopying` protocol.
+ Containers hold a single structure. All values in a `PWContainer` object are immutable on the client. You can modify `PWContainer` values in the MaaS portal. `PWContainer` conforms to the `NSCoding` and `NSCopying` protocol.
 */
 
 @interface PWContainer : NSObject <NSCoding, NSCopying>
 
 /**
- An `NSString` that is used to identify the container ID.
+ An `NSString` that is used to identify the Container ID.
  */
 @property (nonatomic, readonly) NSString *containerID;
 
@@ -34,7 +34,7 @@
 @property (nonatomic, readonly) NSDate *creationDate;
 
 /**
- The last update date for the container.
+ The date of the last update for the container.
  */
 @property (nonatomic, readonly) NSDate *lastUpdated;
 

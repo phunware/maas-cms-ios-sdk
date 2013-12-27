@@ -8,13 +8,13 @@
 #import <Foundation/Foundation.h>
 
 /**
- `PWSchema` objects are applied to `PWStructure` items and define what fields of data a particular `PWStructure` item can contain. You can modify `PWSchema` values in MaaS Portal. `PWSchema` conforms to the `NSCoding` and `NSCopying` protocol.
+ `PWSchema` objects are applied to `PWStructure` items and define what fields of data a particular `PWStructure` item can contain. You can modify `PWSchema` values in the MaaS portal. `PWSchema` conforms to the `NSCoding` and `NSCopying` protocol.
 */
 
 @interface PWSchema : NSObject <NSCoding, NSCopying>
 
 /**
- A string that is used to identify the schema ID.
+ A string that is used to identify the Schema ID.
  */
 @property (nonatomic, readonly) NSString *schemaID;
 
@@ -24,12 +24,12 @@
 @property (nonatomic, readonly) NSString *name;
 
 /**
- An array of `PWSchemaField` objects associated with the schema. `PWSchemaField` objects have a base object definition that can
+ An array of `PWSchemaField` objects associated with the schema.
  */
 @property (nonatomic, readonly) NSArray *fields;
 
 /**
- A array of attributes associated with the schema. Attribute objects are of `NSDictionary` type, `@{@"key" : @"value"}`.
+ A array of attributes associated with the schema. Attribute objects are of `NSDictionary` type: `@{@"key" : @"value"}`.
  */
 @property (nonatomic, readonly) NSArray *attributes;
 
@@ -44,7 +44,7 @@
 @property (nonatomic, readonly) NSDate *creationDate;
 
 /**
- The last update date for the schema.
+ The date of the last update for the schema.
  */
 @property (nonatomic, readonly) NSDate *lastUpdated;
 

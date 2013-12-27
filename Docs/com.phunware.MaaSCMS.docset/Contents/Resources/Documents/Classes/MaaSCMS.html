@@ -4,10 +4,9 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>MaaSCMS Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 840)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -193,13 +192,13 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p><code>MaaSCMS</code> provides a full-featured Content Management Solution, allowing you to deliver engaging content to your users.</p>
+						<p><code>MaaSCMS</code> provides a full-featured content management solution that allows you to deliver engaging content to your users.</p>
 					</div>
 					
 					
@@ -218,21 +217,18 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getAllContainersWithSuccess:failure:">+&nbsp;getAllContainersWithSuccess:failure:</a></code>
-		<span class="tooltip"><p>Returns a list of the available containers.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getContainerWithContainerID:success:failure:">+&nbsp;getContainerWithContainerID:success:failure:</a></code>
-		<span class="tooltip"><p>Returns a <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> object for the specified container ID.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:">+&nbsp;getContainersContainingAnyTags:containingAllTags:success:failure:</a></code>
-		<span class="tooltip"><p>Returns a list of the available containers filtered by the specified tags. Only one of the tag array arguments is required.</p></span>
 	</span>
 	
 	
@@ -247,21 +243,18 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getAllSchemasWithSuccess:failure:">+&nbsp;getAllSchemasWithSuccess:failure:</a></code>
-		<span class="tooltip"><p>Returns a list of the available containers.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSchemaWithSchemaID:success:failure:">+&nbsp;getSchemaWithSchemaID:success:failure:</a></code>
-		<span class="tooltip"><p>Returns a <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> object for the specified schema ID.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:">+&nbsp;getSchemasContainingAnyTags:containingAllTags:success:failure:</a></code>
-		<span class="tooltip"><p>Returns a list of the available schemas filtered by the specified tags. Only one of the tag array arguments is required.</p></span>
 	</span>
 	
 	
@@ -276,14 +269,12 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getStructuresForContainerID:depth:includeSchema:success:failure:">+&nbsp;getStructuresForContainerID:depth:includeSchema:success:failure:</a></code>
-		<span class="tooltip"><p>This method is used to get a structure. Depending on the request parameters, this may return a multi-level structure, or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified id.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getStructureWithID:containerID:depth:includeSchema:success:failure:">+&nbsp;getStructureWithID:containerID:depth:includeSchema:success:failure:</a></code>
-		<span class="tooltip"><p>This method is used to get a structure for a specified structure ID. Depending on the request parameters, this may return a multi-level structure, or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified :id.</p></span>
 	</span>
 	
 	
@@ -298,77 +289,66 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:">+&nbsp;getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:</a></code>
-		<span class="tooltip"><p>Gets the content based on the structure hierarchy and schemas. The structure of the response data for this method relies completely on the structure of the structures and schemas. Content will be retrieved starting from the root level.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getContentForContentID:containerID:structureID:success:failure:">+&nbsp;getContentForContentID:containerID:structureID:success:failure:</a></code>
-		<span class="tooltip"><p>Gets the content for the specified content ID and container ID. The structure of the response data for this method relies completely on the structures and schemas.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getAllContentsForContainerID:limit:offset:success:failure:">+&nbsp;getAllContentsForContainerID:limit:offset:success:failure:</a></code>
-		<span class="tooltip"><p>Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getContentsForContainerID:structureID:limit:offset:success:failure:">+&nbsp;getContentsForContainerID:structureID:limit:offset:success:failure:</a></code>
-		<span class="tooltip"><p>Gets all content for a specific container ID and structure ID. The structure of the content data for this method relies completely on the structure and schemas.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getContentsForContainerID:parentID:structureID:limit:offset:success:failure:">+&nbsp;getContentsForContainerID:parentID:structureID:limit:offset:success:failure:</a></code>
-		<span class="tooltip"><p>Gets all content for a specific container ID, parent ID, and structure ID. The structure of the content data for this method relies completely on the structure and schemas.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addContent:containerID:structureID:parentContentID:success:failure:">+&nbsp;addContent:containerID:structureID:parentContentID:success:failure:</a></code>
-		<span class="tooltip"><p>This method is used to save new content. If no parent content exists you should use <code>addContent:structureID:success:failure:</code>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addContent:containerID:structureID:success:failure:">+&nbsp;addContent:containerID:structureID:success:failure:</a></code>
-		<span class="tooltip"><p>This method is used to save new content. If parent content exists you should use <code>addContent:structureID:parentContentID:success:failure:</code>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/updateContentForContentID:containerID:structureID:updatedContent:success:failure:">+&nbsp;updateContentForContentID:containerID:structureID:updatedContent:success:failure:</a></code>
-		<span class="tooltip"><p>This method is used to update existing content.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/updateContentForContentID:containerID:structureID:parentContentID:updatedContent:success:failure:">+&nbsp;updateContentForContentID:containerID:structureID:parentContentID:updatedContent:success:failure:</a></code>
-		<span class="tooltip"><p>This method is used to update existing content.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deleteContentForContentID:traverse:success:failure:">+&nbsp;deleteContentForContentID:traverse:success:failure:</a></code>
-		<span class="tooltip"><p>This method is used to delete a specific content item. If the associated structure for the content is a dynamic object structure residing in a parent array structure then all child content will be deleted as well. However, if the associated structure for the content is a static structure item then only the specified content will be deleted.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deleteContentChildrenForContentID:success:failure:">+&nbsp;deleteContentChildrenForContentID:success:failure:</a></code>
-		<span class="tooltip"><p>This method is used to delete all child elements within an array structure item.</p></span>
 	</span>
 	
 	
@@ -383,7 +363,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/serviceName">+&nbsp;serviceName</a></code>
-		<span class="tooltip"><p>Returns &lsquo;MaaSCMS&rsquo;.</p></span>
 	</span>
 	
 	
@@ -409,7 +388,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method is used to save new content. If no parent content exists you should use <code>addContent:structureID:success:failure:</code>.</p>
+		<p>This method is used to save new content. If no parent content exists, you should use <code>addContent:structureID:success:failure:</code>.</p>
 	</div>		
 	
     
@@ -438,7 +417,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>parentContentID</em></dt>
-			<dd><p>The ID of the parent content item. This is used to link up any dynamic children of this structure item that may have already been created, when the associated structure is itself within a dynamic structure item. When this is the case, the only way to know which child content path is associated with this parent content data is to supply the parent to this content item.</p></dd>
+			<dd><p>The ID of the parent content item. This is used to link up any dynamic children of this structure item that may have already been created when the associated structure is itself within a dynamic structure item. When this is the case, the only way to know which child content path is associated with this parent content data is to supply the parent to this content item.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -448,7 +427,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>addContent:structureID:parentContentID:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>addContent:structureID:parentContentID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -480,7 +459,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method is used to save new content. If parent content exists you should use <code>addContent:structureID:parentContentID:success:failure:</code>.</p>
+		<p>This method is used to save new content. If parent content exists, you should use <code>addContent:structureID:parentContentID:success:failure:</code>.</p>
 	</div>		
 	
     
@@ -514,7 +493,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>addContent:structureID:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>addContent:structureID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -560,7 +539,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>contentID</em></dt>
-			<dd><p>The specified content ID.</p></dd>
+			<dd><p>The specified Content ID.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -570,7 +549,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>deleteContentChildrenForContentID:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>deleteContentChildrenForContentID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -602,7 +581,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method is used to delete a specific content item. If the associated structure for the content is a dynamic object structure residing in a parent array structure then all child content will be deleted as well. However, if the associated structure for the content is a static structure item then only the specified content will be deleted.</p>
+		<p>This method is used to delete a specific content item. If the associated structure for the content is a dynamic object structure residing in a parent array structure, then all child content will be deleted as well. However, if the associated structure for the content is a static structure item, only the specified content will be deleted.</p>
 	</div>		
 	
     
@@ -616,12 +595,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>contentID</em></dt>
-			<dd><p>The specified content ID.</p></dd>
+			<dd><p>The specified Content ID.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>traverse</em></dt>
-			<dd><p>If <code>YES</code> then child content will be deleted as well. This parameter is only useful when the content ID is associated to a static structure item. In that case, the content for the static structure item will be deleted, along with any content within that structure item.</p></dd>
+			<dd><p>If &lsquo;YES&rsquo;, then child content will be deleted as well. This parameter is only useful when the Content ID is associated to a static structure item. In that case, the content for the static structure item will be deleted, along with any content within that structure item.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -631,7 +610,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>deleteContentForContentID:traverse:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>deleteContentForContentID:traverse:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -677,12 +656,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getAllContainersWithSuccess:failure:</code> succeeds. This block has no return value and takes one argument: The containers received from the server, an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects.</p></dd>
+			<dd><p>A block object to be executed when <code>getAllContainersWithSuccess:failure:</code> succeeds. This block has no return value and takes one argument: the containers received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects).</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getAllContainersWithSuccess:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getAllContainersWithSuccess:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -733,7 +712,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>limit</em></dt>
-			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10, maximum value is 100.</p></dd>
+			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -743,12 +722,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getAllContentsForContainerID:limit:offset:success:failure:</code> succeeds. This block has no return value and takes three arguments: The content received from the server, a <a href="../Classes/PWPagination.html"><code>PWPagination</code></a> object that details content pagination information, and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</p></dd>
+			<dd><p>A block object to be executed when <code>getAllContentsForContainerID:limit:offset:success:failure:</code> succeeds. This block has no return value and takes three arguments: the content received from the server, a <a href="../Classes/PWPagination.html"><code>PWPagination</code></a> object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getAllContentsForContainerID:limit:offset:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getAllContentsForContainerID:limit:offset:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -794,7 +773,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getAllSchemasForContainerID:success:failure:</code> succeeds. This block has no return value and takes one argument: The schemas received from the server, an <code>NSArray</code> object that contains <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> objects.</p></dd>
+			<dd><p>A block object to be executed when <code>getAllSchemasForContainerID:success:failure:</code> succeeds. This block has no return value and takes one argument: the schemas received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> objects).</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -831,7 +810,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> object for the specified container ID.</p>
+		<p>Returns a <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> object for the specified Container ID.</p>
 	</div>		
 	
     
@@ -845,17 +824,17 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>containerID</em></dt>
-			<dd><p>The requested container ID.</p></dd>
+			<dd><p>The requested Container ID.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getContainerWithContainerID:success:failure:</code> succeeds. This block has no return value and takes one argument: The container received from the server.</p></dd>
+			<dd><p>A block object to be executed when <code>getContainerWithContainerID:success:failure:</code> succeeds. This block has no return value and takes one argument: the container received from the server.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getContainerWithContainerID:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getContainerWithContainerID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -887,7 +866,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a list of the available containers filtered by the specified tags. Only one of the tag array arguments is required.</p>
+		<p>Returns a list of the available containers, filtered by the specified tags. Only one of the tag array arguments is required.</p>
 	</div>		
 	
     
@@ -911,12 +890,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getContainersContainingAnyTags:containingAllTags:success:failure:</code> succeeds. This block has no return value and takes one argument: The containers received from the server, an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects.</p></dd>
+			<dd><p>A block object to be executed when <code>getContainersContainingAnyTags:containingAllTags:success:failure:</code> succeeds. This block has no return value and takes one argument: the containers received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects).</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getContainersContainingAnyTags:containingAllTags:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getContainersContainingAnyTags:containingAllTags:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -962,7 +941,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>contentID</em></dt>
-			<dd><p>The content ID to fetch.</p></dd>
+			<dd><p>The Content ID to fetch.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -972,7 +951,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>structureID</em></dt>
-			<dd><p>The ID of the structure item to start at. If no structure ID is specified then the content will be retrieved starting from the root level. Otherwise, the content will be retrieved starting at the level in the structure hierarchy that the specified structure item resides.</p></dd>
+			<dd><p>The ID of the structure item to start at. If no Structure ID is specified, then the content will be retrieved starting from the root level. Otherwise, the content will be retrieved starting at the level in the structure hierarchy that the specified structure item resides.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -982,7 +961,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>limit</em></dt>
-			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10, maximum value is 100. NOTE: This parameter is only used when the structure_id references a structure item of type array.</p></dd>
+			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100. NOTE: This parameter is only used when the structure_id references a structure item of type array.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -997,7 +976,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getContentForContainerID:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getContentForContainerID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1029,7 +1008,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Gets the content for the specified content ID and container ID. The structure of the response data for this method relies completely on the structures and schemas.</p>
+		<p>Gets the content for the specified Content ID and Container ID. The structure of the response data for this method relies completely on the structures and schemas.</p>
 	</div>		
 	
     
@@ -1043,7 +1022,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>contentID</em></dt>
-			<dd><p>The content ID to fetch.</p></dd>
+			<dd><p>The Content ID to fetch.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1058,12 +1037,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getContentForContentID:containerID:success:failure:</code> succeeds. This block has no return value and takes one argument: The content received from the server. The structure of the response data for this method relies completely on the structure of the structures and schemas.</p></dd>
+			<dd><p>A block object to be executed when <code>getContentForContentID:containerID:success:failure:</code> succeeds. This block has no return value and takes one argument: the content received from the server. The structure of the response data for this method relies completely on the structure of the structures and schemas.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getContentForContentID:containerID:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getContentForContentID:containerID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1095,7 +1074,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Gets all content for a specific container ID, parent ID, and structure ID. The structure of the content data for this method relies completely on the structure and schemas.</p>
+		<p>Gets all content for a specific Container ID, Parent ID, and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.</p>
 	</div>		
 	
     
@@ -1124,7 +1103,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>limit</em></dt>
-			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10, maximum value is 100.</p></dd>
+			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1134,12 +1113,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <a href="#//api/name/getContentsForContainerID:structureID:limit:offset:success:failure:"><code>getContentsForContainerID:structureID:limit:offset:success:failure:</code></a> succeeds. This block has no return value and takes three arguments: The content received from the server, a <a href="../Classes/PWPagination.html"><code>PWPagination</code></a> object that details content pagination information, and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</p></dd>
+			<dd><p>A block object to be executed when <a href="#//api/name/getContentsForContainerID:structureID:limit:offset:success:failure:"><code>getContentsForContainerID:structureID:limit:offset:success:failure:</code></a> succeeds. This block has no return value and takes three arguments: the content received from the server, a <a href="../Classes/PWPagination.html"><code>PWPagination</code></a> object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <a href="#//api/name/getContentsForContainerID:structureID:limit:offset:success:failure:"><code>getContentsForContainerID:structureID:limit:offset:success:failure:</code></a> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <a href="#//api/name/getContentsForContainerID:structureID:limit:offset:success:failure:"><code>getContentsForContainerID:structureID:limit:offset:success:failure:</code></a> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1171,7 +1150,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Gets all content for a specific container ID and structure ID. The structure of the content data for this method relies completely on the structure and schemas.</p>
+		<p>Gets all content for a specific Container ID and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.</p>
 	</div>		
 	
     
@@ -1195,7 +1174,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>limit</em></dt>
-			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10, maximum value is 100.</p></dd>
+			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1205,12 +1184,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getContentsForContainerID:structureID:limit:offset:success:failure:</code> succeeds. This block has no return value and takes three arguments: The content received from the server, a <a href="../Classes/PWPagination.html"><code>PWPagination</code></a> object that details content pagination information, and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</p></dd>
+			<dd><p>A block object to be executed when <code>getContentsForContainerID:structureID:limit:offset:success:failure:</code> succeeds. This block has no return value and takes three arguments: the content received from the server, a <a href="../Classes/PWPagination.html"><code>PWPagination</code></a> object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getContentsForContainerID:structureID:limit:offset:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getContentsForContainerID:structureID:limit:offset:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1242,7 +1221,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> object for the specified schema ID.</p>
+		<p>Returns a <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> object for the specified Schema ID.</p>
 	</div>		
 	
     
@@ -1256,12 +1235,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>schemaID</em></dt>
-			<dd><p>The requested schema ID.</p></dd>
+			<dd><p>The requested Schema ID.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getSchemaWithSchemaID:success:failure:</code> succeeds. This block has no return value and takes one argument: The schema received from the server.</p></dd>
+			<dd><p>A block object to be executed when <code>getSchemaWithSchemaID:success:failure:</code> succeeds. This block has no return value and takes one argument: the schema received from the server.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1298,7 +1277,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a list of the available schemas filtered by the specified tags. Only one of the tag array arguments is required.</p>
+		<p>Returns a list of the available schemas, filtered by the specified tags. Only one of the tag array arguments is required.</p>
 	</div>		
 	
     
@@ -1322,12 +1301,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getSchemasContainingAnyTags:success:failure:</code> succeeds. This block has no return value and takes one argument: The containers received from the server, an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects.</p></dd>
+			<dd><p>A block object to be executed when <code>getSchemasContainingAnyTags:success:failure:</code> succeeds. This block has no return value and takes one argument: the containers received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects).</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getSchemasContainingAnyTags:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getSchemasContainingAnyTags:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1359,7 +1338,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method is used to get a structure for a specified structure ID. Depending on the request parameters, this may return a multi-level structure, or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified :id.</p>
+		<p>This method is used to get a structure for a specified structure ID. Depending on the request parameters, this may return a multi-level structure, or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified ID.</p>
 	</div>		
 	
     
@@ -1383,22 +1362,22 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>depth</em></dt>
-			<dd><p>The depth to traverse into child structures. If the depth is set to 0 (default) then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use <code>kMaaSCMSDepthFullHierarchy</code>. Be careful when using this value for large structures.</p></dd>
+			<dd><p>The depth to traverse into child structures. If the depth is set to 0 (default), then no child structures will be returned; if the depth is set to 1, then the immediate child structures will be returned; and so on. To get the full hierarchy of children, use <code>kMaaSCMSDepthFullHierarchy</code>. Be careful when using this value for large structures.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>schema</em></dt>
-			<dd><p>If <code>YES</code> then the schema will be returned for structures that have one.</p></dd>
+			<dd><p>If <code>YES</code>, then the schema will be returned for structures that have one.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getStructureForContainerID:depth:includeSchema:success:failure:</code> succeeds. This block has no return value and takes one argument: The structure received from the server.</p></dd>
+			<dd><p>A block object to be executed when <code>getStructureForContainerID:depth:includeSchema:success:failure:</code> succeeds. This block has no return value and takes one argument: the structure received from the server.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getStructureForContainerID:depth:includeSchema:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getStructureForContainerID:depth:includeSchema:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1430,7 +1409,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method is used to get a structure. Depending on the request parameters, this may return a multi-level structure, or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified id.</p>
+		<p>This method is used to get a structure. Depending on the request parameters, this may return a multi-level structure or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified id.</p>
 	</div>		
 	
     
@@ -1546,7 +1525,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>contentID</em></dt>
-			<dd><p>The specified content ID.</p></dd>
+			<dd><p>The specified Content ID.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1561,12 +1540,12 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>parentContentID</em></dt>
-			<dd><p>The specified parent content ID.</p></dd>
+			<dd><p>The specified parent Content ID.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>updatedContent</em></dt>
-			<dd><p>The updated content. If a parameter IS NOT specified, it will retain its current value. If a parameter IS specified, but with an empty value, then the value will be cleared.</p></dd>
+			<dd><p>The updated content. If a parameter IS NOT specified, it will retain its current value. If a parameter IS specified with an empty value, then the value will be cleared.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1576,7 +1555,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>updateContentForContentID:updatedContent:structureID:parentContentID:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>updateContentForContentID:updatedContent:structureID:parentContentID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1622,7 +1601,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>contentID</em></dt>
-			<dd><p>The specified content ID.</p></dd>
+			<dd><p>The specified Content ID.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1637,7 +1616,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>updatedContent</em></dt>
-			<dd><p>The updated content. If a parameter IS NOT specified, it will retain its current value. If a parameter IS specified, but with an empty value, then the value will be cleared.</p></dd>
+			<dd><p>The updated content. If a parameter IS NOT specified, it will retain its current value. If a parameter IS specified with an empty value, then the value will be cleared.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -1647,7 +1626,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>updateContentForContentID:structureID:updatedContent:success:failure:</code> fails. This block has no return value and takes one argument:, an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>updateContentForContentID:structureID:updatedContent:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1677,6 +1656,8 @@
 					
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -1687,9 +1668,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Phunware, Inc.. All rights reserved. (Last updated: 2013-10-08)</span><br />
+						<p><span class="copyright">&copy; 2013 Phunware, Inc.. All rights reserved. (Last updated: 2013-12-27)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
