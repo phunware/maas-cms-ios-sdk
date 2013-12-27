@@ -10,7 +10,7 @@ This is the iOS SDK for the MaaS Content Management module. Visit http://maas.ph
 Requirements
 ------------
 
-- MaaSCore v1.0.0 or greater
+- MaaS Core v1.0.0 or greater
 - iOS 5.0 or greater
 - Xcode 4.4 or greater
 
@@ -54,11 +54,11 @@ The MaaS Content Management SDK allows developers to fetch and manage the variou
 
 ### Container
 
-**Containers** hold a single structure. You can create any number of containers in MaaS Portal. You can also associate tags with containers to assist with fetching.
+**Containers** hold a single structure. You can create any number of containers in the MaaS portal. You can also associate tags with containers to assist with fetching.
 
 ### Schema
 
-**Schemas** are applied to **Structure** items and define what fields of data a particular structure item can contain.. You can create any number of schemas in MaaS Portal. You can also associate tags with schemas to assist with fetching.
+**Schemas** are applied to **Structure** items and define what fields of data a particular structure item can contain.. You can create any number of schemas in the MaaS portal. You can also associate tags with schemas to assist with fetching.
 
 ### Structure
 
