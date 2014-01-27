@@ -49,25 +49,18 @@ extern NSInteger const PWCMSUnused;
  */
 + (void)getContainerWithContainerID:(NSString *)containerID success:(void(^)(PWContainer *container))success failure:(void (^)(NSError *error))failure;
 
-/**
- Returns a list of the available containers, filtered by the specified tags. Only one of the tag array arguments is required.
- @param anyTags (Optional) Each matching result must contain at least one of the tags in the specified array.
- @param allTags (Optional) Each matching result must contain all of the tags in this array.
- @param success A block object to be executed when `getContainersContainingAnyTags:containingAllTags:success:failure:` succeeds. This block has no return value and takes one argument: the containers received from the server (an `NSArray` object that contains `PWContainer` objects).
- @param failure A block object to be executed when `getContainersContainingAnyTags:containingAllTags:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
- */
-+ (void)getContainersContainingAnyTags:(NSArray *)anyTags containingAllTags:(NSArray *)allTags success:(void(^)(NSArray *containers))success failure:(void (^)(NSError *error))failure;
-
 ///-----------------------
 /// @name Schema Methods
 ///-----------------------
 
 /**
  Returns a list of the available containers.
- @param success A block object to be executed when `getAllSchemasForContainerID:success:failure:` succeeds. This block has no return value and takes one argument: the schemas received from the server (an `NSArray` object that contains `PWSchema` objects).
- @param failure A block object to be executed when `getAllSchemasForContainerID:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
+ @param limit Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.
+ @param offset Specifies the number of results to offset. This is useful for pagination. Default value is 0.
+ @param success A block object to be executed when `getSchemasWithLimit:limit:offset:success:failure:` succeeds. This block has no return value and takes one argument: the schemas received from the server (an `NSArray` object that contains `PWSchema` objects).
+ @param failure A block object to be executed when `getSchemasWithLimit:limit:offset:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  */
-+ (void)getAllSchemasWithSuccess:(void(^)(NSArray *schemas))success failure:(void (^)(NSError *error))failure;
++ (void)getSchemasWithLimit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *schemas, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
 
 /**
  Returns a `PWSchema` object for the specified Schema ID.
@@ -77,14 +70,6 @@ extern NSInteger const PWCMSUnused;
  */
 + (void)getSchemaWithSchemaID:(NSString *)schemaID success:(void(^)(PWSchema *schema))success failure:(void (^)(NSError *error))failure;
 
-/**
- Returns a list of the available schemas, filtered by the specified tags. Only one of the tag array arguments is required.
- @param anyTags (Optional) Each matching result must contain at least one of the tags in the specified array.
- @param allTags (Optional) Each matching result must contain all of the tags in this array.
- @param success A block object to be executed when `getSchemasContainingAnyTags:success:failure:` succeeds. This block has no return value and takes one argument: the containers received from the server (an `NSArray` object that contains `PWContainer` objects).
- @param failure A block object to be executed when `getSchemasContainingAnyTags:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
- */
-+ (void)getSchemasContainingAnyTags:(NSArray *)anyTags containingAllTags:(NSArray *)allTags success:(void(^)(NSArray *schemas))success failure:(void (^)(NSError *error))failure;
 
 ///-----------------------
 /// @name Structure Methods

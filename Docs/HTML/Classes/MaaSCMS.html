@@ -53,11 +53,7 @@
 	
 	<option value="//api/name/getAllContentsForContainerID:limit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContentsForContainerID:limit:offset:success:failure:</option>
 	
-	<option value="//api/name/getAllSchemasWithSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllSchemasWithSuccess:failure:</option>
-	
 	<option value="//api/name/getContainerWithContainerID:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getContainerWithContainerID:success:failure:</option>
-	
-	<option value="//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getContainersContainingAnyTags:containingAllTags:success:failure:</option>
 	
 	<option value="//api/name/getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:</option>
 	
@@ -69,7 +65,7 @@
 	
 	<option value="//api/name/getSchemaWithSchemaID:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getSchemaWithSchemaID:success:failure:</option>
 	
-	<option value="//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getSchemasContainingAnyTags:containingAllTags:success:failure:</option>
+	<option value="//api/name/getSchemasWithLimit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getSchemasWithLimit:offset:success:failure:</option>
 	
 	<option value="//api/name/getStructureWithID:containerID:depth:includeSchema:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getStructureWithID:containerID:depth:includeSchema:success:failure:</option>
 	
@@ -131,11 +127,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContentsForContainerID:limit:offset:success:failure:">getAllContentsForContainerID:limit:offset:success:failure:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllSchemasWithSuccess:failure:">getAllSchemasWithSuccess:failure:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getContainerWithContainerID:success:failure:">getContainerWithContainerID:success:failure:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:">getContainersContainingAnyTags:containingAllTags:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:">getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:</a></span></li>
 	
@@ -147,7 +139,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSchemaWithSchemaID:success:failure:">getSchemaWithSchemaID:success:failure:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:">getSchemasContainingAnyTags:containingAllTags:success:failure:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSchemasWithLimit:offset:success:failure:">getSchemasWithLimit:offset:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStructureWithID:containerID:depth:includeSchema:success:failure:">getStructureWithID:containerID:depth:includeSchema:success:failure:</a></span></li>
 	
@@ -226,12 +218,6 @@
 	</span>
 	
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:">+&nbsp;getContainersContainingAnyTags:containingAllTags:success:failure:</a></code>
-	</span>
-	
-	
 </li>
 						</ul>
 						
@@ -242,19 +228,13 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/getAllSchemasWithSuccess:failure:">+&nbsp;getAllSchemasWithSuccess:failure:</a></code>
+		<code><a href="#//api/name/getSchemasWithLimit:offset:success:failure:">+&nbsp;getSchemasWithLimit:offset:success:failure:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSchemaWithSchemaID:success:failure:">+&nbsp;getSchemaWithSchemaID:success:failure:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:">+&nbsp;getSchemasContainingAnyTags:containingAllTags:success:failure:</a></code>
 	</span>
 	
 	
@@ -753,57 +733,6 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/getAllSchemasWithSuccess:failure:" title="getAllSchemasWithSuccess:failure:"></a>
-	<h3 class="subsubtitle method-title">getAllSchemasWithSuccess:failure:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Returns a list of the available containers.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (void)getAllSchemasWithSuccess:(void ( ^ ) ( NSArray *schemas ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getAllSchemasForContainerID:success:failure:</code> succeeds. This block has no return value and takes one argument: the schemas received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> objects).</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getAllSchemasForContainerID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/getContainerWithContainerID:success:failure:" title="getContainerWithContainerID:success:failure:"></a>
 	<h3 class="subsubtitle method-title">getContainerWithContainerID:success:failure:</h3>
 	
@@ -835,67 +764,6 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
 			<dd><p>A block object to be executed when <code>getContainerWithContainerID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:" title="getContainersContainingAnyTags:containingAllTags:success:failure:"></a>
-	<h3 class="subsubtitle method-title">getContainersContainingAnyTags:containingAllTags:success:failure:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Returns a list of the available containers, filtered by the specified tags. Only one of the tag array arguments is required.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (void)getContainersContainingAnyTags:(NSArray *)<em>anyTags</em> containingAllTags:(NSArray *)<em>allTags</em> success:(void ( ^ ) ( NSArray *containers ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>anyTags</em></dt>
-			<dd><p>(Optional) Each matching result must contain at least one of the tags in the specified array.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>allTags</em></dt>
-			<dd><p>(Optional) Each matching result must contain all of the tags in this array.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getContainersContainingAnyTags:containingAllTags:success:failure:</code> succeeds. This block has no return value and takes one argument: the containers received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects).</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getContainersContainingAnyTags:containingAllTags:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1271,18 +1139,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:" title="getSchemasContainingAnyTags:containingAllTags:success:failure:"></a>
-	<h3 class="subsubtitle method-title">getSchemasContainingAnyTags:containingAllTags:success:failure:</h3>
+	<a name="//api/name/getSchemasWithLimit:offset:success:failure:" title="getSchemasWithLimit:offset:success:failure:"></a>
+	<h3 class="subsubtitle method-title">getSchemasWithLimit:offset:success:failure:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a list of the available schemas, filtered by the specified tags. Only one of the tag array arguments is required.</p>
+		<p>Returns a list of the available containers.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (void)getSchemasContainingAnyTags:(NSArray *)<em>anyTags</em> containingAllTags:(NSArray *)<em>allTags</em> success:(void ( ^ ) ( NSArray *schemas ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)getSchemasWithLimit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *schemas , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
     
 	
@@ -1290,23 +1158,23 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>anyTags</em></dt>
-			<dd><p>(Optional) Each matching result must contain at least one of the tags in the specified array.</p></dd>
+			<dt><em>limit</em></dt>
+			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>allTags</em></dt>
-			<dd><p>(Optional) Each matching result must contain all of the tags in this array.</p></dd>
+			<dt><em>offset</em></dt>
+			<dd><p>Specifies the number of results to offset. This is useful for pagination. Default value is 0.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getSchemasContainingAnyTags:success:failure:</code> succeeds. This block has no return value and takes one argument: the containers received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects).</p></dd>
+			<dd><p>A block object to be executed when <code>getSchemasWithLimit:limit:offset:success:failure:</code> succeeds. This block has no return value and takes one argument: the schemas received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> objects).</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getSchemasContainingAnyTags:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getSchemasWithLimit:limit:offset:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1668,7 +1536,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Phunware, Inc.. All rights reserved. (Last updated: 2013-12-27)</span><br />
+						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-01-27)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

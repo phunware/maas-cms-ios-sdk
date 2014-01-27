@@ -1,7 +1,7 @@
 MaaS Content Management SDK for iOS
 ================
 
-Version 1.0.1
+Version 1.1.0
 
 This is the iOS SDK for the MaaS Content Management module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -10,7 +10,7 @@ This is the iOS SDK for the MaaS Content Management module. Visit http://maas.ph
 Requirements
 ------------
 
-- MaaS Core v1.0.0 or greater
+- MaaS Core v1.2.0 or greater
 - iOS 5.0 or greater
 - Xcode 4.4 or greater
 
@@ -172,8 +172,8 @@ The primary methods in MaaS Content Management revolve fetching, creating, updat
         ...
     }];
     
-    // Get an array of schemas that match an array of tags.
-    [MaaSCMS getSchemasContainingAnyTags:@[@"SCHEMA_TAG"] containingAllTags:nil success:^(NSArray *schemas) {
+    // Get an array of schemas with the specificed pagination parameters
+    [MaaSCMS getSchemasWithLimit:10 offset:0 success:^(NSArray *schemas, PWPagination *pagination, BOOL pagingEnabled) {
         ...
     } failure:^(NSError *error) {
         ...
