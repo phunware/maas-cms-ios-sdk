@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Phunware, Inc. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface Wheel_Of_LunchTests : SenTestCase
+@interface Wheel_Of_LunchTests : XCTestCase
 
 @end

@@ -21,13 +21,6 @@ extern NSInteger const PWCMSUnused;
 
  */
 
-/*
- Container ID: String
- Schema ID: String
- Content ID: String
- Structure ID: Int
- */
-
 @interface MaaSCMS : NSObject
 
 ///-----------------------
@@ -126,12 +119,11 @@ extern NSInteger const PWCMSUnused;
 /**
  Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.
  @param containerID The ID of the container to get the content for.
- @param limit Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.
- @param offset Specifies the number of results to offset. This is useful for pagination. Default value is 0.
+ @param depth The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use `kMaaSCMSDepthFullHierarchy`. Be careful when using this value for large structures.
  @param success A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` succeeds. This block has no return value and takes three arguments: the content received from the server, a `PWPagination` object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.
  @param failure A block object to be executed when `getAllContentsForContainerID:limit:offset:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  */
-+ (void)getAllContentsForContainerID:(NSString *)containerID limit:(NSInteger)limit offset:(NSInteger)offset success:(void(^)(NSArray *contents, PWPagination *pagination, BOOL pagingEnabled))success failure:(void (^)(NSError *error))failure;
++ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth success:(void(^)(NSDictionary *contents))success failure:(void (^)(NSError *error))failure;
 
 /**
  Gets all content for a specific Container ID and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.

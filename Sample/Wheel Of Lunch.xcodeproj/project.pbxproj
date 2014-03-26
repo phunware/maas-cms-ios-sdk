@@ -14,7 +14,6 @@
 		B014046D17BBC79C00F3D703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B014046C17BBC79C00F3D703 /* main.m */; };
 		B014047117BBC79C00F3D703 /* PWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B014047017BBC79C00F3D703 /* PWAppDelegate.m */; };
 		B014047A17BBC79C00F3D703 /* PWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B014047917BBC79C00F3D703 /* PWMainViewController.m */; };
-		B014048E17BBC79C00F3D703 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B014048D17BBC79C00F3D703 /* SenTestingKit.framework */; };
 		B014048F17BBC79C00F3D703 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B014046017BBC79B00F3D703 /* UIKit.framework */; };
 		B014049017BBC79C00F3D703 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B014046217BBC79B00F3D703 /* Foundation.framework */; };
 		B014049817BBC79C00F3D703 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B014049617BBC79C00F3D703 /* InfoPlist.strings */; };
@@ -70,8 +69,7 @@
 		B014047017BBC79C00F3D703 /* PWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWAppDelegate.m; sourceTree = "<group>"; };
 		B014047817BBC79C00F3D703 /* PWMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWMainViewController.h; sourceTree = "<group>"; };
 		B014047917BBC79C00F3D703 /* PWMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWMainViewController.m; sourceTree = "<group>"; };
-		B014048C17BBC79C00F3D703 /* Wheel Of LunchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wheel Of LunchTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B014048D17BBC79C00F3D703 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B014048C17BBC79C00F3D703 /* Wheel Of LunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wheel Of LunchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B014049517BBC79C00F3D703 /* Wheel Of LunchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wheel Of LunchTests-Info.plist"; sourceTree = "<group>"; };
 		B014049717BBC79C00F3D703 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B014049917BBC79C00F3D703 /* Wheel_Of_LunchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wheel_Of_LunchTests.h; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B014048E17BBC79C00F3D703 /* SenTestingKit.framework in Frameworks */,
 				B014048F17BBC79C00F3D703 /* UIKit.framework in Frameworks */,
 				B014049017BBC79C00F3D703 /* Foundation.framework in Frameworks */,
 			);
@@ -167,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				B014045D17BBC79B00F3D703 /* Wheel Of Lunch.app */,
-				B014048C17BBC79C00F3D703 /* Wheel Of LunchTests.octest */,
+				B014048C17BBC79C00F3D703 /* Wheel Of LunchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +181,6 @@
 				B014046017BBC79B00F3D703 /* UIKit.framework */,
 				B014046217BBC79B00F3D703 /* Foundation.framework */,
 				B014046417BBC79B00F3D703 /* CoreGraphics.framework */,
-				B014048D17BBC79C00F3D703 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -366,8 +362,8 @@
 			);
 			name = "Wheel Of LunchTests";
 			productName = "Wheel Of LunchTests";
-			productReference = B014048C17BBC79C00F3D703 /* Wheel Of LunchTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = B014048C17BBC79C00F3D703 /* Wheel Of LunchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -376,6 +372,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PW;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Phunware, Inc.";
 			};
@@ -602,15 +599,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wheel Of Lunch.app/Wheel Of Lunch";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
+					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wheel Of Lunch/Wheel Of Lunch-Prefix.pch";
 				INFOPLIST_FILE = "Wheel Of LunchTests/Wheel Of LunchTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -619,15 +616,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wheel Of Lunch.app/Wheel Of Lunch";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
+					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wheel Of Lunch/Wheel Of Lunch-Prefix.pch";
 				INFOPLIST_FILE = "Wheel Of LunchTests/Wheel Of LunchTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

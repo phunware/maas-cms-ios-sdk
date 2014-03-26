@@ -1,5 +1,8 @@
 #MaaSCMS Changelog
 
+##1.2.1 (Wednesday, March 26th, 2014)
+ * Adding arm64 support
+
 ##1.1.0 (Monday, January 27th, 2014)
  * Removed tag calls for containers and schema
  * Added limit and offset parameters to getSchemas call
