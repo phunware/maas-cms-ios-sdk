@@ -1,5 +1,9 @@
 #MaaSCMS Changelog
 
+##1.2.2 (Thursday, April 24th, 2014)
+ * Adding limit and offset parameters back into getAllContentsForContainerID method.
+ * Deprecated current implementation of getAllContentsForContainerID. This method will be removed  in a future release. 
+
 ##1.2.1 (Wednesday, March 26th, 2014)
  * Adding arm64 support
 

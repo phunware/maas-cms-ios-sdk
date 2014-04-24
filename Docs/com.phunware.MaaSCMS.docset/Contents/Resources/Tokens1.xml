@@ -233,21 +233,18 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getAllContentsForContainerID:limit:offset:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getAllContentsForContainerID:depth:limit:offset:success:failure:</TokenIdentifier>
 			<Abstract type="html">Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.</Abstract>
 			<DeclaredIn>MaaSCMS.h</DeclaredIn>
 			
-			<Declaration>+ (void)getAllContentsForContainerID:(NSString *)containerID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Declaration>+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>containerID</Name>
 					<Abstract type="html">The ID of the container to get the content for.</Abstract>
 				</Parameter><Parameter>
-					<Name>limit</Name>
-					<Abstract type="html">Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.</Abstract>
-				</Parameter><Parameter>
-					<Name>offset</Name>
-					<Abstract type="html">Specifies the number of results to offset. This is useful for pagination. Default value is 0.</Abstract>
+					<Name>depth</Name>
+					<Abstract type="html">The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use kMaaSCMSDepthFullHierarchy. Be careful when using this value for large structures.</Abstract>
 				</Parameter><Parameter>
 					<Name>success</Name>
 					<Abstract type="html">A block object to be executed when getAllContentsForContainerID:limit:offset:success:failure: succeeds. This block has no return value and takes three arguments: the content received from the server, a PWPagination object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</Abstract>
@@ -257,7 +254,7 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/getAllContentsForContainerID:limit:offset:success:failure:</Anchor>
+			<Anchor>//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -514,6 +511,18 @@
 			
 			
 			<Anchor>//api/name/serviceName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getAllContentsForContainerID:depth:success:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			
+			<Declaration>+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth success:(void ( ^ ) ( NSDictionary *contents ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			
+			
+			<Anchor>//api/name/getAllContentsForContainerID:depth:success:failure:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

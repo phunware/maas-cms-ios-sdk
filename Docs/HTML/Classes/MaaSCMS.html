@@ -51,7 +51,9 @@
 	
 	<option value="//api/name/getAllContainersWithSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContainersWithSuccess:failure:</option>
 	
-	<option value="//api/name/getAllContentsForContainerID:limit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContentsForContainerID:limit:offset:success:failure:</option>
+	<option value="//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContentsForContainerID:depth:limit:offset:success:failure:</option>
+	
+	<option value="//api/name/getAllContentsForContainerID:depth:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContentsForContainerID:depth:success:failure:</option>
 	
 	<option value="//api/name/getContainerWithContainerID:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getContainerWithContainerID:success:failure:</option>
 	
@@ -105,6 +107,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Other Methods">Other Methods</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Deprepcated">Deprepcated</a></span></li>
+	
 </ul></li>
 
 
@@ -125,7 +129,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContainersWithSuccess:failure:">getAllContainersWithSuccess:failure:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContentsForContainerID:limit:offset:success:failure:">getAllContentsForContainerID:limit:offset:success:failure:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:">getAllContentsForContainerID:depth:limit:offset:success:failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContentsForContainerID:depth:success:failure:">getAllContentsForContainerID:depth:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getContainerWithContainerID:success:failure:">getContainerWithContainerID:success:failure:</a></span></li>
 	
@@ -280,7 +286,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/getAllContentsForContainerID:limit:offset:success:failure:">+&nbsp;getAllContentsForContainerID:limit:offset:success:failure:</a></code>
+		<code><a href="#//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:">+&nbsp;getAllContentsForContainerID:depth:limit:offset:success:failure:</a></code>
 	</span>
 	
 	
@@ -343,6 +349,20 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/serviceName">+&nbsp;serviceName</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Deprepcated" name="task_Deprepcated"></a>
+						<h3 class="subsubtitle task-title">Deprepcated</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAllContentsForContainerID:depth:success:failure:">+&nbsp;getAllContentsForContainerID:depth:success:failure:</a></code>
 	</span>
 	
 	
@@ -667,8 +687,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/getAllContentsForContainerID:limit:offset:success:failure:" title="getAllContentsForContainerID:limit:offset:success:failure:"></a>
-	<h3 class="subsubtitle method-title">getAllContentsForContainerID:limit:offset:success:failure:</h3>
+	<a name="//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:" title="getAllContentsForContainerID:depth:limit:offset:success:failure:"></a>
+	<h3 class="subsubtitle method-title">getAllContentsForContainerID:depth:limit:offset:success:failure:</h3>
 	
 	
 	
@@ -678,7 +698,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> depth:(NSInteger)<em>depth</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
     
 	
@@ -691,13 +711,8 @@
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>limit</em></dt>
-			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>offset</em></dt>
-			<dd><p>Specifies the number of results to offset. This is useful for pagination. Default value is 0.</p></dd>
+			<dt><em>depth</em></dt>
+			<dd><p>The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use <code>kMaaSCMSDepthFullHierarchy</code>. Be careful when using this value for large structures.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -718,6 +733,11 @@
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>It&rsquo;s important to note that this method only returns the specified pagination parameters for the root level array object. Nested arrays default to a pagination of 10 and a limit of 0.</p>
+	</div>
+	
 	
 	
 	
@@ -730,6 +750,17 @@
 	</div>				
 	
 	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAllContentsForContainerID:depth:success:failure:" title="getAllContentsForContainerID:depth:success:failure:"></a>
+	<h3 class="subsubtitle method-title">getAllContentsForContainerID:depth:success:failure:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> depth:(NSInteger)<em>depth</em> success:(void ( ^ ) ( NSDictionary *contents ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+    
 </div>
 						
 						<div class="section-method">
@@ -1536,7 +1567,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-01-27)</span><br />
+						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-04-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
