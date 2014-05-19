@@ -1,7 +1,7 @@
 MaaS Content Management SDK for iOS
 ================
 
-Version 1.2.2
+Version 1.2.4
 
 This is the iOS SDK for the MaaS Content Management module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -10,7 +10,7 @@ This is the iOS SDK for the MaaS Content Management module. Visit http://maas.ph
 Requirements
 ------------
 
-- MaaS Core v1.2.0 or greater
+- MaaS Core v1.2.5 or greater
 - iOS 5.0 or greater
 - Xcode 4.4 or greater
 

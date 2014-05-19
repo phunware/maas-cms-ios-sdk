@@ -210,6 +210,36 @@ extern NSInteger const PWCMSUnused;
  */
 + (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
 
+
+///-----------------------
+/// @name Cache Control
+///-----------------------
+
+/**
+ Set the TTL in seconds for caching CME content.
+ @param timeToLive The specified cache time to live in seconds.
+ 
+ @discussion If there is no network connectivity or the content fails to fetch from CME for another reason the cache will return the last valid piece of content regardless of the TTL.
+ */
++ (void)setCacheTTL:(NSTimeInterval)timeToLive;
+
+/**
+ The TTL for CME content in seconds. Defaults to 0.
+ @return The cached content TTL.
+ */
++ (NSTimeInterval)cacheTTL;
+
+/**
+ Removes all objects from the cache that have not been used since the specified date.
+ @param date Objects that haven't been accessed since this date are removed from the cache.
+ */
++ (void)trimCacheToDate:(NSDate *)date;
+
+/**
+ Removes all CME data from the cache. This method blocks the calling thread until the cache has been cleared.
+ */
++ (void)clearCache;
+
 ///-----------------------
 /// @name Other Methods
 ///-----------------------

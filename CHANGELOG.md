@@ -1,5 +1,8 @@
 #MaaSCMS Changelog
 
+##1.2.4 (Monday, May 19th, 2014)
+ * Fixed issue with getContent integer parameters being passed as strings instead of numbers
+
 ##1.2.2 (Thursday, April 24th, 2014)
  * Adding limit and offset parameters back into getAllContentsForContainerID method.
  * Deprecated current implementation of getAllContentsForContainerID. This method will be removed  in a future release. 
