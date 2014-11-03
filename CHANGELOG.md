@@ -1,5 +1,8 @@
 #MaaSCMS Changelog
 
+##1.2.6 (Monday, November 3rd, 2014)
+ * Enabled encryption support
+
 ##1.2.4 (Monday, May 19th, 2014)
  * Fixed issue with getContent integer parameters being passed as strings instead of numbers
 
