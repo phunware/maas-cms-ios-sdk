@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEContainer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEContainer</TokenIdentifier>
+			<Abstract type="html">A PWCMEContainer object encapsulates content associated with an app, including content that is publicly accessible to all users of the app and content that is private to a specific user. A container object manages all explicit and implicit attempts to access the contents of the container.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the container. (read-only)</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/name</TokenIdentifier>
+			<Abstract type="html">The name of the container. (read-only)</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEContainer/name</TokenIdentifier>
+			<Abstract type="html">The name of the container. (read-only)</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/setContainerIdentifier:</TokenIdentifier>
+			<Abstract type="html">The string that identifies the app’s container. (read-only)</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *containerIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containerIdentifier</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/containerIdentifier</TokenIdentifier>
+			<Abstract type="html">The string that identifies the app’s container. (read-only)</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *containerIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containerIdentifier</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEContainer/containerIdentifier</TokenIdentifier>
+			<Abstract type="html">The string that identifies the app’s container. (read-only)</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *containerIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containerIdentifier</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCMEContainer/defaultContainer</TokenIdentifier>
+			<Abstract type="html">Returns the default container object for managing the current app’s content.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)defaultContainer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The container object associated with the current app’s content. This method always returns a valid container object.</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultContainer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCMEContainer/setDefaultContainer:</TokenIdentifier>
+			<Abstract type="html">Specify the default container.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>+ (void)setDefaultContainer:(PWCMEContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract type="html">The default container. This parameter cannot be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultContainer:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCMEContainer/containerWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">Instantiates a container with the given container identifier.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)containerWithIdentifier:(NSString *)containerIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerIdentifier</Name>
+					<Abstract type="html">The identifier of the container. This parameter cannot be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/containerWithIdentifier:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCMEContainer/fetchContainerWithIdentifier:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Instantiates a container with the given container identifier.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>+ (void)fetchContainerWithIdentifier:(NSString *)containerIdentifier completionHandler:(void ( ^ ) ( PWCMEContainer *container , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerIdentifier</Name>
+					<Abstract type="html">The identifier of the container. This parameter cannot be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+
+- container: The requested container object. If no such record is found, this parameter is nil.
+
+- error: An error object, or nil if the container was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchContainerWithIdentifier:completionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/addOperation:</TokenIdentifier>
+			<Abstract type="html">Queues an operation for execution in the current container.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)addOperation:(PWCMEOperation *)operation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The operation to queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addOperation:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCMEContainer/fetchAllContainersWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Returns all containers that the application has access to.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>+ (void)fetchAllContainersWithCompletionHandler:(void ( ^ ) ( NSArray *containers , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block object to be executed when fetchAllContainersWithCompletionHandler: is complete. This block has no return value and takes two argument: an NSArray of returned containers and an NSError object describing the error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAllContainersWithCompletionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/fetchRecordWithID:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Fetches one record asynchronously from the current container.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchRecordWithID:(PWCMERecordID *)recordID completionHandler:(void ( ^ ) ( PWCMERecord *record , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recordID</Name>
+					<Abstract type="html">The ID of the record you want to fetch. This method throws an exception if this parameter is nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+
+- record: The requested record object. If no such record is found, this parameter is nil.
+
+- error: An error object, or nil if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchRecordWithID:completionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/saveRecord:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Saves one record asynchronously to the current database.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)saveRecord:(PWCMERecord *)record completionHandler:(void ( ^ ) ( PWCMERecord *record , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>record</Name>
+					<Abstract type="html">The record to save. This method throws an exception if this parameter is nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+- record: The record object you attempted to save.
+- error: An error object, or nil if the record was saved successfully. Use the information in the error object to determine whether a problem has a workaround.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveRecord:completionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/deleteRecordWithID:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Deletes the specified record asynchronously from the current container.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteRecordWithID:(PWCMERecordID *)recordID completionHandler:(void ( ^ ) ( PWCMERecordID *recordID , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recordID</Name>
+					<Abstract type="html">The ID of the record you want to delete. This method throws an exception if this parameter is nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+
+- record: The record ID you attempted to delete. If no such record is found, this parameter is nil.
+
+- error: An error object or nil if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteRecordWithID:completionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/performQuery:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Searches the current container asynchronously for records that match the query parameters.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)performQuery:(PWCMEQuery *)query completionHandler:(void ( ^ ) ( NSArray *results , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query object containing the parameters for the search. This method throws an exception if this parameter is nil. For information about how to construct queries, see PWCMEQuery Class Reference.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+
+- results: An array containing zero or more PWCMERecord objects. The returned records correspond to the records in the current container that match the parameters of the query.
+
+- error: An error object or nil if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/performQuery:completionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/fetchAllStructuresWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Fetches all structures in the current container.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchAllStructuresWithCompletionHandler:(void ( ^ ) ( NSArray *structures , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+
+- structures: An array containing zero or more PWCMEStructure objects. The returned structures correspond to the structures in the current container.
+
+- error: An error object, or nil if the structuress were fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly allocated operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchAllStructuresWithCompletionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/fetchStructures:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Fetches specified structures asynchronously from the current container.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchStructures:(NSArray *)structureIdentifiers completionHandler:(void ( ^ ) ( NSArray *structures , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>structureIdentifiers</Name>
+					<Abstract type="html">An array of structure identifiers that you want to fetch. This method throws an exception if this parameter is nil. Structure identifiers must be of type NSNumber.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+
+- schemas: An array containing zero or more PWCMEStructure objects.
+- error: An error object or nil if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchStructures:completionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEContainer/fetchSchemas:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Fetches specified schemas asynchronously from the current container.</Abstract>
+			<DeclaredIn>PWCMEContainer.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchSchemas:(NSArray *)schemaIdentifiers completionHandler:(void ( ^ ) ( NSArray *schemas , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>schemaIdentifiers</Name>
+					<Abstract type="html">An array of schema identifiers that you want to fetch. This method throws an exception if this parameter is nil. Schema identifiers must be of type NSString.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+    - schemas: An array containing zero or more PWCMESchema objects.
+    - error: An error object or nil if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchSchemas:completionHandler:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,735 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PWCMEModifyRecordsOperation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PWCME </a></h1>
+				<a id="developerHome" href="../index.html">Phunware, Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PWCMEModifyRecordsOperation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/modifyRecordsCompletionBlock">&nbsp;&nbsp;&nbsp;&nbsp;modifyRecordsCompletionBlock</option>
+	
+	<option value="//api/name/perRecordIDDeleteCompletionBlock">&nbsp;&nbsp;&nbsp;&nbsp;perRecordIDDeleteCompletionBlock</option>
+	
+	<option value="//api/name/perRecordSaveCompletionBlock">&nbsp;&nbsp;&nbsp;&nbsp;perRecordSaveCompletionBlock</option>
+	
+	<option value="//api/name/recordIDsToDelete">&nbsp;&nbsp;&nbsp;&nbsp;recordIDsToDelete</option>
+	
+	<option value="//api/name/recordsToSave">&nbsp;&nbsp;&nbsp;&nbsp;recordsToSave</option>
+	
+	<option value="//api/name/savePolicy">&nbsp;&nbsp;&nbsp;&nbsp;savePolicy</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initWithRecordsToSave:recordIDsToDelete:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithRecordsToSave:recordIDsToDelete:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modifyRecordsCompletionBlock">modifyRecordsCompletionBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/perRecordIDDeleteCompletionBlock">perRecordIDDeleteCompletionBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/perRecordSaveCompletionBlock">perRecordSaveCompletionBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordIDsToDelete">recordIDsToDelete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordsToSave">recordsToSave</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/savePolicy">savePolicy</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithRecordsToSave:recordIDsToDelete:">initWithRecordsToSave:recordIDsToDelete:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PWCMEModifyRecordsOperation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PWCMEModifyRecordsOperation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/PWCMEOperation.html">PWCMEOperation</a> : NSOperation</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PWCMEModifyRecordsOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A <code>PWCMEModifyRecordsOperation</code> object saves changes to one or more <a href="../Classes/PWCMERecord.html"><code>PWCMERecord</code></a> objects. After modifying the fields of a record, use this type of operation object to save those changes to a database. You also use instances of this class to delete records permanently from a database.</p>
+
+<p>When saving a record that contains references to other records, Phunware CME must be able to find the target of those references. During a save operation, Phunware CME verifies that any target records actually exist in the container. If it cannot verify the existence of a target record, Phunware CME reports an error and does not save the record containing the reference to that target. When creating two new records that have a reference between them, use the same operation object to save both records at the same time.</p>
+
+<p>When you save records, the value in the <a href="#//api/name/savePolicy">savePolicy</a> property determines how to proceed when conflicts are detected on the server. Because records can be modified between the time you fetch them and the time you save them, the save policy determines whether new changes overwrite existing changes. By default, the operation object reports an error if a newer version of a record is found on the server. You can change the default setting to permit your changes to overwrite the server values wholly or partially.</p>
+
+<p>The blocks you assign to monitor progress of the operation are executed serially on an internal queue managed by the operation object. Your blocks must be capable of executing on a background thread, so any tasks that require access to the main thread must be redirected accordingly.</p>
+
+<p>If you assign a completion block to the <code>completionBlock</code> property of the operation object, the completion block is called after the operation executes and returns its results to you. You can use a completion block to perform housekeeping chores related to the operation, but do not use it to process the results of the operation itself. Any completion block you specify should be prepared to handle the failure of the operation to complete its task, whether due to an error or an explicit cancellation.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordsToSave">&nbsp;&nbsp;recordsToSave</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordIDsToDelete">&nbsp;&nbsp;recordIDsToDelete</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/savePolicy">&nbsp;&nbsp;savePolicy</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/perRecordIDDeleteCompletionBlock">&nbsp;&nbsp;perRecordIDDeleteCompletionBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/perRecordSaveCompletionBlock">&nbsp;&nbsp;perRecordSaveCompletionBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/modifyRecordsCompletionBlock">&nbsp;&nbsp;modifyRecordsCompletionBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithRecordsToSave:recordIDsToDelete:">&ndash;&nbsp;initWithRecordsToSave:recordIDsToDelete:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/modifyRecordsCompletionBlock" title="modifyRecordsCompletionBlock"></a>
+	<h3 class="subsubtitle method-title">modifyRecordsCompletionBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The block to execute after the status of all changes is known.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( NSArray *savedRecords , NSArray *deletedRecordIDs , NSError *operationError ) modifyRecordsCompletionBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The block returns no value and takes the following parameters:
+- savedRecord: The array of <a href="../Classes/PWCMERecord.html"><code>PWCMERecord</code></a> objects you tried to save.
+- deletedRecordIDs: The array of <a href="../Classes/PWCMERecordID.html"><code>PWCMERecordID</code></a> objects corresponding to the records you tried to delete.
+- operationError: An error object containing information about a problem or <code>nil</code> if the results are saved successfully.</p>
+
+<p>This block is executed only once and represents your last chance to process the operation results. It is executed after all individual progress blocks have completed but before the operation’s completion block. The block is executed serially with respect to the other progress blocks of the operation.</p>
+
+<p>If you intend to use this block to process results, set it before executing the operation or submitting the operation object to a queue.</p>
+
+<p>This block reports an error of type <code>PWCMEErrorPartialFailure</code> when it saves or deletes only some of the records successfully. The userInfo dictionary of the error contains a <code>PWCMEPartialErrorsByItemIDKey</code> key whose value is an NSDictionary object. The keys of that dictionary are the IDs of the records that were not saved or deleted, and the corresponding values are error objects containing information about what happened.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEModifyRecordsOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/perRecordIDDeleteCompletionBlock" title="perRecordIDDeleteCompletionBlock"></a>
+	<h3 class="subsubtitle method-title">perRecordIDDeleteCompletionBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The block to execute when the delete results of a single record are known.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( PWCMERecordID *recordID , NSError *error ) perRecordIDDeleteCompletionBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The block returns no value and takes the following parameters:
+- recordID: A <a href="../Classes/PWCMERecordID.html"><code>PWCMERecordID</code></a> object for the record that you attempted to delete.
+- error: An error object containing information about a problem or ``` if the record was saved successfully.</p>
+
+<p>This block is executed once for each record in the <a href="#//api/name/recordIDsToDelete"><code>recordIDsToDelete</code></a> property. Each time the block is executed, it is executed serially with respect to the other progress blocks of the operation.</p>
+
+<p>If you intend to use this block to process results, set it before executing the operation or submitting the operation object to a queue. Use this block to take any actions after the status of saving the record is known.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEModifyRecordsOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/perRecordSaveCompletionBlock" title="perRecordSaveCompletionBlock"></a>
+	<h3 class="subsubtitle method-title">perRecordSaveCompletionBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The block to execute when the save results of a single record are known.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record , NSError *error ) perRecordSaveCompletionBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The block returns no value and takes the following parameters:
+- record: A <a href="../Classes/PWCMERecord.html"><code>PWCMERecord</code></a> object that you attempted to save.
+- error: An error object containing information about a problem or <code>nil</code> if the record was saved successfully.</p>
+
+<p>This block is executed once for each record in the <a href="#//api/name/recordsToSave"><code>recordsToSave</code></a> property. Each time the block is executed, it is executed serially with respect to the other progress blocks of the operation.</p>
+
+<p>If you intend to use this block to process results, set it before executing the operation or submitting the operation object to a queue. Use this block to take any actions after the status of saving the record is known.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEModifyRecordsOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordIDsToDelete" title="recordIDsToDelete"></a>
+	<h3 class="subsubtitle method-title">recordIDsToDelete</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The IDs of the records to delete permanently from the container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *recordIDsToDelete</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property contains the array of <a href="../Classes/PWCMERecordID.html"><code>PWCMERecordID</code></a> objects that identify the records to delete. The initial contents of the array are set to the records you specified in the <a href="#//api/name/initWithRecordsToSave:recordIDsToDelete:"><code>initWithRecordsToSave:recordIDsToDelete:</code></a> method.</p>
+
+<p>If you intend to change the value of this property, do so before executing the operation or submitting the operation object to a queue.</p>
+
+<p>When deleting records, the operation object reports progress only on the records you specify in this property. Deleting records can trigger the deletion of related records if there is an owner-owned relationship between the records. When additional deletions occur, they are not reported to the progress blocks of this object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEModifyRecordsOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordsToSave" title="recordsToSave"></a>
+	<h3 class="subsubtitle method-title">recordsToSave</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The records to save to the database.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *recordsToSave</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property contains the array of <a href="../Classes/PWCMERecord.html"><code>PWCMERecord</code></a> objects that you want to save. The initial contents of the array are set to the records you specified in the <a href="#//api/name/initWithRecordsToSave:recordIDsToDelete:"><code>initWithRecordsToSave:recordIDsToDelete:</code></a> method. You can modify this array as needed before executing the operation. The records must all target the same container but may belong to different structures in the container.</p>
+
+<p>If you intend to change the value of this property, do so before executing the operation or submitting the operation object to a queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEModifyRecordsOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/savePolicy" title="savePolicy"></a>
+	<h3 class="subsubtitle method-title">savePolicy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The policy to apply when the server contains a newer version of a specific record.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PWCMERecordSavePolicy savePolicy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is PWCMERecordSaveChangedKeys.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEModifyRecordsOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns an operation object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized operation object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEModifyRecordsOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithRecordsToSave:recordIDsToDelete:" title="initWithRecordsToSave:recordIDsToDelete:"></a>
+	<h3 class="subsubtitle method-title">initWithRecordsToSave:recordIDsToDelete:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns an operation object configured to save and delete the specified records.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithRecordsToSave:(NSArray *)<em>records</em> recordIDsToDelete:(NSArray *)<em>recordIDs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>records</em></dt>
+			<dd><p>An array of <a href="../Classes/PWCMERecord.html"><code>PWCMERecord</code></a> objects representing the records to save, if any. You may specify <code>nil</code> for this parameter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordIDs</em></dt>
+			<dd><p>An array of <a href="../Classes/PWCMERecordID.html"><code>PWCMERecordID</code></a> objects representing the records you want to delete, if any. You may specify <code>nil</code> for this parameter.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized operation object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The records you intend to save or delete must all reside in the same container, which you can specify when you configure the operation object. Saving a record that is not in the current container creates it in the database. Trying to delete a record that does not exist in the current container returns an error for that record.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEModifyRecordsOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

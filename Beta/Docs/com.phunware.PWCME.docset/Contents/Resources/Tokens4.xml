@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEFetchSchemasOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEFetchSchemasOperation</TokenIdentifier>
+			<Abstract type="html">A PWCMEFetchSchemasOperation object retrieves PWCMESchema objects with known IDs from Phunware CME. Use this operation object to fetch record zones so that you can ascertain their capabilities.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchSchemasOperation/setSchemaIdentifiers:</TokenIdentifier>
+			<Abstract type="html">The IDs of the schemas you want to retrieve.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *schemaIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/schemaIdentifiers</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchSchemasOperation/schemaIdentifiers</TokenIdentifier>
+			<Abstract type="html">The IDs of the schemas you want to retrieve.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *schemaIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/schemaIdentifiers</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchSchemasOperation/schemaIdentifiers</TokenIdentifier>
+			<Abstract type="html">The IDs of the schemas you want to retrieve.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *schemaIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/schemaIdentifiers</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchSchemasOperation/setPerSchemaCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single schema are available.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMESchema *schema , NSError *error ) perSchemaCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perSchemaCompletionBlock</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchSchemasOperation/perSchemaCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single schema are available.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMESchema *schema , NSError *error ) perSchemaCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perSchemaCompletionBlock</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchSchemasOperation/perSchemaCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single schema are available.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMESchema *schema , NSError *error ) perSchemaCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perSchemaCompletionBlock</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchSchemasOperation/setFetchSchemasCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute with the fetch results. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *schemas , NSError *operationError ) fetchSchemasCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchSchemasCompletionBlock</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchSchemasOperation/fetchSchemasCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute with the fetch results. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *schemas , NSError *operationError ) fetchSchemasCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchSchemasCompletionBlock</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchSchemasOperation/fetchSchemasCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute with the fetch results. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *schemas , NSError *operationError ) fetchSchemasCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchSchemasCompletionBlock</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchSchemasOperation/initWithSchemaIdentifiers:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object configured to fetch the specified schemas.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithSchemaIdentifiers:(NSArray *)schemaIdentifiers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>schemaIdentifiers</Name>
+					<Abstract type="html">An array of NSString objects representing the schemas you want to retrieve. This parameter is used to initialize the value in the schemaIdentifiers property. If you specify nil, you must assign a value to the schemaIdentifiers property before executing the operation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSchemaIdentifiers:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchSchemasOperation/init</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object.</Abstract>
+			<DeclaredIn>PWCMEFetchSchemasOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">An initialized operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>PWCME</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node>
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="23"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>PWCMEContainer</Name>
+            <Path>Classes/PWCMEContainer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEContainer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEContainer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEContainer.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEContainer.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEContainer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>PWCMEFetchContainersOperation</Name>
+            <Path>Classes/PWCMEFetchContainersOperation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchContainersOperation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchContainersOperation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchContainersOperation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchContainersOperation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>PWCMEFetchRecordsOperation</Name>
+            <Path>Classes/PWCMEFetchRecordsOperation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchRecordsOperation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchRecordsOperation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchRecordsOperation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchRecordsOperation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>PWCMEFetchSchemasOperation</Name>
+            <Path>Classes/PWCMEFetchSchemasOperation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchSchemasOperation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchSchemasOperation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchSchemasOperation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchSchemasOperation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>PWCMEFetchStructuresOperation</Name>
+            <Path>Classes/PWCMEFetchStructuresOperation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchStructuresOperation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchStructuresOperation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchStructuresOperation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchStructuresOperation.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEFetchStructuresOperation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>PWCMEModifyRecordsOperation</Name>
+            <Path>Classes/PWCMEModifyRecordsOperation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEModifyRecordsOperation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEModifyRecordsOperation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEModifyRecordsOperation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEModifyRecordsOperation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>PWCMEObject</Name>
+            <Path>Classes/PWCMEObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>PWCMEOperation</Name>
+            <Path>Classes/PWCMEOperation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEOperation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEOperation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEOperation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>PWCMEQuery</Name>
+            <Path>Classes/PWCMEQuery.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEQuery.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEQuery.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEQuery.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEQuery.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>PWCMEQueryCursor</Name>
+            <Path>Classes/PWCMEQueryCursor.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEQueryCursor.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEQueryCursor.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEQueryCursor.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>PWCMEQueryOperation</Name>
+            <Path>Classes/PWCMEQueryOperation.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEQueryOperation.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEQueryOperation.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEQueryOperation.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEQueryOperation.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>PWCMERecord</Name>
+            <Path>Classes/PWCMERecord.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMERecord.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMERecord.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMERecord.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMERecord.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>PWCMERecordID</Name>
+            <Path>Classes/PWCMERecordID.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMERecordID.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMERecordID.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMERecordID.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWCMERecordID.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>PWCMESchema</Name>
+            <Path>Classes/PWCMESchema.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMESchema.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMESchema.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMESchema.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>PWCMESchemaField</Name>
+            <Path>Classes/PWCMESchemaField.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMESchemaField.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMESchemaField.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMESchemaField.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>PWCMEStructure</Name>
+            <Path>Classes/PWCMEStructure.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWCMEStructure.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWCMEStructure.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWCMEStructure.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		
+		<Node id="17" type="file" documentType="reference">
+            <Name>NSArray(PWCMERecordValue)</Name>
+            <Path>Categories/NSArray+PWCMERecordValue.html</Path>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>NSData(PWCMERecordValue)</Name>
+            <Path>Categories/NSData+PWCMERecordValue.html</Path>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>NSDate(PWCMERecordValue)</Name>
+            <Path>Categories/NSDate+PWCMERecordValue.html</Path>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>NSNumber(PWCMERecordValue)</Name>
+            <Path>Categories/NSNumber+PWCMERecordValue.html</Path>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>NSString(PWCMERecordValue)</Name>
+            <Path>Categories/NSString+PWCMERecordValue.html</Path>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>NSURL(PWCMERecordValue)</Name>
+            <Path>Categories/NSURL+PWCMERecordValue.html</Path>
+            
+        </Node>
+		
+        <Node id="23" type="file" documentType="reference">
+            <Name>PWCMERecordValue</Name>
+            <Path>Protocols/PWCMERecordValue.html</Path>
+            
+        </Node>
+		
+        <Node id="24" type="file" documentType="reference">
+            <Name>PWCMEErrorCode</Name>
+            <Path>Constants/PWCMEErrorCode.html</Path>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>PWCMERecordSavePolicy</Name>
+            <Path>Constants/PWCMERecordSavePolicy.html</Path>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>PWCMESchemaFieldType</Name>
+            <Path>Constants/PWCMESchemaFieldType.html</Path>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>PWCMEStructureType</Name>
+            <Path>Constants/PWCMEStructureType.html</Path>
+            
+        </Node>
+		
+	</Library>
+</DocSetNodes>

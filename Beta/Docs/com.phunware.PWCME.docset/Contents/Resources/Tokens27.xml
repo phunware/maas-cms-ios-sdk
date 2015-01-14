@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PWCMEStructureType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PWCMEStructureType</TokenIdentifier>
+			<Abstract type="html">This enum indicates the type of structure.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMEStructureTypeUnknown</TokenIdentifier>
+            <Abstract type="html">The structure is unknown.</Abstract>
+            <Declaration>PWCMEStructureTypeUnknown</Declaration>
+            
+            <DeclaredIn>PWCMEStructure.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMEStructureTypeObject</TokenIdentifier>
+            <Abstract type="html">The structure is an object.</Abstract>
+            <Declaration>PWCMEStructureTypeObject</Declaration>
+            
+            <DeclaredIn>PWCMEStructure.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMEStructureTypeArray</TokenIdentifier>
+            <Abstract type="html">The structure an array and holds other structures and/or objects.</Abstract>
+            <Declaration>PWCMEStructureTypeArray</Declaration>
+            
+            <DeclaredIn>PWCMEStructure.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+	</File>
+</Tokens>

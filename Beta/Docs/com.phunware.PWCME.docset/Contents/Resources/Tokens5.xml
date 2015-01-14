@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEFetchStructuresOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEFetchStructuresOperation</TokenIdentifier>
+			<Abstract type="html">A PWCMEFetchStructuresOperation object retrieves PWCMEStructure objects with known IDs from Phunware CME. Use this operation object to fetch record zones so that you can ascertain their capabilities.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/setDepth:</TokenIdentifier>
+			<Abstract type="html">The depth to traverse into child structures. If the depth is set to 0, then no child structures will be returned; if the depth is set to 1, then the immediate child structures will be returned; and so on. To get the full hierarchy of children, use kMaaSCMSDepthFullHierarchy. Be careful when using this value for large structures.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger depth</Declaration>
+			
+			
+			<Anchor>//api/name/depth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/depth</TokenIdentifier>
+			<Abstract type="html">The depth to traverse into child structures. If the depth is set to 0, then no child structures will be returned; if the depth is set to 1, then the immediate child structures will be returned; and so on. To get the full hierarchy of children, use kMaaSCMSDepthFullHierarchy. Be careful when using this value for large structures.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger depth</Declaration>
+			
+			
+			<Anchor>//api/name/depth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchStructuresOperation/depth</TokenIdentifier>
+			<Abstract type="html">The depth to traverse into child structures. If the depth is set to 0, then no child structures will be returned; if the depth is set to 1, then the immediate child structures will be returned; and so on. To get the full hierarchy of children, use kMaaSCMSDepthFullHierarchy. Be careful when using this value for large structures.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSInteger depth</Declaration>
+			
+			
+			<Anchor>//api/name/depth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/setIncludeSchema:</TokenIdentifier>
+			<Abstract type="html">If YES, then the PWSchema objects will be returned for structures that have one.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL includeSchema</Declaration>
+			
+			
+			<Anchor>//api/name/includeSchema</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/includeSchema</TokenIdentifier>
+			<Abstract type="html">If YES, then the PWSchema objects will be returned for structures that have one.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL includeSchema</Declaration>
+			
+			
+			<Anchor>//api/name/includeSchema</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchStructuresOperation/includeSchema</TokenIdentifier>
+			<Abstract type="html">If YES, then the PWSchema objects will be returned for structures that have one.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL includeSchema</Declaration>
+			
+			
+			<Anchor>//api/name/includeSchema</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/setStructureIdenifiers:</TokenIdentifier>
+			<Abstract type="html">The IDs of the structures you want to retrieve.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *structureIdenifiers</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdenifiers</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/structureIdenifiers</TokenIdentifier>
+			<Abstract type="html">The IDs of the structures you want to retrieve.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *structureIdenifiers</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdenifiers</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchStructuresOperation/structureIdenifiers</TokenIdentifier>
+			<Abstract type="html">The IDs of the structures you want to retrieve.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *structureIdenifiers</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdenifiers</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/setPerStructureCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single structure are available.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMEStructure *structure , NSError *error ) perStructureCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perStructureCompletionBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/perStructureCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single structure are available.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMEStructure *structure , NSError *error ) perStructureCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perStructureCompletionBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchStructuresOperation/perStructureCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single structure are available.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMEStructure *structure , NSError *error ) perStructureCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perStructureCompletionBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/setFetchStructuresCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute with the fetch results. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *structures , NSError *operationError ) fetchStructuresCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchStructuresCompletionBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/fetchStructuresCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute with the fetch results. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *structures , NSError *operationError ) fetchStructuresCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchStructuresCompletionBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchStructuresOperation/fetchStructuresCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute with the fetch results. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *structures , NSError *operationError ) fetchStructuresCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchStructuresCompletionBlock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCMEFetchStructuresOperation/fetchAllStructuresOperation</TokenIdentifier>
+			<Abstract type="html">Returns an operation object that can be used to fetch all structures in the current container.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)fetchAllStructuresOperation</Declaration>
+			
+			<ReturnValue><Abstract type="html">A newly allocated operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchAllStructuresOperation</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/initWithStructureIdentifiers:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object configured to fetch the specified structures.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithStructureIdentifiers:(NSArray *)structureIdentifiers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>structureIdentifiers</Name>
+					<Abstract type="html">An array of NSNumber objects representing the structures you want to retrieve. This parameter is used to initialize the value in the structureIdentifiers property. If you specify nil, you must assign a value to the structureIdentifiers property before executing the operation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithStructureIdentifiers:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchStructuresOperation/init</TokenIdentifier>
+			<Abstract type="html">Returns an operation object.</Abstract>
+			<DeclaredIn>PWCMEFetchStructuresOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">A newly allocated operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,1272 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PWCMEContainer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PWCME </a></h1>
+				<a id="developerHome" href="../index.html">Phunware, Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PWCMEContainer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/containerIdentifier">&nbsp;&nbsp;&nbsp;&nbsp;containerIdentifier</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/containerWithIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;+ containerWithIdentifier:</option>
+	
+	<option value="//api/name/defaultContainer">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultContainer</option>
+	
+	<option value="//api/name/fetchAllContainersWithCompletionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;+ fetchAllContainersWithCompletionHandler:</option>
+	
+	<option value="//api/name/fetchContainerWithIdentifier:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;+ fetchContainerWithIdentifier:completionHandler:</option>
+	
+	<option value="//api/name/setDefaultContainer:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDefaultContainer:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- addOperation:</option>
+	
+	<option value="//api/name/deleteRecordWithID:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteRecordWithID:completionHandler:</option>
+	
+	<option value="//api/name/fetchAllStructuresWithCompletionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchAllStructuresWithCompletionHandler:</option>
+	
+	<option value="//api/name/fetchRecordWithID:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchRecordWithID:completionHandler:</option>
+	
+	<option value="//api/name/fetchSchemas:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchSchemas:completionHandler:</option>
+	
+	<option value="//api/name/fetchStructures:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- fetchStructures:completionHandler:</option>
+	
+	<option value="//api/name/performQuery:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- performQuery:completionHandler:</option>
+	
+	<option value="//api/name/saveRecord:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- saveRecord:completionHandler:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting A Container">Getting A Container</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Convenience Methods">Convenience Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containerIdentifier">containerIdentifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containerWithIdentifier:">containerWithIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultContainer">defaultContainer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllContainersWithCompletionHandler:">fetchAllContainersWithCompletionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchContainerWithIdentifier:completionHandler:">fetchContainerWithIdentifier:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultContainer:">setDefaultContainer:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addOperation:">addOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteRecordWithID:completionHandler:">deleteRecordWithID:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllStructuresWithCompletionHandler:">fetchAllStructuresWithCompletionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchRecordWithID:completionHandler:">fetchRecordWithID:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchSchemas:completionHandler:">fetchSchemas:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchStructures:completionHandler:">fetchStructures:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performQuery:completionHandler:">performQuery:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveRecord:completionHandler:">saveRecord:completionHandler:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PWCMEContainer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PWCMEContainer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/PWCMEObject.html">PWCMEObject</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSSecureCoding</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PWCMEContainer.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A <code>PWCMEContainer</code> object encapsulates content associated with an app, including content that is publicly accessible to all users of the app and content that is private to a specific user. A container object manages all explicit and implicit attempts to access the contents of the container.</p>
+
+<p>Your application must set a valid <a href="#//api/name/defaultContainer"><code>defaultContainer</code></a>.</p>
+
+<p>Most of these calls operate on a single item in the current container and allow for simple operations. If you&rsquo;d like to batch your requests, add dependencies between requests, set priorities or schedule operations on your own queue, take a look at the corresponding <a href="../Classes/PWCMEOperation.html"><code>PWCMEOperation</code></a>.</p>
+
+<p>These calls operate on a single item in the current container and allow for simple operations. If you&rsquo;d like to batch your requests, add dependencies between requests, set priorities, or schedule operations on your own queue, take a look at the corresponding <a href="../Classes/PWCMEOperation.html">PWCMEOperation</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containerIdentifier">&nbsp;&nbsp;containerIdentifier</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultContainer">+&nbsp;defaultContainer</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDefaultContainer:">+&nbsp;setDefaultContainer:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting A Container" name="task_Getting A Container"></a>
+						<h3 class="subsubtitle task-title">Getting A Container</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containerWithIdentifier:">+&nbsp;containerWithIdentifier:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchContainerWithIdentifier:completionHandler:">+&nbsp;fetchContainerWithIdentifier:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addOperation:">&ndash;&nbsp;addOperation:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Convenience Methods" name="task_Convenience Methods"></a>
+						<h3 class="subsubtitle task-title">Convenience Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllContainersWithCompletionHandler:">+&nbsp;fetchAllContainersWithCompletionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchRecordWithID:completionHandler:">&ndash;&nbsp;fetchRecordWithID:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveRecord:completionHandler:">&ndash;&nbsp;saveRecord:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteRecordWithID:completionHandler:">&ndash;&nbsp;deleteRecordWithID:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performQuery:completionHandler:">&ndash;&nbsp;performQuery:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllStructuresWithCompletionHandler:">&ndash;&nbsp;fetchAllStructuresWithCompletionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchStructures:completionHandler:">&ndash;&nbsp;fetchStructures:completionHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchSchemas:completionHandler:">&ndash;&nbsp;fetchSchemas:completionHandler:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/containerIdentifier" title="containerIdentifier"></a>
+	<h3 class="subsubtitle method-title">containerIdentifier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The string that identifies the app’s container. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *containerIdentifier</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use the value in this property to distinguish between different container objects in your app.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the container. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/containerWithIdentifier:" title="containerWithIdentifier:"></a>
+	<h3 class="subsubtitle method-title">containerWithIdentifier:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Instantiates a container with the given container identifier.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)containerWithIdentifier:(NSString *)<em>containerIdentifier</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>containerIdentifier</em></dt>
+			<dd><p>The identifier of the container. This parameter cannot be <code>nil</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method instantiates a container locally and does not seek to fetch additional container metadata such as the <a href="#//api/name/name">name</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultContainer" title="defaultContainer"></a>
+	<h3 class="subsubtitle method-title">defaultContainer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the default container object for managing the current app’s content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)defaultContainer</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The container object associated with the current app’s content. This method always returns a valid container object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to retrieve the container for your app’s native content. This container is the one your app typically uses to store its data. If you want the container for a different app, create and initialize that container using the <a href="#//api/name/containerWithIdentifier:">containerWithIdentifier:</a> method. The default container is persisted.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllContainersWithCompletionHandler:" title="fetchAllContainersWithCompletionHandler:"></a>
+	<h3 class="subsubtitle method-title">fetchAllContainersWithCompletionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns all containers that the application has access to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)fetchAllContainersWithCompletionHandler:(void ( ^ ) ( NSArray *containers , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>A block object to be executed when <code>fetchAllContainersWithCompletionHandler:</code> is complete. This block has no return value and takes two argument: an <code>NSArray</code> of returned containers and an <code>NSError</code> object describing the error that occurred.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchContainerWithIdentifier:completionHandler:" title="fetchContainerWithIdentifier:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">fetchContainerWithIdentifier:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Instantiates a container with the given container identifier.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)fetchContainerWithIdentifier:(NSString *)<em>containerIdentifier</em> completionHandler:(void ( ^ ) ( PWCMEContainer *container , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>containerIdentifier</em></dt>
+			<dd><p>The identifier of the container. This parameter cannot be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:</p>
+
+<ul>
+<li><p>container: The requested container object. If no such record is found, this parameter is <code>nil</code>.</p></li>
+<li><p>error: An error object, or <code>nil</code> if the container was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</p></li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to fetch a container that is not urgent to your app’s execution. This method fetches the container with a default priority, which may cause the task to execute after higher-priority tasks. To fetch container more urgently, create a <a href="../Classes/PWCMEFetchContainersOperation.html"><code>PWCMEFetchContainersOperation</code></a> object with the desired priority. You can also use that operation object to fetch multiple containers simultaneously.</p><p>This method attempts to fetch the remote container.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDefaultContainer:" title="setDefaultContainer:"></a>
+	<h3 class="subsubtitle method-title">setDefaultContainer:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specify the default container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setDefaultContainer:(PWCMEContainer *)<em>container</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>container</em></dt>
+			<dd><p>The default container. This parameter cannot be <code>nil</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addOperation:" title="addOperation:"></a>
+	<h3 class="subsubtitle method-title">addOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Queues an operation for execution in the current container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addOperation:(PWCMEOperation *)<em>operation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p>The operation to queue.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method adds the operation object to an operation queue managed by the container itself. Operation objects in the container’s queue execute concurrently with default priorities in background threads.</p>
+
+<p>This method changes the operation object’s container (if any) to the current container.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteRecordWithID:completionHandler:" title="deleteRecordWithID:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">deleteRecordWithID:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes the specified record asynchronously from the current container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteRecordWithID:(PWCMERecordID *)<em>recordID</em> completionHandler:(void ( ^ ) ( PWCMERecordID *recordID , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordID</em></dt>
+			<dd><p>The ID of the record you want to delete. This method throws an exception if this parameter is <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:</p>
+
+<ul>
+<li><p>record: The record ID you attempted to delete. If no such record is found, this parameter is <code>nil</code>.</p></li>
+<li><p>error: An error object or <code>nil</code> if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</p></li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Deleting a record may trigger additional deletions if the record was referenced by other records. This method reports only the ID of the record you asked to delete. PWCME does not report deletions triggered by owning relationships between records.</p>
+
+<p>This method deletes the record with a default priority, which may cause the task to execute after higher-priority tasks. To delete records more urgently, create a <a href="../Classes/PWCMEModifyRecordsOperation.html"><code>PWCMEModifyRecordsOperation</code></a> object with the desired priority. You can also use that operation object to delete multiple records simultaneously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllStructuresWithCompletionHandler:" title="fetchAllStructuresWithCompletionHandler:"></a>
+	<h3 class="subsubtitle method-title">fetchAllStructuresWithCompletionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches all structures in the current container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchAllStructuresWithCompletionHandler:(void ( ^ ) ( NSArray *structures , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:</p>
+
+<ul>
+<li><p>structures: An array containing zero or more <a href="../Classes/PWCMEStructure.html"><code>PWCMEStructure</code></a> objects. The returned structures correspond to the structures in the current container.</p></li>
+<li><p>error: An error object, or <code>nil</code> if the structuress were fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</p></li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly allocated operation object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchRecordWithID:completionHandler:" title="fetchRecordWithID:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">fetchRecordWithID:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches one record asynchronously from the current container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchRecordWithID:(PWCMERecordID *)<em>recordID</em> completionHandler:(void ( ^ ) ( PWCMERecord *record , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordID</em></dt>
+			<dd><p>The ID of the record you want to fetch. This method throws an exception if this parameter is <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:</p>
+
+<ul>
+<li><p>record: The requested record object. If no such record is found, this parameter is <code>nil</code>.</p></li>
+<li><p>error: An error object, or <code>nil</code> if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround</p></li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to fetch records that are not urgent to your app’s execution. This method fetches the record with a default priority, which may cause the task to execute after higher-priority tasks. To fetch records more urgently, create a <a href="../Classes/PWCMEFetchRecordsOperation.html"><code>PWCMEFetchRecordsOperation</code></a> object with the desired priority. You can also use that operation object to fetch multiple records simultaneously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchSchemas:completionHandler:" title="fetchSchemas:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">fetchSchemas:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches specified schemas asynchronously from the current container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchSchemas:(NSArray *)<em>schemaIdentifiers</em> completionHandler:(void ( ^ ) ( NSArray *schemas , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>schemaIdentifiers</em></dt>
+			<dd><p>An array of schema identifiers that you want to fetch. This method throws an exception if this parameter is <code>nil</code>. Schema identifiers must be of type <code>NSString</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+    - schemas: An array containing zero or more <a href="../Classes/PWCMESchema.html"><code>PWCMESchema</code></a> objects.
+    - error: An error object or <code>nil</code> if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to fetch schemas that are not urgent to your app’s execution. This method fetches the schemas with a default priority, which may cause the task to execute after higher-priority tasks. To fetch schemas more urgently, create a <a href="../Classes/PWCMEFetchSchemasOperation.html"><code>PWCMEFetchSchemasOperation</code></a> object with the desired priority. You can also use that operation object to fetch multiple records simultaneously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchStructures:completionHandler:" title="fetchStructures:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">fetchStructures:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches specified structures asynchronously from the current container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fetchStructures:(NSArray *)<em>structureIdentifiers</em> completionHandler:(void ( ^ ) ( NSArray *structures , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>structureIdentifiers</em></dt>
+			<dd><p>An array of structure identifiers that you want to fetch. This method throws an exception if this parameter is <code>nil</code>. Structure identifiers must be of type <code>NSNumber</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:</p>
+
+<ul>
+<li>schemas: An array containing zero or more <a href="../Classes/PWCMEStructure.html"><code>PWCMEStructure</code></a> objects.</li>
+<li>error: An error object or <code>nil</code> if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to fetch structures that are not urgent to your app’s execution. This method fetches the structures with a default priority, which may cause the task to execute after higher-priority tasks. To fetch structures more urgently, create a <a href="../Classes/PWCMEFetchStructuresOperation.html"><code>PWCMEFetchStructuresOperation</code></a> object with the desired priority. You can also use that operation object to fetch multiple records simultaneously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performQuery:completionHandler:" title="performQuery:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">performQuery:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Searches the current container asynchronously for records that match the query parameters.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)performQuery:(PWCMEQuery *)<em>query</em> completionHandler:(void ( ^ ) ( NSArray *results , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>The query object containing the parameters for the search. This method throws an exception if this parameter is nil. For information about how to construct queries, see <a href="../Classes/PWCMEQuery.html"><code>PWCMEQuery</code></a> Class Reference.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:</p>
+
+<ul>
+<li><p>results: An array containing zero or more <a href="../Classes/PWCMERecord.html">PWCMERecord</a> objects. The returned records correspond to the records in the current container that match the parameters of the query.</p></li>
+<li><p>error: An error object or <code>nil</code> if the record was fetched successfully. Use the information in the error object to determine whether a problem has a workaround.</p></li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to execute searches against the current container.</p>
+
+<p>Do not use this method when the number of returned records is potentially more than a hundred records. For efficiency, all queries automatically limit the number of returned records based on current conditions. If your query hits the maximum value, this method returns only the first portion of the overall results. The number of returned records should be sufficient in most cases, but to get the entire set of records you must use a <a href="../Classes/PWCMEQueryOperation.html"><code>PWCMEQueryOperation</code></a> object instead. Query operations also return a maximum number of results, but when they do, they provide a cursor object that you can use to fetch the next batch of results.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveRecord:completionHandler:" title="saveRecord:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">saveRecord:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves one record asynchronously to the current database.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)saveRecord:(PWCMERecord *)<em>record</em> completionHandler:(void ( ^ ) ( PWCMERecord *record , NSError *error ))<em>completionHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>record</em></dt>
+			<dd><p>The record to save. This method throws an exception if this parameter is <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to execute with the results. Your block must be capable of running on any thread of the app and take the following parameters:
+- record: The record object you attempted to save.
+- error: An error object, or <code>nil</code> if the record was saved successfully. Use the information in the error object to determine whether a problem has a workaround.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method saves the record only if it has never been saved before or if it is newer than the version on the server. You cannot use this method to overwrite newer versions of a record on the server.</p>
+
+<p>This method saves the record with a default priority, which may cause the task to execute after higher-priority tasks. To save records more urgently, create a <a href="../Classes/PWCMEModifyRecordsOperation.html"><code>PWCMEModifyRecordsOperation</code></a> object with the desired priority. You can also use that operation object to save multiple records simultaneously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEContainer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEModifyRecordsOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEModifyRecordsOperation</TokenIdentifier>
+			<Abstract type="html">A PWCMEModifyRecordsOperation object saves changes to one or more PWCMERecord objects. After modifying the fields of a record, use this type of operation object to save those changes to a database. You also use instances of this class to delete records permanently from a database.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/setRecordsToSave:</TokenIdentifier>
+			<Abstract type="html">The records to save to the database.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordsToSave</Declaration>
+			
+			
+			<Anchor>//api/name/recordsToSave</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/recordsToSave</TokenIdentifier>
+			<Abstract type="html">The records to save to the database.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordsToSave</Declaration>
+			
+			
+			<Anchor>//api/name/recordsToSave</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEModifyRecordsOperation/recordsToSave</TokenIdentifier>
+			<Abstract type="html">The records to save to the database.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordsToSave</Declaration>
+			
+			
+			<Anchor>//api/name/recordsToSave</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/setRecordIDsToDelete:</TokenIdentifier>
+			<Abstract type="html">The IDs of the records to delete permanently from the container.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordIDsToDelete</Declaration>
+			
+			
+			<Anchor>//api/name/recordIDsToDelete</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/recordIDsToDelete</TokenIdentifier>
+			<Abstract type="html">The IDs of the records to delete permanently from the container.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordIDsToDelete</Declaration>
+			
+			
+			<Anchor>//api/name/recordIDsToDelete</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEModifyRecordsOperation/recordIDsToDelete</TokenIdentifier>
+			<Abstract type="html">The IDs of the records to delete permanently from the container.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordIDsToDelete</Declaration>
+			
+			
+			<Anchor>//api/name/recordIDsToDelete</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/setSavePolicy:</TokenIdentifier>
+			<Abstract type="html">The policy to apply when the server contains a newer version of a specific record.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PWCMERecordSavePolicy savePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/savePolicy</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/savePolicy</TokenIdentifier>
+			<Abstract type="html">The policy to apply when the server contains a newer version of a specific record.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PWCMERecordSavePolicy savePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/savePolicy</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEModifyRecordsOperation/savePolicy</TokenIdentifier>
+			<Abstract type="html">The policy to apply when the server contains a newer version of a specific record.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PWCMERecordSavePolicy savePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/savePolicy</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/setPerRecordIDDeleteCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute when the delete results of a single record are known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecordID *recordID , NSError *error ) perRecordIDDeleteCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordIDDeleteCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/perRecordIDDeleteCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the delete results of a single record are known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecordID *recordID , NSError *error ) perRecordIDDeleteCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordIDDeleteCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEModifyRecordsOperation/perRecordIDDeleteCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the delete results of a single record are known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecordID *recordID , NSError *error ) perRecordIDDeleteCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordIDDeleteCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/setPerRecordSaveCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute when the save results of a single record are known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record , NSError *error ) perRecordSaveCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordSaveCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/perRecordSaveCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the save results of a single record are known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record , NSError *error ) perRecordSaveCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordSaveCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEModifyRecordsOperation/perRecordSaveCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the save results of a single record are known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record , NSError *error ) perRecordSaveCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordSaveCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/setModifyRecordsCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute after the status of all changes is known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *savedRecords , NSArray *deletedRecordIDs , NSError *operationError ) modifyRecordsCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/modifyRecordsCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/modifyRecordsCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute after the status of all changes is known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *savedRecords , NSArray *deletedRecordIDs , NSError *operationError ) modifyRecordsCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/modifyRecordsCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEModifyRecordsOperation/modifyRecordsCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute after the status of all changes is known.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *savedRecords , NSArray *deletedRecordIDs , NSError *operationError ) modifyRecordsCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/modifyRecordsCompletionBlock</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/init</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">An initialized operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEModifyRecordsOperation/initWithRecordsToSave:recordIDsToDelete:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object configured to save and delete the specified records.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithRecordsToSave:(NSArray *)records recordIDsToDelete:(NSArray *)recordIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>records</Name>
+					<Abstract type="html">An array of PWCMERecord objects representing the records to save, if any. You may specify nil for this parameter.</Abstract>
+				</Parameter><Parameter>
+					<Name>recordIDs</Name>
+					<Abstract type="html">An array of PWCMERecordID objects representing the records you want to delete, if any. You may specify nil for this parameter.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRecordsToSave:recordIDsToDelete:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

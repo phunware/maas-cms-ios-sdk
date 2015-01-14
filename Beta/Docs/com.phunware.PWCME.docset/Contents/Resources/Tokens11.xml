@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEQueryOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEQueryOperation</TokenIdentifier>
+			<Abstract type="html">A PWCMEQueryOperation object is a concrete operation that you can use to execute queries against a container. A query operation takes the query parameters you provide and applies those parameters to the specified container, delivering any matching records asynchronously to the blocks that you provide.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/setQuery:</TokenIdentifier>
+			<Abstract type="html">The query to use for the search.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) PWCMEQuery *query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/query</TokenIdentifier>
+			<Abstract type="html">The query to use for the search.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) PWCMEQuery *query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQueryOperation/query</TokenIdentifier>
+			<Abstract type="html">The query to use for the search.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) PWCMEQuery *query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/setCursor:</TokenIdentifier>
+			<Abstract type="html">The data cursor to use for continuing the search.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) PWCMEQueryCursor *cursor</Declaration>
+			
+			
+			<Anchor>//api/name/cursor</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/cursor</TokenIdentifier>
+			<Abstract type="html">The data cursor to use for continuing the search.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) PWCMEQueryCursor *cursor</Declaration>
+			
+			
+			<Anchor>//api/name/cursor</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQueryOperation/cursor</TokenIdentifier>
+			<Abstract type="html">The data cursor to use for continuing the search.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) PWCMEQueryCursor *cursor</Declaration>
+			
+			
+			<Anchor>//api/name/cursor</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/setResultsLimit:</TokenIdentifier>
+			<Abstract type="html">Defaults to PWCMEQueryOperationMaximumResults.
+Queries may return fewer than resultsLimit in some scenarios:
+- There are legitimately fewer than &apos;resultsLimit&apos; number of records matching the query (and visible to the current user).
+- During the process of querying and fetching the results, some records were deleted, or became unreadable by the current user.
+When determining if there are more records to fetch, always check for the presence of a cursor in queryCompletionBlock.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger resultsLimit</Declaration>
+			
+			
+			<Anchor>//api/name/resultsLimit</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/resultsLimit</TokenIdentifier>
+			<Abstract type="html">Defaults to PWCMEQueryOperationMaximumResults.
+Queries may return fewer than resultsLimit in some scenarios:
+- There are legitimately fewer than &apos;resultsLimit&apos; number of records matching the query (and visible to the current user).
+- During the process of querying and fetching the results, some records were deleted, or became unreadable by the current user.
+When determining if there are more records to fetch, always check for the presence of a cursor in queryCompletionBlock.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger resultsLimit</Declaration>
+			
+			
+			<Anchor>//api/name/resultsLimit</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQueryOperation/resultsLimit</TokenIdentifier>
+			<Abstract type="html">Defaults to PWCMEQueryOperationMaximumResults.
+Queries may return fewer than resultsLimit in some scenarios:
+- There are legitimately fewer than &apos;resultsLimit&apos; number of records matching the query (and visible to the current user).
+- During the process of querying and fetching the results, some records were deleted, or became unreadable by the current user.
+When determining if there are more records to fetch, always check for the presence of a cursor in queryCompletionBlock.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger resultsLimit</Declaration>
+			
+			
+			<Anchor>//api/name/resultsLimit</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/setRecordFetchedBlock:</TokenIdentifier>
+			<Abstract type="html">This block will be called once for every record that is returned as a result of the query. The callbacks will happen in the order that the results were sorted in.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record ) recordFetchedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/recordFetchedBlock</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/recordFetchedBlock</TokenIdentifier>
+			<Abstract type="html">This block will be called once for every record that is returned as a result of the query. The callbacks will happen in the order that the results were sorted in.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record ) recordFetchedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/recordFetchedBlock</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQueryOperation/recordFetchedBlock</TokenIdentifier>
+			<Abstract type="html">This block will be called once for every record that is returned as a result of the query. The callbacks will happen in the order that the results were sorted in.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record ) recordFetchedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/recordFetchedBlock</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/setQueryCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">This block is called when the operation completes.
+The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *records , PWCMEQueryCursor *cursor , NSError *operationError ) queryCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/queryCompletionBlock</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/queryCompletionBlock</TokenIdentifier>
+			<Abstract type="html">This block is called when the operation completes.
+The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *records , PWCMEQueryCursor *cursor , NSError *operationError ) queryCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/queryCompletionBlock</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQueryOperation/queryCompletionBlock</TokenIdentifier>
+			<Abstract type="html">This block is called when the operation completes.
+The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *records , PWCMEQueryCursor *cursor , NSError *operationError ) queryCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/queryCompletionBlock</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/init</TokenIdentifier>
+			<Abstract type="html">The standard initializer is not available for PWCMEQueryOperation.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/initWithQuery:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object configured to search for records in the specified container.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithQuery:(PWCMEQuery *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to use during the search. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithQuery:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryOperation/initWithCursor:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object that returns more results from a previous search.</Abstract>
+			<DeclaredIn>PWCMEQueryOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCursor:(PWCMEQueryCursor *)cursor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cursor</Name>
+					<Abstract type="html">The cursor object identifying the previous search. This value is passed to the completion block of the previous search. For more information, see the queryCompletionBlock property.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized operation object ready to continue the search.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCursor:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMERecordID.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMERecordID</TokenIdentifier>
+			<Abstract type="html">A PWCMERecordID object uniquely identifies a record in a container. Record ID objects are normally created automatically when you create a new record, but you might also create IDs in several specific situations. For example, you must create record ID objects when you want to create a new a record locally. You can also create record ID objects when you want to retrieve records with known IDs from a container.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/setRecordIdentifier:</TokenIdentifier>
+			<Abstract type="html">The unique identifier of the record. (read-only)</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recordIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/recordIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/recordIdentifier</TokenIdentifier>
+			<Abstract type="html">The unique identifier of the record. (read-only)</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recordIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/recordIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMERecordID/recordIdentifier</TokenIdentifier>
+			<Abstract type="html">The unique identifier of the record. (read-only)</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recordIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/recordIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/setParentRecordIdentifier:</TokenIdentifier>
+			<Abstract type="html">The unique identifier of the parent record.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *parentRecordIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/parentRecordIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/parentRecordIdentifier</TokenIdentifier>
+			<Abstract type="html">The unique identifier of the parent record.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *parentRecordIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/parentRecordIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMERecordID/parentRecordIdentifier</TokenIdentifier>
+			<Abstract type="html">The unique identifier of the parent record.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *parentRecordIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/parentRecordIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/setStructureIdentifier:</TokenIdentifier>
+			<Abstract type="html">The structure identifier of the record.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger structureIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/structureIdentifier</TokenIdentifier>
+			<Abstract type="html">The structure identifier of the record.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger structureIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMERecordID/structureIdentifier</TokenIdentifier>
+			<Abstract type="html">The structure identifier of the record.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger structureIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdentifier</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/init</TokenIdentifier>
+			<Abstract type="html">NOTE: The standard initializer is not available.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/initWithRecordIdentifier:structureIdentifier:</TokenIdentifier>
+			<Abstract type="html">Initializes a record identifier with the specified parameters.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithRecordIdentifier:(NSString *)recordIdentifier structureIdentifier:(NSInteger)structureIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recordIdentifier</Name>
+					<Abstract type="html">The record identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>structureIdentifier</Name>
+					<Abstract type="html">The structure identifier for the record.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized record ID object or nil if the object cannot be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRecordIdentifier:structureIdentifier:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/initWithParentRecordIdentifier:structureIdentifier:</TokenIdentifier>
+			<Abstract type="html">Initializes a record identifier with the specified parameters.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithParentRecordIdentifier:(NSString *)parentRecordIdentifier structureIdentifier:(NSInteger)structureIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parentRecordIdentifier</Name>
+					<Abstract type="html">The parent identifier for the record. This property may be nil if the record does not have a parent.</Abstract>
+				</Parameter><Parameter>
+					<Name>structureIdentifier</Name>
+					<Abstract type="html">The structure identifier for the record.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized record ID object or nil if the object cannot be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithParentRecordIdentifier:structureIdentifier:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/initWithRecordIdentifier:parentRecordIdentifier:structureIdentifier:</TokenIdentifier>
+			<Abstract type="html">Initializes a record identifier with the specified parameters.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithRecordIdentifier:(NSString *)recordIdentifier parentRecordIdentifier:(NSString *)parentRecordIdentifier structureIdentifier:(NSInteger)structureIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recordIdentifier</Name>
+					<Abstract type="html">The record identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>parentRecordIdentifier</Name>
+					<Abstract type="html">The parent identifier for the record. This property may be nil if the record does not have a parent.</Abstract>
+				</Parameter><Parameter>
+					<Name>structureIdentifier</Name>
+					<Abstract type="html">The structure identifier for the record.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized record ID object or nil if the object cannot be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRecordIdentifier:parentRecordIdentifier:structureIdentifier:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecordID/initWithStructureID:parentIdentifier:</TokenIdentifier>
+			<Abstract type="html">Initializes a record identifier for a locally created record.</Abstract>
+			<DeclaredIn>PWCMERecordID.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithStructureID:(NSInteger)structureIdentifier parentIdentifier:(NSString *)parentIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>structureIdentifier</Name>
+					<Abstract type="html">The structure identifier for the record.</Abstract>
+				</Parameter><Parameter>
+					<Name>parentIdentifier</Name>
+					<Abstract type="html">The parent identifier for the record. This property may be nil if the record does not have a parent.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized record ID object or nil if the object cannot be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithStructureID:parentIdentifier:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

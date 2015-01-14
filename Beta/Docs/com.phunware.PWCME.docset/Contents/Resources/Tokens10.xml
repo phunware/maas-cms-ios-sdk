@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEQueryCursor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEQueryCursor</TokenIdentifier>
+			<Abstract type="html">A PWCMEQueryCursor object is an opaque data object that marks the stopping point for a query and the starting point for retrieving the remaining results. You do not create instances of this class yourself. When fetching records using a PWCMEQueryOperation object, if the number of results exceeds the results limit value set for the query, the server will provide you with a query cursor object. Use that cursor object to initialize a new PWCMEQueryOperation and retrieve the next batch of results for the same query.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQueryCursor/init</TokenIdentifier>
+			<Abstract type="html">NOTE: The standard initializer is not available.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

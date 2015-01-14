@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PWCMESchemaFieldType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PWCMESchemaFieldType</TokenIdentifier>
+			<Abstract type="html">Constants indicating the different field types supported by a schema.</Abstract>
+			<DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeUnknown</TokenIdentifier>
+            <Abstract type="html">The field type is unknown.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeUnknown</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeTextSingle</TokenIdentifier>
+            <Abstract type="html">A single-line text input. If the value is meant to be an ID from a MongoDB store, use the &quot;objectId&quot; type instead.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeTextSingle</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeTextMulti</TokenIdentifier>
+            <Abstract type="html">A multi-line text input.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeTextMulti</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeHTMLSingle</TokenIdentifier>
+            <Abstract type="html">A single-line HTML input.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeHTMLSingle</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeHTMLMulti</TokenIdentifier>
+            <Abstract type="html">A multi-line HTML input.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeHTMLMulti</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeSelectSingle</TokenIdentifier>
+            <Abstract type="html">A single-select drop-down.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeSelectSingle</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeSelectMulti</TokenIdentifier>
+            <Abstract type="html">A multi-select drop-down.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeSelectMulti</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeBoolean</TokenIdentifier>
+            <Abstract type="html">A BOOL value. Value must be YES or NO`.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeBoolean</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeDate</TokenIdentifier>
+            <Abstract type="html">A date (without time). Value must be a valid date formatted as RFC 3339.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeDate</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeTime</TokenIdentifier>
+            <Abstract type="html">  A time (without date). Value must be the number of seconds since midnight UTC, with midnight being 0 and the max value being 86400. For instance, if the time should be set to 1:05:25am, the value would be 3925. </Abstract>
+            <Declaration>PWCMESchemaFieldTypeTime</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeDateTime</TokenIdentifier>
+            <Abstract type="html">A date and time. Value must be a valid date formatted as RFC 3339.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeDateTime</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeFile</TokenIdentifier>
+            <Abstract type="html">An uploaded file.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeFile</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeNumber</TokenIdentifier>
+            <Abstract type="html">A numeric value. This includes integers or decimals.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeNumber</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeInteger</TokenIdentifier>
+            <Abstract type="html">An integer (whole number).</Abstract>
+            <Declaration>PWCMESchemaFieldTypeInteger</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeDecimal</TokenIdentifier>
+            <Abstract type="html">A decimal (floating point) number.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeDecimal</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMESchemaFieldTypeObjectID</TokenIdentifier>
+            <Abstract type="html">A 24-byte hex string.</Abstract>
+            <Declaration>PWCMESchemaFieldTypeObjectID</Declaration>
+            
+            <DeclaredIn>PWCMESchemaFieldTypes.h</DeclaredIn>
+            
+            <NodeRef refid="26"/>
+        </Token>
+        
+	</File>
+</Tokens>

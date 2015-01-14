@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEStructure.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEStructure</TokenIdentifier>
+			<Abstract type="html">PWCMEStructure items are used to build the structure and hierarchy of the data. Each structure item that is defined as an object can also optionally be assigned a schema that defines what content can be saved to those structure items. All values in a PWCMEStructure object are immutable on the client. You can modify PWCMEStructure values in the MaaS portal. PWCMEStructure conforms to the NSCoding and NSCopying protocol.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setStructureIdentifier:</TokenIdentifier>
+			<Abstract type="html">An integer that is used to identify the structure identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger structureIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/structureIdentifier</TokenIdentifier>
+			<Abstract type="html">An integer that is used to identify the structure identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger structureIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/structureIdentifier</TokenIdentifier>
+			<Abstract type="html">An integer that is used to identify the structure identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger structureIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/structureIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setParentIdentifier:</TokenIdentifier>
+			<Abstract type="html">An integer that is used to identify the parent identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger parentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/parentIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/parentIdentifier</TokenIdentifier>
+			<Abstract type="html">An integer that is used to identify the parent identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger parentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/parentIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/parentIdentifier</TokenIdentifier>
+			<Abstract type="html">An integer that is used to identify the parent identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger parentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/parentIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setContainerIdentifier:</TokenIdentifier>
+			<Abstract type="html">A string used to identify the container identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *containerIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containerIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/containerIdentifier</TokenIdentifier>
+			<Abstract type="html">A string used to identify the container identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *containerIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containerIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/containerIdentifier</TokenIdentifier>
+			<Abstract type="html">A string used to identify the container identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *containerIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containerIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setSchemaIdentifier:</TokenIdentifier>
+			<Abstract type="html">A string used to identify the schema identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *schemaIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/schemaIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/schemaIdentifier</TokenIdentifier>
+			<Abstract type="html">A string used to identify the schema identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *schemaIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/schemaIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/schemaIdentifier</TokenIdentifier>
+			<Abstract type="html">A string used to identify the schema identifier.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *schemaIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/schemaIdentifier</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setName:</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure name.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/name</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure name.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/name</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure name.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setType:</TokenIdentifier>
+			<Abstract type="html">The type of structure.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMEStructureType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/type</TokenIdentifier>
+			<Abstract type="html">The type of structure.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMEStructureType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/type</TokenIdentifier>
+			<Abstract type="html">The type of structure.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMEStructureType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setField:</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure field.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			
+			
+			<Anchor>//api/name/field</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/field</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure field.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			
+			
+			<Anchor>//api/name/field</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/field</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure field.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			
+			
+			<Anchor>//api/name/field</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setStructureDescription:</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure name.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			
+			
+			<Anchor>//api/name/structureDescription</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/structureDescription</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure name.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			
+			
+			<Anchor>//api/name/structureDescription</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/structureDescription</TokenIdentifier>
+			<Abstract type="html">A string used to identify the structure name.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *structureDescription</Declaration>
+			
+			
+			<Anchor>//api/name/structureDescription</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setSortOrder:</TokenIdentifier>
+			<Abstract type="html">An NSComparisonResults that is used to identify the structure sort order.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSComparisonResult sortOrder</Declaration>
+			
+			
+			<Anchor>//api/name/sortOrder</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/sortOrder</TokenIdentifier>
+			<Abstract type="html">An NSComparisonResults that is used to identify the structure sort order.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSComparisonResult sortOrder</Declaration>
+			
+			
+			<Anchor>//api/name/sortOrder</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/sortOrder</TokenIdentifier>
+			<Abstract type="html">An NSComparisonResults that is used to identify the structure sort order.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSComparisonResult sortOrder</Declaration>
+			
+			
+			<Anchor>//api/name/sortOrder</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setActive:</TokenIdentifier>
+			<Abstract type="html">An BOOL used to identify whether the structure is active.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isActive) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/isActive</TokenIdentifier>
+			<Abstract type="html">An BOOL used to identify whether the structure is active.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isActive) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/active</TokenIdentifier>
+			<Abstract type="html">An BOOL used to identify whether the structure is active.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isActive) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setSchema:</TokenIdentifier>
+			<Abstract type="html">The PWCMESchema object associated with the current structure, if one exists.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMESchema *schema</Declaration>
+			
+			
+			<Anchor>//api/name/schema</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/schema</TokenIdentifier>
+			<Abstract type="html">The PWCMESchema object associated with the current structure, if one exists.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMESchema *schema</Declaration>
+			
+			
+			<Anchor>//api/name/schema</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/schema</TokenIdentifier>
+			<Abstract type="html">The PWCMESchema object associated with the current structure, if one exists.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMESchema *schema</Declaration>
+			
+			
+			<Anchor>//api/name/schema</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/setChildren:</TokenIdentifier>
+			<Abstract type="html">Depending on the API method, child PWStructure items may be return as well.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
+			
+			
+			<Anchor>//api/name/children</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEStructure/children</TokenIdentifier>
+			<Abstract type="html">Depending on the API method, child PWStructure items may be return as well.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
+			
+			
+			<Anchor>//api/name/children</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEStructure/children</TokenIdentifier>
+			<Abstract type="html">Depending on the API method, child PWStructure items may be return as well.</Abstract>
+			<DeclaredIn>PWCMEStructure.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
+			
+			
+			<Anchor>//api/name/children</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

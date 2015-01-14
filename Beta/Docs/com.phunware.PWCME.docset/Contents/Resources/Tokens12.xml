@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMERecord.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMERecord</TokenIdentifier>
+			<Abstract type="html">A PWCMERecord object is a dictionary of key-value pairs that you use to fetch and save the data of your app. Records are the fundamental objects you use to manage data in Phunware CME. You may define any number of record types for your app, with each record type corresponding to a different type of information you need. Within a given record type, you then define one or more fields, with a name and a data value. Records can contain simple data types such as strings and numbers or more complex types such as pointers to other records.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/setRecordID:</TokenIdentifier>
+			<Abstract type="html">The unique ID of the record. (read-only)</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) PWCMERecordID *recordID</Declaration>
+			
+			
+			<Anchor>//api/name/recordID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/recordID</TokenIdentifier>
+			<Abstract type="html">The unique ID of the record. (read-only)</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) PWCMERecordID *recordID</Declaration>
+			
+			
+			<Anchor>//api/name/recordID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMERecord/recordID</TokenIdentifier>
+			<Abstract type="html">The unique ID of the record. (read-only)</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) PWCMERecordID *recordID</Declaration>
+			
+			
+			<Anchor>//api/name/recordID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/setSchemaID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the schema associated with the record.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			
+			
+			<Anchor>//api/name/schemaID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/schemaID</TokenIdentifier>
+			<Abstract type="html">The identifier of the schema associated with the record.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			
+			
+			<Anchor>//api/name/schemaID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMERecord/schemaID</TokenIdentifier>
+			<Abstract type="html">The identifier of the schema associated with the record.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *schemaID</Declaration>
+			
+			
+			<Anchor>//api/name/schemaID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/init</TokenIdentifier>
+			<Abstract type="html">NOTE: The standard initializer is not available.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/initWithRecordID:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a new record of the specified type.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithRecordID:(PWCMERecordID *)recordID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recordID</Name>
+					<Abstract type="html">The record identifier associated with the new record.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithRecordID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/objectForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value for the given key stored in the record.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The string that identifies a field in the record. Key names consist of one or more alphanumeric characters and start with a letter. You may also include underscore characters if you do not use an underscore as the first character in the name. Spaces are not allowed in key names.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The object associated with the specified key or nil if no such key exists in the record.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectForKey:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/setObject:forKey:</TokenIdentifier>
+			<Abstract type="html">  Adds the specified key-value pair to the record.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>- (void)setObject:(id&lt;PWCMERecordValue&gt;)object forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The value to assign to the specified key. The object must belong to the PWCMERecordValue protocol. It is a programmer error to specify an object of any other type. Specify nil for this parameter to remove the value for the field.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to associate with the object. Use this key to retrieve the value later. Key names consist of one or more alphanumeric characters and start with a letter. You may also include underscore characters if you do not use an underscore as the first character in the name. Spaces are not allowed in key names. The names of your keys must not match the names of any properties of this class.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKey:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html">Returns the value for the given key stored in the record.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>- (id)objectForKeyedSubscript:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The string that identifies a field in the record. Key names consist of one or more alphanumeric characters and start with a letter. You may also include underscore characters but cannot use an underscore as the first character in the name. Spaces are not allowed in key names.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value associated with the specified key or nil if no such key exists in the record.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/setObject:forKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html">Adds the specified key-value pair to the record.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>- (void)setObject:(id&lt;PWCMERecordValue&gt;)object forKeyedSubscript:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The value to assign to the specified key. The object must belong to the PWCMERecordValue protocol. It is a programmer error to specify an object of any other type. Specify nil for this parameter to remove the value for the field.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to associate with the object. Use this key to retrieve the value later. Key names consist of one or more alphanumeric characters and start with a letter. You may also include underscore characters but cannot use an underscore as the first character in the name. Spaces are not allowed in key names. The names of your keys must not match the names of any properties of this class.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKeyedSubscript:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/allKeys</TokenIdentifier>
+			<Abstract type="html">Returns an array of strings corresponding to all keys currently in the record.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)allKeys</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of NSString objects. The returned array contains only the keys that have corresponding values in the record. If no keys are set for the record, this method returns an empty array.</Abstract></ReturnValue>
+			<Anchor>//api/name/allKeys</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMERecord/changedKeys</TokenIdentifier>
+			<Abstract type="html">Returns an array of strings representing the keys that have changed recently.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)changedKeys</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of NSString objects, each of which represents a key whose value has changed since the record was downloaded or saved. If no keys have changed, this method returns an empty array.</Abstract></ReturnValue>
+			<Anchor>//api/name/changedKeys</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

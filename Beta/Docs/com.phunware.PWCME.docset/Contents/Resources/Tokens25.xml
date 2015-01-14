@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PWCMERecordSavePolicy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PWCMERecordSavePolicy</TokenIdentifier>
+			<Abstract type="html">Constants indicating the policy to apply when saving records.</Abstract>
+			<DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMERecordSaveChangedKeys</TokenIdentifier>
+            <Abstract type="html">Locally edited keys are written to the server. Any unseen changes on the server
+     will be overwritten to the locally edited value. </Abstract>
+            <Declaration>PWCMERecordSaveChangedKeys</Declaration>
+            
+            <DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWCMERecordSaveAllKeys</TokenIdentifier>
+            <Abstract type="html">All local keys are written to the server.  Any unseen changes on the server will be
+     overwritten with the local values.  Keys present only on the server remain unchanged.
+     There are two common ways in which a server record will contain keys not present locally:
+     1 - Since you&apos;ve fetched this record, another client has added a new key to the record.
+     2 - The presence of desiredKeys on the fetch / query that returned this record meant
+     that only a portion of the record&apos;s keys were downloaded. </Abstract>
+            <Declaration>PWCMERecordSaveAllKeys</Declaration>
+            
+            <DeclaredIn>PWCMEModifyRecordsOperation.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+	</File>
+</Tokens>

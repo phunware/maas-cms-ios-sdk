@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PWCMERecordValue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PWCMERecordValue</TokenIdentifier>
+			<Abstract type="html">The PWCMERecordValue protocol provides strong type checking for objects that the Phunware CME framework stores on the server. Do not adopt this protocol in your custom classes. Phunware CME does not support writing custom data types to the server. Attempting to do so results in an error.</Abstract>
+			<DeclaredIn>PWCMERecord.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

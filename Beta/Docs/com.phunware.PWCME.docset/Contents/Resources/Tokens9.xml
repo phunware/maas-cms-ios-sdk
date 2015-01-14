@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEQuery.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEQuery</TokenIdentifier>
+			<Abstract type="html">A PWCMEQuery object manages the criteria to apply when searching for records in a container. You create a query object as the first step in the search process. The query object stores the search parameters, including the type of records to search, the match criteria (predicate to apply and the sort parameters to apply to the results. The second step is to use the query object to initialize a PWCMEQueryOperation object, which you then execute to generate the results.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/setDesiredKeys:</TokenIdentifier>
+			<Abstract type="html">Declares which user-defined keys should be fetched and added to the resulting PWCMERecords. If set to nil (the default), declares the entire record should be downloaded. If set to an empty array, declares that no user fields should be downloaded.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *desiredKeys</Declaration>
+			
+			
+			<Anchor>//api/name/desiredKeys</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/desiredKeys</TokenIdentifier>
+			<Abstract type="html">Declares which user-defined keys should be fetched and added to the resulting PWCMERecords. If set to nil (the default), declares the entire record should be downloaded. If set to an empty array, declares that no user fields should be downloaded.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *desiredKeys</Declaration>
+			
+			
+			<Anchor>//api/name/desiredKeys</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQuery/desiredKeys</TokenIdentifier>
+			<Abstract type="html">Declares which user-defined keys should be fetched and added to the resulting PWCMERecords. If set to nil (the default), declares the entire record should be downloaded. If set to an empty array, declares that no user fields should be downloaded.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *desiredKeys</Declaration>
+			
+			
+			<Anchor>//api/name/desiredKeys</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/setFieldName:</TokenIdentifier>
+			<Abstract type="html">The record type to search. (read-only)</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *fieldName</Declaration>
+			
+			
+			<Anchor>//api/name/fieldName</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/fieldName</TokenIdentifier>
+			<Abstract type="html">The record type to search. (read-only)</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *fieldName</Declaration>
+			
+			
+			<Anchor>//api/name/fieldName</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQuery/fieldName</TokenIdentifier>
+			<Abstract type="html">The record type to search. (read-only)</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *fieldName</Declaration>
+			
+			
+			<Anchor>//api/name/fieldName</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/setPredicate:</TokenIdentifier>
+			<Abstract type="html">The search criteria to use when matching records. (read-only).</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSPredicate *predicate</Declaration>
+			
+			
+			<Anchor>//api/name/predicate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/predicate</TokenIdentifier>
+			<Abstract type="html">The search criteria to use when matching records. (read-only).</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSPredicate *predicate</Declaration>
+			
+			
+			<Anchor>//api/name/predicate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQuery/predicate</TokenIdentifier>
+			<Abstract type="html">The search criteria to use when matching records. (read-only).</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSPredicate *predicate</Declaration>
+			
+			
+			<Anchor>//api/name/predicate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/setSortDescriptors:</TokenIdentifier>
+			<Abstract type="html">The sort descriptors to use when organizing the query results.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *sortDescriptors</Declaration>
+			
+			
+			<Anchor>//api/name/sortDescriptors</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/sortDescriptors</TokenIdentifier>
+			<Abstract type="html">The sort descriptors to use when organizing the query results.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *sortDescriptors</Declaration>
+			
+			
+			<Anchor>//api/name/sortDescriptors</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEQuery/sortDescriptors</TokenIdentifier>
+			<Abstract type="html">The sort descriptors to use when organizing the query results.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *sortDescriptors</Declaration>
+			
+			
+			<Anchor>//api/name/sortDescriptors</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEQuery/initWithFieldName:predicate:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a query object with the specified parameters.</Abstract>
+			<DeclaredIn>PWCMEQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithFieldName:(NSString *)fieldName predicate:(NSPredicate *)predicate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fieldName</Name>
+					<Abstract type="html">The type of record to search. Specify the name of one of your app’s supported record types.
+
+This method throws an exception if this parameter is nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>predicate</Name>
+					<Abstract type="html">The search predicate to apply to the prospective records. Only records matching the predicate criteria are returned in the search results. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized query object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFieldName:predicate:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

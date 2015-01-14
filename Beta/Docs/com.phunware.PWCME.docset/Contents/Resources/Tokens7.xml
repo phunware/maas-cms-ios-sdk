@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEObject</TokenIdentifier>
+			<Abstract type="html">A PWCMEObject is the base class for many Phunware CME related objects and contains basic information, such as the creation date and last updated date of a CME object.</Abstract>
+			<DeclaredIn>PWCMEObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEObject/setCreationDate:</TokenIdentifier>
+			<Abstract type="html">The time when the record was first saved to the server. (read-only)</Abstract>
+			<DeclaredIn>PWCMEObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEObject/creationDate</TokenIdentifier>
+			<Abstract type="html">The time when the record was first saved to the server. (read-only)</Abstract>
+			<DeclaredIn>PWCMEObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEObject/creationDate</TokenIdentifier>
+			<Abstract type="html">The time when the record was first saved to the server. (read-only)</Abstract>
+			<DeclaredIn>PWCMEObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEObject/setModificationDate:</TokenIdentifier>
+			<Abstract type="html">The time when the record was last saved to the server. (read-only)</Abstract>
+			<DeclaredIn>PWCMEObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *modificationDate</Declaration>
+			
+			
+			<Anchor>//api/name/modificationDate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEObject/modificationDate</TokenIdentifier>
+			<Abstract type="html">The time when the record was last saved to the server. (read-only)</Abstract>
+			<DeclaredIn>PWCMEObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *modificationDate</Declaration>
+			
+			
+			<Anchor>//api/name/modificationDate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEObject/modificationDate</TokenIdentifier>
+			<Abstract type="html">The time when the record was last saved to the server. (read-only)</Abstract>
+			<DeclaredIn>PWCMEObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *modificationDate</Declaration>
+			
+			
+			<Anchor>//api/name/modificationDate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

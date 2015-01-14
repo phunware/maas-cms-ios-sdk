@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEFetchRecordsOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEFetchRecordsOperation</TokenIdentifier>
+			<Abstract type="html">A PWCMEFetchRecordsOperation object retrieves PWCMERecord objects with known IDs from Phunware CME. Use this operation to retrieve the entire contents of each record or a subset of its contained values. As records become available, the operation object reports progress about the state of the operation to several different blocks, which you can use to process the results.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchRecordsOperation/setRecordIDs:</TokenIdentifier>
+			<Abstract type="html">The array of IDs corresponding to the records to fetch.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordIDs</Declaration>
+			
+			
+			<Anchor>//api/name/recordIDs</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchRecordsOperation/recordIDs</TokenIdentifier>
+			<Abstract type="html">The array of IDs corresponding to the records to fetch.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordIDs</Declaration>
+			
+			
+			<Anchor>//api/name/recordIDs</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchRecordsOperation/recordIDs</TokenIdentifier>
+			<Abstract type="html">The array of IDs corresponding to the records to fetch.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *recordIDs</Declaration>
+			
+			
+			<Anchor>//api/name/recordIDs</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchRecordsOperation/setPerRecordCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single record are available.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record , PWCMERecordID *recordID , NSError *error ) perRecordCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordCompletionBlock</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchRecordsOperation/perRecordCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single record are available.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record , PWCMERecordID *recordID , NSError *error ) perRecordCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordCompletionBlock</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchRecordsOperation/perRecordCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single record are available.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record , PWCMERecordID *recordID , NSError *error ) perRecordCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perRecordCompletionBlock</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchRecordsOperation/setFetchRecordsCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute after all records are fetched or have received appropriate errors. This block is called when the operation completes. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSDictionary *recordsByRecordID , NSError *operationError ) fetchRecordsCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchRecordsCompletionBlock</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchRecordsOperation/fetchRecordsCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute after all records are fetched or have received appropriate errors. This block is called when the operation completes. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSDictionary *recordsByRecordID , NSError *operationError ) fetchRecordsCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchRecordsCompletionBlock</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchRecordsOperation/fetchRecordsCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute after all records are fetched or have received appropriate errors. This block is called when the operation completes. The [NSOperation completionBlock] will also be called if both are set.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSDictionary *recordsByRecordID , NSError *operationError ) fetchRecordsCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchRecordsCompletionBlock</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchRecordsOperation/init</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchRecordsOperation/initWithRecordIDs:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object configured to fetch records with the specified IDs.</Abstract>
+			<DeclaredIn>PWCMEFetchRecordsOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithRecordIDs:(NSArray *)recordIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recordIDs</Name>
+					<Abstract type="html">An array of PWCMERecordID objects representing the records you want to retrieve. This parameter is used to initialize the value in the recordIDs property. If nil, you must assign an appropriate value to the recordIDs property before executing the operation.
+
+If any of the objects in the array are not PWCMERecordID objects, this method raises an exception.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRecordIDs:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,715 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PWCMEQueryOperation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PWCME </a></h1>
+				<a id="developerHome" href="../index.html">Phunware, Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PWCMEQueryOperation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/cursor">&nbsp;&nbsp;&nbsp;&nbsp;cursor</option>
+	
+	<option value="//api/name/query">&nbsp;&nbsp;&nbsp;&nbsp;query</option>
+	
+	<option value="//api/name/queryCompletionBlock">&nbsp;&nbsp;&nbsp;&nbsp;queryCompletionBlock</option>
+	
+	<option value="//api/name/recordFetchedBlock">&nbsp;&nbsp;&nbsp;&nbsp;recordFetchedBlock</option>
+	
+	<option value="//api/name/resultsLimit">&nbsp;&nbsp;&nbsp;&nbsp;resultsLimit</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initWithCursor:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCursor:</option>
+	
+	<option value="//api/name/initWithQuery:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithQuery:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cursor">cursor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/query">query</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryCompletionBlock">queryCompletionBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordFetchedBlock">recordFetchedBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultsLimit">resultsLimit</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCursor:">initWithCursor:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithQuery:">initWithQuery:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PWCMEQueryOperation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PWCMEQueryOperation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/PWCMEOperation.html">PWCMEOperation</a> : NSOperation</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PWCMEQueryOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A <code>PWCMEQueryOperation</code> object is a concrete operation that you can use to execute queries against a container. A <a href="#//api/name/query">query</a> operation takes the <a href="#//api/name/query">query</a> parameters you provide and applies those parameters to the specified container, delivering any matching records asynchronously to the blocks that you provide.</p>
+
+<p>To perform a new search:</p>
+
+<ol>
+<li><p>Initialize a <code>PWCMEQueryOperation</code> object with a <a href="../Classes/PWCMEQuery.html"><code>PWCMEQuery</code></a> object containing the search criteria and sorting information for the records you want.</p></li>
+<li><p>Assign a block to the <a href="#//api/name/queryCompletionBlock">queryCompletionBlock</a> property so that you can process the results and execute the operation.</p></li>
+</ol>
+
+
+<p>If the search yields many records, the operation object may deliver a portion of the total results to your blocks immediately, along with a <a href="#//api/name/cursor">cursor</a> for obtaining the remaining records. If a <a href="#//api/name/cursor">cursor</a> is provided, use it to initialize and execute a separate <code>PWCMEQueryOperation</code> object when you are ready to process the next batch of results.</p>
+
+<ol>
+<li><p>Optionally configure the return results by specifying values for the <a href="#//api/name/resultsLimit">resultsLimit</a> and desiredKeys properties.</p></li>
+<li><p>Pass the <a href="#//api/name/query">query</a> operation object to the <code>addOperation:</code> method of the target container to execute the operation against that container.</p></li>
+</ol>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/query">&nbsp;&nbsp;query</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cursor">&nbsp;&nbsp;cursor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultsLimit">&nbsp;&nbsp;resultsLimit</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordFetchedBlock">&nbsp;&nbsp;recordFetchedBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryCompletionBlock">&nbsp;&nbsp;queryCompletionBlock</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithQuery:">&ndash;&nbsp;initWithQuery:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithCursor:">&ndash;&nbsp;initWithCursor:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cursor" title="cursor"></a>
+	<h3 class="subsubtitle method-title">cursor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The data cursor to use for continuing the search.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) PWCMEQueryCursor *cursor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You set the initial value of this property with the <a href="#//api/name/initWithCursor:"><code>initWithCursor:</code></a> method. When you use a cursor, the contents of the <a href="#//api/name/query">query</a> property are ignored. The data cursor stored in this property is an opaque object that is provided to you by the server. For more information about getting this cursor, see the <a href="#//api/name/queryCompletionBlock"><code>queryCompletionBlock</code></a> property.</p>
+
+<p>If you intend to specify or change the value in this property, do so before executing the operation or submitting the operation object to a queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEQueryOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/query" title="query"></a>
+	<h3 class="subsubtitle method-title">query</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The query to use for the search.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) PWCMEQuery *query</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You set the initial value of this property with the <a href="#//api/name/initWithQuery:"><code>initWithQuery:</code></a> method. When the value in the <a href="#//api/name/cursor">cursor</a> property is <code>nil</code>, the query operation uses the <a href="../Classes/PWCMEQuery.html"><code>PWCMEQuery</code></a> object in this property to execute a new search and return the results to your completion handler. If the <a href="#//api/name/cursor">cursor</a> value is not <code>nil</code>, the <a href="#//api/name/cursor">cursor</a> is used instead.</p>
+
+<p>If you intend to specify or change the value of this property, do so before executing the operation or submitting the operation object to a queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEQueryOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryCompletionBlock" title="queryCompletionBlock"></a>
+	<h3 class="subsubtitle method-title">queryCompletionBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block is called when the operation completes.
+The <code>[NSOperation completionBlock]</code> will also be called if both are set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( NSArray *records , PWCMEQueryCursor *cursor , NSError *operationError ) queryCompletionBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEQueryOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordFetchedBlock" title="recordFetchedBlock"></a>
+	<h3 class="subsubtitle method-title">recordFetchedBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This block will be called once for every record that is returned as a result of the <a href="#//api/name/query">query</a>. The callbacks will happen in the order that the results were sorted in.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( PWCMERecord *record ) recordFetchedBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEQueryOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultsLimit" title="resultsLimit"></a>
+	<h3 class="subsubtitle method-title">resultsLimit</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defaults to PWCMEQueryOperationMaximumResults.
+Queries may return fewer than resultsLimit in some scenarios:
+- There are legitimately fewer than &lsquo;resultsLimit&rsquo; number of records matching the <a href="#//api/name/query">query</a> (and visible to the current user).
+- During the process of querying and fetching the results, some records were deleted, or became unreadable by the current user.
+When determining if there are more records to fetch, always check for the presence of a <a href="#//api/name/cursor">cursor</a> in <a href="#//api/name/queryCompletionBlock">queryCompletionBlock</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSUInteger resultsLimit</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEQueryOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The standard initializer is not available for <code>PWCMEQueryOperation</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEQueryOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithCursor:" title="initWithCursor:"></a>
+	<h3 class="subsubtitle method-title">initWithCursor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns an operation object that returns more results from a previous search.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithCursor:(PWCMEQueryCursor *)<em>cursor</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cursor</em></dt>
+			<dd><p>The <a href="#//api/name/cursor">cursor</a> object identifying the previous search. This value is passed to the completion block of the previous search. For more information, see the <a href="#//api/name/queryCompletionBlock"><code>queryCompletionBlock</code></a> property.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized operation object ready to continue the search.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this method to initialize a <a href="#//api/name/query">query</a> operation that retrieves the next batch of results from a previous search. When executing searches based on a <a href="#//api/name/cursor">cursor</a>, do not cache <a href="#//api/name/cursor">cursor</a> objects for a long time before using them. A <a href="#//api/name/cursor">cursor</a> is not a snapshot of the previous search results; it stores a relative offset into the results list. An operation object created using a <a href="#//api/name/cursor">cursor</a> performs a new search, sorts the new set of results and uses the previous offset value to determine where the next batch of results starts.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEQueryOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithQuery:" title="initWithQuery:"></a>
+	<h3 class="subsubtitle method-title">initWithQuery:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns an operation object configured to search for records in the specified container.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithQuery:(PWCMEQuery *)<em>query</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>The <a href="#//api/name/query">query</a> to use during the search. This parameter must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized operation object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You can use the returned PWCMEQueryOperation object only once to perform a search, but the object you specify in the <a href="#//api/name/query">query</a> parameter can be reused as needed. When executed, this <a href="#//api/name/query">query</a> object performs a new search and returns the first batch of results. If there are more results available, you must create a separate <a href="#//api/name/query">query</a> object using the provided <a href="#//api/name/cursor">cursor</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCMEQueryOperation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

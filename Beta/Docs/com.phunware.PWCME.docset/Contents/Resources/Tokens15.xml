@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMESchemaField.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMESchemaField</TokenIdentifier>
+			<Abstract type="html">PWSchemaField objects define the fields that are specified for a PWSchema object. A PWSchemaField object has a few base parameters and can be extended to support additional key-value pairs. Additional key-value pairs are available in the customKeys property. You can modify PWSchemaField values in the Phunware portal. PWSchemaField conforms to the NSCoding and NSCopying protocol.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/setField:</TokenIdentifier>
+			<Abstract type="html">A string describing the field key.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			
+			
+			<Anchor>//api/name/field</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/field</TokenIdentifier>
+			<Abstract type="html">A string describing the field key.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			
+			
+			<Anchor>//api/name/field</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMESchemaField/field</TokenIdentifier>
+			<Abstract type="html">A string describing the field key.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *field</Declaration>
+			
+			
+			<Anchor>//api/name/field</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/setLabel:</TokenIdentifier>
+			<Abstract type="html">A string describing the field label.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/label</TokenIdentifier>
+			<Abstract type="html">A string describing the field label.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMESchemaField/label</TokenIdentifier>
+			<Abstract type="html">A string describing the field label.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/setType:</TokenIdentifier>
+			<Abstract type="html">A string describing the field type.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMESchemaFieldType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/type</TokenIdentifier>
+			<Abstract type="html">A string describing the field type.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMESchemaFieldType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMESchemaField/type</TokenIdentifier>
+			<Abstract type="html">A string describing the field type.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWCMESchemaFieldType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/setRequired:</TokenIdentifier>
+			<Abstract type="html">A BOOL value that indicates whether or not this field is required.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
+			
+			
+			<Anchor>//api/name/required</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/required</TokenIdentifier>
+			<Abstract type="html">A BOOL value that indicates whether or not this field is required.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
+			
+			
+			<Anchor>//api/name/required</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMESchemaField/required</TokenIdentifier>
+			<Abstract type="html">A BOOL value that indicates whether or not this field is required.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL required</Declaration>
+			
+			
+			<Anchor>//api/name/required</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/setFieldDescription:</TokenIdentifier>
+			<Abstract type="html">A string describing the field.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
+			
+			
+			<Anchor>//api/name/fieldDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMESchemaField/fieldDescription</TokenIdentifier>
+			<Abstract type="html">A string describing the field.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
+			
+			
+			<Anchor>//api/name/fieldDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMESchemaField/fieldDescription</TokenIdentifier>
+			<Abstract type="html">A string describing the field.</Abstract>
+			<DeclaredIn>PWCMESchemaField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fieldDescription</Declaration>
+			
+			
+			<Anchor>//api/name/fieldDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

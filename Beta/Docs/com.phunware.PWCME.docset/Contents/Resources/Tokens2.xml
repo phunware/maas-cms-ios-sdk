@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWCMEFetchContainersOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCMEFetchContainersOperation</TokenIdentifier>
+			<Abstract type="html">A PWCMEFetchContainersOperation object retrieves PWCMEContainer objects with known IDs from Phunware CME. As containers become available, the operation object reports progress about the state of the operation to several different blocks, which you can use to process the results.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchContainersOperation/setContainerIDs:</TokenIdentifier>
+			<Abstract type="html">The array of IDs corresponding to the containers to fetch.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *containerIDs</Declaration>
+			
+			
+			<Anchor>//api/name/containerIDs</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchContainersOperation/containerIDs</TokenIdentifier>
+			<Abstract type="html">The array of IDs corresponding to the containers to fetch.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *containerIDs</Declaration>
+			
+			
+			<Anchor>//api/name/containerIDs</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchContainersOperation/containerIDs</TokenIdentifier>
+			<Abstract type="html">The array of IDs corresponding to the containers to fetch.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *containerIDs</Declaration>
+			
+			
+			<Anchor>//api/name/containerIDs</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchContainersOperation/setPerContainerCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single record are available.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMEContainer *container , NSError *error ) perContainerCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perContainerCompletionBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchContainersOperation/perContainerCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single record are available.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMEContainer *container , NSError *error ) perContainerCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perContainerCompletionBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchContainersOperation/perContainerCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute when the results of a single record are available.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( PWCMEContainer *container , NSError *error ) perContainerCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/perContainerCompletionBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchContainersOperation/setFetchContainersCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">The block to execute after all records are fetched or have received appropriate errors.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *containers , NSError *operationError ) fetchContainersCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchContainersCompletionBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchContainersOperation/fetchContainersCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute after all records are fetched or have received appropriate errors.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *containers , NSError *operationError ) fetchContainersCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchContainersCompletionBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWCMEFetchContainersOperation/fetchContainersCompletionBlock</TokenIdentifier>
+			<Abstract type="html">The block to execute after all records are fetched or have received appropriate errors.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( NSArray *containers , NSError *operationError ) fetchContainersCompletionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchContainersCompletionBlock</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchContainersOperation/init</TokenIdentifier>
+			<Abstract type="html">NOTE: The standard initializer is unavailale for this operation.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWCMEFetchContainersOperation/initWithContainerIDs:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an operation object configured to fetch the containers with the specified IDs.</Abstract>
+			<DeclaredIn>PWCMEFetchContainersOperation.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithContainerIDs:(NSArray *)containerIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerIDs</Name>
+					<Abstract type="html">An array of NSString objects representing the containers you want to retrieve. This parameter is used to initialize the value in the containerIDs property. Cannot be nil.
+
+If any of the objects in the array are not NSString objects, this method raises an exception.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized operation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContainerIDs:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
