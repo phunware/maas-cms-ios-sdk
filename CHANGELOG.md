@@ -1,7 +1,7 @@
 # PWCME Changelog
 
 ##2.0.0 BETA 2 (Thursday, February 26th, 2015)
- * Added method to PWCMEQuery that allows initialization with a structure ID: `- (instancetype)initWithFieldName:(NSString *)fieldName predicate:(NSPredicate *)predicate parentStructureID:(NSInteger)structureID;:
+ * Added method to `PWCMEQuery` that allows initialization with a structure ID: `- (instancetype)initWithFieldName:(NSString *)fieldName predicate:(NSPredicate *)predicate parentStructureID:(NSInteger)structureID;`
  * Disabled NSURLCache for all PWCMEOperations
  * Added `fetchAllSchemasOperation` method to `PWCMEFetchSchemasOperation` class.
  * Exposing `NSOperationQueue` associated with a `PWCMEContainer` object.
