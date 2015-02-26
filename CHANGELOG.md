@@ -1,5 +1,14 @@
 # PWCME Changelog
 
+##2.0.0 BETA 2 (Thursday, February 26th, 2015)
+ * Added method to PWCMEQuery that allows initialization with a structure ID: `- (instancetype)initWithFieldName:(NSString *)fieldName predicate:(NSPredicate *)predicate parentStructureID:(NSInteger)structureID;:
+ * Disabled NSURLCache for all PWCMEOperations
+ * Added `fetchAllSchemasOperation` method to `PWCMEFetchSchemasOperation` class.
+ * Exposing `NSOperationQueue` associated with a `PWCMEContainer` object.
+ * Added `attributes` field to `PWCMESchemaField` object that allows user to access attributes associated with a `PWCMESchemaField`
+ * Fixed internal `AFNetworking` dependency which means it should no longer clash with application level dependencies
+
+
 ##2.0.0 BETA (Wednesday, January 14th, 2015)
  * Initial beta release of PWMCE. Native support for queries, records, and much more. Please see the GitHub Wiki for more information.
 

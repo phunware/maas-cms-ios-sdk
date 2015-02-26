@@ -18,7 +18,7 @@
 
 /**
  The IDs of the schemas you want to retrieve.
- @discussion Use this property to view or change the IDs of the schemas you want to retrieve. Each item in the array must be an `NSString` object. If you intend to change the value of this property, do so before executing the operation or submitting the operation object to a queue.
+ @discussion Use this property to view or change the IDs of the schemas you want to retrieve. Each item in the array must be an `NSString` object. If you intend to change the value of this property, do so before executing the operation or submitting the operation object to a queue. If this value is `nil` all schemas will attempt to be fetched.
  */
 @property (nonatomic, copy) NSArray *schemaIdentifiers;
 
@@ -47,6 +47,13 @@
  This block reports an error of type `PWCMEErrorPartialFailure` when it retrieves only some of the schemas successfully. The userInfo dictionary of the error contains a `PWCMEPartialErrorsByItemIDKey` key whose value is an NSDictionary object. The keys of that dictionary are the IDs of the schemas that were not retrieved and the corresponding values are error objects containing information about what happened.
  */
 @property (nonatomic, copy) void (^fetchSchemasCompletionBlock)(NSArray /* PWCMESchema */ *schemas, NSError *operationError);
+
+/**
+ Returns an operation object that can be used to fetch all schemas in the current container.
+ @return A newly allocated operation object.
+ @discussion After initializing the operation, assign a value to the `fetchSchemasCompletionBlock` property to process the results.
+ */
++ (instancetype)fetchAllSchemasOperation;
 
 /**
  Initializes and returns an operation object configured to fetch the specified schemas.

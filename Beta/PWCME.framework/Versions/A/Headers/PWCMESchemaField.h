@@ -29,4 +29,7 @@
 /** A string describing the field. */
 @property (nonatomic, readonly) NSString *fieldDescription;
 
+/** An array of attributes associated with the schema field. */
+@property (nonatomic, readonly) NSDictionary *attributes;
+
 @end

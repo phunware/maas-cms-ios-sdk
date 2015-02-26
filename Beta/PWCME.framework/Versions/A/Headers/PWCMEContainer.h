@@ -29,6 +29,11 @@
 @property (nonatomic, readonly) NSString *containerIdentifier;
 
 /**
+ The queue on which container operations are posted.
+*/
+@property (nonatomic, readonly) NSOperationQueue *operationQueue;
+
+/**
  Returns the default container object for managing the current app’s content.
  @return The container object associated with the current app’s content. This method always returns a valid container object.
  @discussion Use this method to retrieve the container for your app’s native content. This container is the one your app typically uses to store its data. If you want the container for a different app, create and initialize that container using the containerWithIdentifier: method. The default container is persisted.

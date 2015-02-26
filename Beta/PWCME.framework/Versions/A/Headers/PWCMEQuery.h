@@ -64,10 +64,22 @@
  @param fieldName The type of record to search. Specify the name of one of your app’s supported record types.
  
  This method throws an exception if this parameter is `nil`.
- @param predicate The search predicate to apply to the prospective records. Only records matching the predicate criteria are returned in the search results. This parameter must not be `nil`.
+ @param predicate The search predicate to apply to the prospective records. Only records matching the predicate criteria are returned in the search results. This parameter can be `nil` if you wish to fetch all records for the specified field.
+ @return An initialized query object.
+ @discussion You cannot change the record type and predicate of a query object after you create it. If you want to search for a different set of records using a different set of search criteria, create a new query object. You can add sort descriptors to the query and change them later as needed. Note that this method ONLY works when querying against fields which reside at the root level of a container.
+ */
+- (instancetype)initWithFieldName:(NSString *)fieldName predicate:(NSPredicate *)predicate NS_DESIGNATED_INITIALIZER;
+
+/**
+ Initializes and returns a query object with the specified parameters. This method should be used when trying to query fields that don't exist at the root level of container.
+ @param fieldName The type of record to search. Specify the name of one of your app’s supported record types.
+ 
+ This method throws an exception if this parameter is `nil`.
+ @param predicate The search predicate to apply to the prospective records. Only records matching the predicate criteria are returned in the search results. This parameter can be `nil` if you wish to fetch all records for the specified field.
+ @param structureID The parent structure identifier that you wish to query against.
  @return An initialized query object.
  @discussion You cannot change the record type and predicate of a query object after you create it. If you want to search for a different set of records using a different set of search criteria, create a new query object. You can add sort descriptors to the query and change them later as needed.
  */
-- (instancetype)initWithFieldName:(NSString *)fieldName predicate:(NSPredicate *)predicate;
+- (instancetype)initWithFieldName:(NSString *)fieldName predicate:(NSPredicate *)predicate parentStructureID:(NSInteger)structureID;
 
 @end
