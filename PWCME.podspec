@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/phunware/maas-content-management-ios-sdk.git", :tag => "v1.2.7" }
   s.license      = { :type => 'Copyright', :text => 'Copyright 2015 by Phunware Inc. All rights reserved.' }
 
-  s.public_header_files = 'Framework/PWCME.framework/Versions/A/Headers/*.h'
-  s.ios.vendored_frameworks = 'Framework/PWCME.framework'
+  s.public_header_files = 'Framework/MaaSCMS.framework/Versions/A/Headers/*.h'
+  s.ios.vendored_frameworks = 'Framework/MaaSCMS.framework'
   s.dependency 'PWCore'
   s.requires_arc = true
 
