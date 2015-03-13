@@ -12,6 +12,11 @@
 ##2.0.0 BETA (Wednesday, January 14th, 2015)
  * Initial beta release of PWMCE. Native support for queries, records, and much more. Please see the GitHub Wiki for more information.
 
+---
+
+##1.2.7 (Friday, March 13th, 2014)
+ * Fixed issue where `deleteContentForContentID:traverse:success:failure:` would not actually delete the specified CME content.
+
 ##1.2.6 (Monday, November 3rd, 2014)
  * Enabled encryption support
 

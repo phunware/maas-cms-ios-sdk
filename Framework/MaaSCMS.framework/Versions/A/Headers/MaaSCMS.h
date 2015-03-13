@@ -208,7 +208,7 @@ extern NSInteger const PWCMSUnused;
  @param success A block object to be executed when `deleteContentChildrenForContentID:success:failure:` succeeds. This block has no return value and takes no arguments.
  @param failure A block object to be executed when `deleteContentChildrenForContentID:success:failure:` fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.
  */
-+ (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
++ (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void (^)(void))success failure:(void (^)(NSError *error))failure __deprecated;
 
 
 ///-----------------------
