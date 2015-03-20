@@ -72,7 +72,7 @@ The structure of the **content** object relies completely on the structure of th
 Integration
 -----------
 
-The primary methods in MaaS Content Management revolve fetching, creating, updating and deleting content. You can also GET structures, containers and schemas.
+The primary methods in Content Management revolve fetching, creating, updating and deleting content. You can also GET structures, containers and schemas.
 
 ### Getting Content
 
