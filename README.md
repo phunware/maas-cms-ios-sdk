@@ -32,7 +32,7 @@ The following frameworks are required:
 MaaSCore.framework
 ````
 
-MaaS Content Management has a dependency on MaaSCore.framework which is available here: https://github.com/phunware/maas-core-ios-sdk
+MaaS Content Management has a dependency on MaaSCore.framework, which is available here: https://github.com/phunware/maas-core-ios-sdk
 
 It's recommended that you add the MaaS frameworks to the 'Vendor/Phunware' directory. This directory should contain MaaSCore.framework and MaaSCMS.framework  as well as any other MaaS frameworks that you are using.
 
@@ -57,22 +57,22 @@ The MaaS Content Management SDK allows developers to fetch and manage the variou
 
 ### Schema
 
-**Schemas** are applied to **Structure** items and define what fields of data a particular structure item can contain.. You can create any number of schemas in the MaaS portal. You can also associate tags with schemas to assist with fetching.
+**Schemas** are applied to **structure** items and define what fields of data a particular structure item can contain. You can create any number of schemas in the MaaS portal. You can also associate tags with schemas to assist with fetching.
 
 ### Structure
 
-**Structure** items are used to build the structure and hierarchy of the data. Each **Structure** item that is defined as an object can also optionally be assigned a **Schema** that defines what content can be saved to those **Structure** items.
+**Structure** items are used to build the structure and hierarchy of the data. Each **structure** item that is defined as an object can also optionally be assigned a **schema** that defines what content can be saved to **structure** items.
 
 ### Content
 
-The structure of the **Content** object relies completely on the structure of the menus and schemas.
+The structure of the **content** object relies completely on the structure of the menus and schemas.
 
 
 
 Integration
 -----------
 
-The primary methods in MaaS Content Management revolve fetching, creating, updating and deleting content. You can also get structures, containers and schemas.
+The primary methods in MaaS Content Management revolve fetching, creating, updating and deleting content. You can also GET structures, containers and schemas.
 
 ### Getting Content
 
@@ -88,7 +88,7 @@ The primary methods in MaaS Content Management revolve fetching, creating, updat
 ### Updating Content
 
 ````objective-c
-	// Update content for the specified content ID, container ID and structure ID. Any fields that are ommitted will maintain their previous values.
+	// Update content for the specified content ID, container ID and structure ID. Any omitted fields will maintain their previous values.
     NSDictionary *updatedContent = @{@"user_name" : @"MaaS Test User"};
     
     [MaaSCMS updateContentForContentID:@"CONTENT_ID" containerID:@"CONTAINER_ID" structureID:123 updatedContent:updatedContent success:^{
@@ -182,14 +182,14 @@ The primary methods in MaaS Content Management revolve fetching, creating, updat
 ### Structure
 
 ````objective-c
-	// Get a structure with the specified stucture and container ID. In this example, we want to traverse into all child structures but not include schema.
+	// Fetch a specific structure item with the specified stucture and container ID. In this example, we want to traverse into all child structures and exclude schemata.
     [MaaSCMS getStructureWithID:123 containerID:@"CONTAINER_ID" depth:kMaaSCMSDepthFullHierarchy includeSchema:NO success:^(PWStructure *structure) {
         ...
     } failure:^(NSError *error) {
         ...
     }];
     
-    // Get an array of structures for the specified container ID. In this example, we want to traverse into all child structures and include schema.
+    // Get an array of structures for the specified container ID. In this example, we want to traverse into all child structures and include schemata.
     [MaaSCMS getStructuresForContainerID:@"CONTAINER_ID" depth:kMaaSCMSDepthFullHierarchy includeSchema:YES success:^(NSArray *structures) {
         ...
     } failure:^(NSError *error) {
