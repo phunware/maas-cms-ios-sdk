@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PWContainer Class Reference</title>
+		<title>PWSchema Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -11,12 +11,12 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">MaaSCMS </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">PWCME </a></h1>
 				<a id="developerHome" href="../index.html">Phunware, Inc.</a>
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PWContainer Class Reference</h1>
+				<h1 class="hideInXcode">PWSchema Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -39,13 +39,17 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/containerID">&nbsp;&nbsp;&nbsp;&nbsp;containerID</option>
+	<option value="//api/name/attributes">&nbsp;&nbsp;&nbsp;&nbsp;attributes</option>
 	
 	<option value="//api/name/creationDate">&nbsp;&nbsp;&nbsp;&nbsp;creationDate</option>
+	
+	<option value="//api/name/fields">&nbsp;&nbsp;&nbsp;&nbsp;fields</option>
 	
 	<option value="//api/name/lastUpdated">&nbsp;&nbsp;&nbsp;&nbsp;lastUpdated</option>
 	
 	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/schemaID">&nbsp;&nbsp;&nbsp;&nbsp;schemaID</option>
 	
 	<option value="//api/name/tags">&nbsp;&nbsp;&nbsp;&nbsp;tags</option>
 	
@@ -89,13 +93,17 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containerID">containerID</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributes">attributes</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/creationDate">creationDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fields">fields</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastUpdated">lastUpdated</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/schemaID">schemaID</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tags">tags</a></span></li>
 	
@@ -122,7 +130,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PWContainer Class Reference" name="top"></a>
+				<a title="PWSchema Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -131,7 +139,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PWContainer Class Reference</h1>
+						<h1 class="title title-header">PWSchema Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -145,7 +153,7 @@
 	<td class="specification-value">NSCoding<br />NSCopying</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PWContainer.h</td>
+	<td class="specification-value">PWSchema.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -155,7 +163,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Containers hold a single structure. All values in a <code>PWContainer</code> object are immutable on the client. You can modify <code>PWContainer</code> values in the MaaS portal. <code>PWContainer</code> conforms to the <code>NSCoding</code> and <code>NSCopying</code> protocol.</p>
+						<p><code>PWSchema</code> objects are applied to <a href="../Classes/PWStructure.html"><code>PWStructure</code></a> items and define what <a href="#//api/name/fields">fields</a> of data a particular <a href="../Classes/PWStructure.html"><code>PWStructure</code></a> item can contain. You can modify <code>PWSchema</code> values in the MaaS portal. <code>PWSchema</code> conforms to the <code>NSCoding</code> and <code>NSCopying</code> protocol.</p>
 					</div>
 					
 					
@@ -173,13 +181,25 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/containerID">&nbsp;&nbsp;containerID</a></code>
+		<code><a href="#//api/name/schemaID">&nbsp;&nbsp;schemaID</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fields">&nbsp;&nbsp;fields</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributes">&nbsp;&nbsp;attributes</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -235,18 +255,18 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/containerID" title="containerID"></a>
-	<h3 class="subsubtitle method-title">containerID</h3>
+	<a name="//api/name/attributes" title="attributes"></a>
+	<h3 class="subsubtitle method-title">attributes</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>An <code>NSString</code> that is used to identify the Container ID.</p>
+		<p>A array of attributes associated with the schema. Attribute objects are of <code>NSDictionary</code> type: <code>@{@"key" : @"value"}</code>.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *containerID</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *attributes</code></div>
 
     
 	
@@ -264,7 +284,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWContainer.h</code><br />
+		<code class="declared-in-ref">PWSchema.h</code><br />
 	</div>				
 	
 	
@@ -277,7 +297,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The creation date of the container.</p>
+		<p>The creation date of the schema.</p>
 	</div>		
 	
     
@@ -300,7 +320,43 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWContainer.h</code><br />
+		<code class="declared-in-ref">PWSchema.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fields" title="fields"></a>
+	<h3 class="subsubtitle method-title">fields</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of <a href="../Classes/PWSchemaField.html"><code>PWSchemaField</code></a> objects associated with the schema.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *fields</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWSchema.h</code><br />
 	</div>				
 	
 	
@@ -313,7 +369,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The date of the last update for the container.</p>
+		<p>The date of the last update for the schema.</p>
 	</div>		
 	
     
@@ -336,7 +392,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWContainer.h</code><br />
+		<code class="declared-in-ref">PWSchema.h</code><br />
 	</div>				
 	
 	
@@ -349,7 +405,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>A <code>NSString</code> that is used to identify the container name.</p>
+		<p>A string that is used to identify the schema name.</p>
 	</div>		
 	
     
@@ -372,7 +428,43 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWContainer.h</code><br />
+		<code class="declared-in-ref">PWSchema.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/schemaID" title="schemaID"></a>
+	<h3 class="subsubtitle method-title">schemaID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A string that is used to identify the Schema ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *schemaID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWSchema.h</code><br />
 	</div>				
 	
 	
@@ -385,7 +477,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>A array of tags associated with the container. A tag is an <code>NSString</code> object.</p>
+		<p>A array of tags associated with the schema. A tag is an <code>NSString</code> object.</p>
 	</div>		
 	
     
@@ -408,7 +500,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWContainer.h</code><br />
+		<code class="declared-in-ref">PWSchema.h</code><br />
 	</div>				
 	
 	
@@ -429,7 +521,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Convenience method to instantiate a <code>PWContainer</code> object from a properly formatted <code>NSDictionary</code> object.</p>
+		<p>Convenience method to instantiate a <code>PWSchema</code> object from a properly formatted <code>NSDictionary</code> object.</p>
 	</div>		
 	
     
@@ -443,7 +535,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>dictionary</em></dt>
-			<dd><p>The <a href="#//api/name/dictionary">dictionary</a> from which to instantiate the <code>PWContainer</code> object.</p></dd>
+			<dd><p>The <a href="#//api/name/dictionary">dictionary</a> from which to instantiate the <code>PWSchema</code> object.</p></dd>
 		</dl>
 		
 	</div>
@@ -462,7 +554,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWContainer.h</code><br />
+		<code class="declared-in-ref">PWSchema.h</code><br />
 	</div>				
 	
 	
@@ -483,7 +575,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns an <code>NSDictionary</code> representation of the current container.</p>
+		<p>Returns an <code>NSDictionary</code> representation of the current structure.</p>
 	</div>		
 	
     
@@ -506,7 +598,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWContainer.h</code><br />
+		<code class="declared-in-ref">PWSchema.h</code><br />
 	</div>				
 	
 	
@@ -527,7 +619,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-04-24)</span><br />
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-09-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

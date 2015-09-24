@@ -2,7 +2,7 @@
 <DocSetNodes version="1.0">
     <TOC>
         <Node type="folder">
-            <Name>MaaSCMS</Name>
+            <Name>PWCME</Name>
             <Path>index.html</Path>
 			<Subnodes>
                 
@@ -30,24 +30,24 @@
 	<Library>
 		
 		<Node id="1" type="file" documentType="reference">
-            <Name>MaaSCMS</Name>
-            <Path>Classes/MaaSCMS.html</Path>
+            <Name>PWCME</Name>
+            <Path>Classes/PWCME.html</Path>
             
                 <Subnodes>
                 <Node type="section">
-                    <Path>Classes/MaaSCMS.html</Path>
+                    <Path>Classes/PWCME.html</Path>
                     <Name>Overview</Name>
                     <Anchor>overview</Anchor>
                 </Node>
                 <Node type="section">
-                    <Path>Classes/MaaSCMS.html</Path>
+                    <Path>Classes/PWCME.html</Path>
                     <Name>Tasks</Name>
                     <Anchor>tasks</Anchor>
                 </Node>
                 
                 
                 <Node type="section">
-                    <Path>Classes/MaaSCMS.html</Path>
+                    <Path>Classes/PWCME.html</Path>
                     <Name>Class Methods</Name>
                     <Anchor>class_methods</Anchor>
                 </Node>

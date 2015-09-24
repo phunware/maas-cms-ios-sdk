@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/MaaSCMS.html">
+	<File path="Classes/PWCME.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/MaaSCMS</TokenIdentifier>
-			<Abstract type="html">MaaSCMS provides a full-featured content management solution that allows you to deliver engaging content to your users.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWCME</TokenIdentifier>
+			<Abstract type="html">PWCME provides a full-featured content management solution that allows you to deliver engaging content to your users.</Abstract>
+			<DeclaredIn>PWCME.h</DeclaredIn>
             
 			
 			<NodeRef refid="1"/>
@@ -13,9 +13,9 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getAllContainersWithSuccess:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getAllContainersWithSuccess:failure:</TokenIdentifier>
 			<Abstract type="html">Returns a list of the available containers.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getAllContainersWithSuccess:(void ( ^ ) ( NSArray *containers ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -33,9 +33,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getContainerWithContainerID:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getContainerWithContainerID:success:failure:</TokenIdentifier>
 			<Abstract type="html">Returns a PWContainer object for the specified Container ID.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getContainerWithContainerID:(NSString *)containerID success:(void ( ^ ) ( PWContainer *container ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -56,9 +56,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getSchemasWithLimit:offset:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getSchemasWithLimit:offset:success:failure:</TokenIdentifier>
 			<Abstract type="html">Returns a list of the available containers.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getSchemasWithLimit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *schemas , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -82,9 +82,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getSchemaWithSchemaID:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getSchemaWithSchemaID:success:failure:</TokenIdentifier>
 			<Abstract type="html">Returns a PWSchema object for the specified Schema ID.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getSchemaWithSchemaID:(NSString *)schemaID success:(void ( ^ ) ( PWSchema *schema ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -105,9 +105,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getStructuresForContainerID:depth:includeSchema:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getStructuresForContainerID:depth:includeSchema:success:failure:</TokenIdentifier>
 			<Abstract type="html">This method is used to get a structure. Depending on the request parameters, this may return a multi-level structure or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified id.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getStructuresForContainerID:(NSString *)containerID depth:(NSInteger)depth includeSchema:(BOOL)schema success:(void ( ^ ) ( NSArray *structures ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -134,9 +134,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getStructureWithID:containerID:depth:includeSchema:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getStructureWithID:containerID:depth:includeSchema:success:failure:</TokenIdentifier>
 			<Abstract type="html">This method is used to get a structure for a specified structure ID. Depending on the request parameters, this may return a multi-level structure, or a single-level structure. Traversal will begin at the root level. Otherwise, traversal will begin at the structure item with the specified ID.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getStructureWithID:(NSUInteger)structureID containerID:(NSString *)containerID depth:(NSInteger)depth includeSchema:(BOOL)schema success:(void ( ^ ) ( PWStructure *structure ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -166,9 +166,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:</TokenIdentifier>
 			<Abstract type="html">Gets the content based on the structure hierarchy and schemas. The structure of the response data for this method relies completely on the structure of the structures and schemas. Content will be retrieved starting from the root level.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID parentID:(NSString *)parentID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSDictionary *contents ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -204,9 +204,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getContentForContentID:containerID:structureID:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getContentForContentID:containerID:structureID:success:failure:</TokenIdentifier>
 			<Abstract type="html">Gets the content for the specified Content ID and Container ID. The structure of the response data for this method relies completely on the structures and schemas.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSInteger)structureID success:(void ( ^ ) ( NSDictionary *content ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -233,9 +233,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getAllContentsForContainerID:depth:limit:offset:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getAllContentsForContainerID:depth:limit:offset:success:failure:</TokenIdentifier>
 			<Abstract type="html">Gets all content based on the menu hierarchy and schemas. The structure of the response data for this method relies completely on the structure and schemas.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -245,6 +245,12 @@
 				</Parameter><Parameter>
 					<Name>depth</Name>
 					<Abstract type="html">The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use kMaaSCMSDepthFullHierarchy. Be careful when using this value for large structures.</Abstract>
+				</Parameter><Parameter>
+					<Name>limit</Name>
+					<Abstract type="html">Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">Specifies the number of results to offset. This is useful for pagination. Default value is 0.</Abstract>
 				</Parameter><Parameter>
 					<Name>success</Name>
 					<Abstract type="html">A block object to be executed when getAllContentsForContainerID:limit:offset:success:failure: succeeds. This block has no return value and takes three arguments: the content received from the server, a PWPagination object that details content pagination information and a BOOL value that indicates whether or not paging is enabled. The structure of the content data relies completely on the structure of the structures and schemas.</Abstract>
@@ -259,9 +265,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getContentsForContainerID:structureID:limit:offset:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getContentsForContainerID:structureID:limit:offset:success:failure:</TokenIdentifier>
 			<Abstract type="html">Gets all content for a specific Container ID and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getContentsForContainerID:(NSString *)containerID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -291,9 +297,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getContentsForContainerID:parentID:structureID:limit:offset:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getContentsForContainerID:parentID:structureID:limit:offset:success:failure:</TokenIdentifier>
 			<Abstract type="html">Gets all content for a specific Container ID, Parent ID, and Structure ID. The structure of the content data for this method relies completely on the structure and schemas.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getContentsForContainerID:(NSString *)containerID parentID:(NSString *)parentID structureID:(NSInteger)structureID limit:(NSInteger)limit offset:(NSInteger)offset success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -326,9 +332,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/addContent:containerID:structureID:parentContentID:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/addContent:containerID:structureID:parentContentID:success:failure:</TokenIdentifier>
 			<Abstract type="html">This method is used to save new content. If no parent content exists, you should use addContent:structureID:success:failure:.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)addContent:(NSDictionary *)content containerID:(NSString *)containerID structureID:(NSUInteger)structureID parentContentID:(NSString *)parentContentID success:(void ( ^ ) ( NSString *newContentID ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -358,9 +364,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/addContent:containerID:structureID:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/addContent:containerID:structureID:success:failure:</TokenIdentifier>
 			<Abstract type="html">This method is used to save new content. If parent content exists, you should use addContent:structureID:parentContentID:success:failure:.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)addContent:(NSDictionary *)content containerID:(NSString *)containerID structureID:(NSUInteger)structureID success:(void ( ^ ) ( NSString *newContentID ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -387,9 +393,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/updateContentForContentID:containerID:structureID:updatedContent:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/updateContentForContentID:containerID:structureID:updatedContent:success:failure:</TokenIdentifier>
 			<Abstract type="html">This method is used to update existing content.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)updateContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSUInteger)structureID updatedContent:(NSDictionary *)updatedContent success:(void ( ^ ) ( void ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -419,9 +425,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/updateContentForContentID:containerID:structureID:parentContentID:updatedContent:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/updateContentForContentID:containerID:structureID:parentContentID:updatedContent:success:failure:</TokenIdentifier>
 			<Abstract type="html">This method is used to update existing content.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)updateContentForContentID:(NSString *)contentID containerID:(NSString *)containerID structureID:(NSUInteger)structureID parentContentID:(NSString *)parentContentID updatedContent:(NSDictionary *)updatedContent success:(void ( ^ ) ( void ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -454,9 +460,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/deleteContentForContentID:traverse:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/deleteContentForContentID:traverse:success:failure:</TokenIdentifier>
 			<Abstract type="html">This method is used to delete a specific content item. If the associated structure for the content is a dynamic object structure residing in a parent array structure, then all child content will be deleted as well. However, if the associated structure for the content is a static structure item, only the specified content will be deleted.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)deleteContentForContentID:(NSString *)contentID traverse:(BOOL)traverse success:(void ( ^ ) ( void ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -480,9 +486,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/deleteContentChildrenForContentID:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/deleteContentChildrenForContentID:success:failure:</TokenIdentifier>
 			<Abstract type="html">This method is used to delete all child elements within an array structure item.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)deleteContentChildrenForContentID:(NSString *)contentID success:(void ( ^ ) ( void ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
@@ -503,9 +509,67 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/serviceName</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/setCacheTTL:</TokenIdentifier>
+			<Abstract type="html">Set the TTL in seconds for caching CME content.</Abstract>
+			<DeclaredIn>PWCME.h</DeclaredIn>
+			
+			<Declaration>+ (void)setCacheTTL:(NSTimeInterval)timeToLive</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timeToLive</Name>
+					<Abstract type="html">The specified cache time to live in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCacheTTL:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/cacheTTL</TokenIdentifier>
+			<Abstract type="html">The TTL for CME content in seconds. Defaults to 0.</Abstract>
+			<DeclaredIn>PWCME.h</DeclaredIn>
+			
+			<Declaration>+ (NSTimeInterval)cacheTTL</Declaration>
+			
+			<ReturnValue><Abstract type="html">The cached content TTL.</Abstract></ReturnValue>
+			<Anchor>//api/name/cacheTTL</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/trimCacheToDate:</TokenIdentifier>
+			<Abstract type="html">Removes all objects from the cache that have not been used since the specified date.</Abstract>
+			<DeclaredIn>PWCME.h</DeclaredIn>
+			
+			<Declaration>+ (void)trimCacheToDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">Objects that haven&apos;t been accessed since this date are removed from the cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trimCacheToDate:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/clearCache</TokenIdentifier>
+			<Abstract type="html">Removes all CME data from the cache. This method blocks the calling thread until the cache has been cleared.</Abstract>
+			<DeclaredIn>PWCME.h</DeclaredIn>
+			
+			<Declaration>+ (void)clearCache</Declaration>
+			
+			
+			<Anchor>//api/name/clearCache</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/serviceName</TokenIdentifier>
 			<Abstract type="html">Returns &apos;MaaSCMS&apos;.</Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (NSString *)serviceName</Declaration>
 			
@@ -515,9 +579,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MaaSCMS/getAllContentsForContainerID:depth:success:failure:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PWCME/getAllContentsForContainerID:depth:success:failure:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>MaaSCMS.h</DeclaredIn>
+			<DeclaredIn>PWCME.h</DeclaredIn>
 			
 			<Declaration>+ (void)getAllContentsForContainerID:(NSString *)containerID depth:(NSInteger)depth success:(void ( ^ ) ( NSDictionary *contents ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			
