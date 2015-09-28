@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>MaaSCMS Class Reference</title>
+		<title>PWCME Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -11,12 +11,12 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">MaaSCMS </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">PWCME </a></h1>
 				<a id="developerHome" href="../index.html">Phunware, Inc.</a>
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">MaaSCMS Class Reference</h1>
+				<h1 class="hideInXcode">PWCME Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -45,19 +45,21 @@
 	
 	<option value="//api/name/addContent:containerID:structureID:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ addContent:containerID:structureID:success:failure:</option>
 	
+	<option value="//api/name/cacheTTL">&nbsp;&nbsp;&nbsp;&nbsp;+ cacheTTL</option>
+	
+	<option value="//api/name/clearCache">&nbsp;&nbsp;&nbsp;&nbsp;+ clearCache</option>
+	
 	<option value="//api/name/deleteContentChildrenForContentID:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ deleteContentChildrenForContentID:success:failure:</option>
 	
 	<option value="//api/name/deleteContentForContentID:traverse:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ deleteContentForContentID:traverse:success:failure:</option>
 	
 	<option value="//api/name/getAllContainersWithSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContainersWithSuccess:failure:</option>
 	
-	<option value="//api/name/getAllContentsForContainerID:limit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContentsForContainerID:limit:offset:success:failure:</option>
+	<option value="//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContentsForContainerID:depth:limit:offset:success:failure:</option>
 	
-	<option value="//api/name/getAllSchemasWithSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllSchemasWithSuccess:failure:</option>
+	<option value="//api/name/getAllContentsForContainerID:depth:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getAllContentsForContainerID:depth:success:failure:</option>
 	
 	<option value="//api/name/getContainerWithContainerID:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getContainerWithContainerID:success:failure:</option>
-	
-	<option value="//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getContainersContainingAnyTags:containingAllTags:success:failure:</option>
 	
 	<option value="//api/name/getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:</option>
 	
@@ -69,13 +71,17 @@
 	
 	<option value="//api/name/getSchemaWithSchemaID:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getSchemaWithSchemaID:success:failure:</option>
 	
-	<option value="//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getSchemasContainingAnyTags:containingAllTags:success:failure:</option>
+	<option value="//api/name/getSchemasWithLimit:offset:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getSchemasWithLimit:offset:success:failure:</option>
 	
 	<option value="//api/name/getStructureWithID:containerID:depth:includeSchema:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getStructureWithID:containerID:depth:includeSchema:success:failure:</option>
 	
 	<option value="//api/name/getStructuresForContainerID:depth:includeSchema:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ getStructuresForContainerID:depth:includeSchema:success:failure:</option>
 	
 	<option value="//api/name/serviceName">&nbsp;&nbsp;&nbsp;&nbsp;+ serviceName</option>
+	
+	<option value="//api/name/setCacheTTL:">&nbsp;&nbsp;&nbsp;&nbsp;+ setCacheTTL:</option>
+	
+	<option value="//api/name/trimCacheToDate:">&nbsp;&nbsp;&nbsp;&nbsp;+ trimCacheToDate:</option>
 	
 	<option value="//api/name/updateContentForContentID:containerID:structureID:parentContentID:updatedContent:success:failure:">&nbsp;&nbsp;&nbsp;&nbsp;+ updateContentForContentID:containerID:structureID:parentContentID:updatedContent:success:failure:</option>
 	
@@ -107,7 +113,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Content Methods">Content Methods</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Cache Control">Cache Control</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Other Methods">Other Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Deprepcated">Deprepcated</a></span></li>
 	
 </ul></li>
 
@@ -123,19 +133,21 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addContent:containerID:structureID:success:failure:">addContent:containerID:structureID:success:failure:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cacheTTL">cacheTTL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearCache">clearCache</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteContentChildrenForContentID:success:failure:">deleteContentChildrenForContentID:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteContentForContentID:traverse:success:failure:">deleteContentForContentID:traverse:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContainersWithSuccess:failure:">getAllContainersWithSuccess:failure:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContentsForContainerID:limit:offset:success:failure:">getAllContentsForContainerID:limit:offset:success:failure:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:">getAllContentsForContainerID:depth:limit:offset:success:failure:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllSchemasWithSuccess:failure:">getAllSchemasWithSuccess:failure:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllContentsForContainerID:depth:success:failure:">getAllContentsForContainerID:depth:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getContainerWithContainerID:success:failure:">getContainerWithContainerID:success:failure:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:">getContainersContainingAnyTags:containingAllTags:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:">getContentForContentID:containerID:structureID:parentID:limit:offset:success:failure:</a></span></li>
 	
@@ -147,13 +159,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSchemaWithSchemaID:success:failure:">getSchemaWithSchemaID:success:failure:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:">getSchemasContainingAnyTags:containingAllTags:success:failure:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSchemasWithLimit:offset:success:failure:">getSchemasWithLimit:offset:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStructureWithID:containerID:depth:includeSchema:success:failure:">getStructureWithID:containerID:depth:includeSchema:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStructuresForContainerID:depth:includeSchema:success:failure:">getStructuresForContainerID:depth:includeSchema:success:failure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serviceName">serviceName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCacheTTL:">setCacheTTL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/trimCacheToDate:">trimCacheToDate:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateContentForContentID:containerID:structureID:parentContentID:updatedContent:success:failure:">updateContentForContentID:containerID:structureID:parentContentID:updatedContent:success:failure:</a></span></li>
 	
@@ -168,7 +184,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="MaaSCMS Class Reference" name="top"></a>
+				<a title="PWCME Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -177,7 +193,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">MaaSCMS Class Reference</h1>
+						<h1 class="title title-header">PWCME Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -188,7 +204,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MaaSCMS.h</td>
+	<td class="specification-value">PWCME.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -198,7 +214,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p><code>MaaSCMS</code> provides a full-featured content management solution that allows you to deliver engaging content to your users.</p>
+						<p><code>PWCME</code> provides a full-featured content management solution that allows you to deliver engaging content to your users.</p>
 					</div>
 					
 					
@@ -226,12 +242,6 @@
 	</span>
 	
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:">+&nbsp;getContainersContainingAnyTags:containingAllTags:success:failure:</a></code>
-	</span>
-	
-	
 </li>
 						</ul>
 						
@@ -242,19 +252,13 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/getAllSchemasWithSuccess:failure:">+&nbsp;getAllSchemasWithSuccess:failure:</a></code>
+		<code><a href="#//api/name/getSchemasWithLimit:offset:success:failure:">+&nbsp;getSchemasWithLimit:offset:success:failure:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSchemaWithSchemaID:success:failure:">+&nbsp;getSchemaWithSchemaID:success:failure:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:">+&nbsp;getSchemasContainingAnyTags:containingAllTags:success:failure:</a></code>
 	</span>
 	
 	
@@ -300,7 +304,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/getAllContentsForContainerID:limit:offset:success:failure:">+&nbsp;getAllContentsForContainerID:limit:offset:success:failure:</a></code>
+		<code><a href="#//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:">+&nbsp;getAllContentsForContainerID:depth:limit:offset:success:failure:</a></code>
 	</span>
 	
 	
@@ -356,6 +360,38 @@
 						</ul>
 						
 						
+						<a title="Cache Control" name="task_Cache Control"></a>
+						<h3 class="subsubtitle task-title">Cache Control</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCacheTTL:">+&nbsp;setCacheTTL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cacheTTL">+&nbsp;cacheTTL</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/trimCacheToDate:">+&nbsp;trimCacheToDate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearCache">+&nbsp;clearCache</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
 						<a title="Other Methods" name="task_Other Methods"></a>
 						<h3 class="subsubtitle task-title">Other Methods</h3>
 
@@ -363,6 +399,20 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/serviceName">+&nbsp;serviceName</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Deprepcated" name="task_Deprepcated"></a>
+						<h3 class="subsubtitle task-title">Deprepcated</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAllContentsForContainerID:depth:success:failure:">+&nbsp;getAllContentsForContainerID:depth:success:failure:</a></code>
 	</span>
 	
 	
@@ -446,7 +496,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -512,7 +562,84 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cacheTTL" title="cacheTTL"></a>
+	<h3 class="subsubtitle method-title">cacheTTL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The TTL for CME content in seconds. Defaults to 0.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSTimeInterval)cacheTTL</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The cached content TTL.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCME.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clearCache" title="clearCache"></a>
+	<h3 class="subsubtitle method-title">clearCache</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes all CME data from the cache. This method blocks the calling thread until the cache has been cleared.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)clearCache</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -568,7 +695,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -629,7 +756,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -680,15 +807,15 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/getAllContentsForContainerID:limit:offset:success:failure:" title="getAllContentsForContainerID:limit:offset:success:failure:"></a>
-	<h3 class="subsubtitle method-title">getAllContentsForContainerID:limit:offset:success:failure:</h3>
+	<a name="//api/name/getAllContentsForContainerID:depth:limit:offset:success:failure:" title="getAllContentsForContainerID:depth:limit:offset:success:failure:"></a>
+	<h3 class="subsubtitle method-title">getAllContentsForContainerID:depth:limit:offset:success:failure:</h3>
 	
 	
 	
@@ -698,7 +825,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> depth:(NSInteger)<em>depth</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *contents , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
     
 	
@@ -708,6 +835,11 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>containerID</em></dt>
 			<dd><p>The ID of the container to get the content for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>depth</em></dt>
+			<dd><p>The depth to traverse into child structures. If the depth is set to 0 then no child structures will be returned, if the depth is set to 1 then the immediate child structures will be returned, and so on. To get the full hierarchy of children use <code>kMaaSCMSDepthFullHierarchy</code>. Be careful when using this value for large structures.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -738,49 +870,9 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/getAllSchemasWithSuccess:failure:" title="getAllSchemasWithSuccess:failure:"></a>
-	<h3 class="subsubtitle method-title">getAllSchemasWithSuccess:failure:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Returns a list of the available containers.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (void)getAllSchemasWithSuccess:(void ( ^ ) ( NSArray *schemas ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getAllSchemasForContainerID:success:failure:</code> succeeds. This block has no return value and takes one argument: the schemas received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> objects).</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getAllSchemasForContainerID:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
-		</dl>
-		
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>It&rsquo;s important to note that this method only returns the specified pagination parameters for the root level array object. Nested arrays default to a pagination of 10 and a limit of 0.</p>
 	</div>
 	
 	
@@ -789,18 +881,23 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAllContentsForContainerID:depth:success:failure:" title="getAllContentsForContainerID:depth:success:failure:"></a>
+	<h3 class="subsubtitle method-title">getAllContentsForContainerID:depth:success:failure:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)getAllContentsForContainerID:(NSString *)<em>containerID</em> depth:(NSInteger)<em>depth</em> success:(void ( ^ ) ( NSDictionary *contents ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+    
 </div>
 						
 						<div class="section-method">
@@ -853,68 +950,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/getContainersContainingAnyTags:containingAllTags:success:failure:" title="getContainersContainingAnyTags:containingAllTags:success:failure:"></a>
-	<h3 class="subsubtitle method-title">getContainersContainingAnyTags:containingAllTags:success:failure:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Returns a list of the available containers, filtered by the specified tags. Only one of the tag array arguments is required.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (void)getContainersContainingAnyTags:(NSArray *)<em>anyTags</em> containingAllTags:(NSArray *)<em>allTags</em> success:(void ( ^ ) ( NSArray *containers ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>anyTags</em></dt>
-			<dd><p>(Optional) Each matching result must contain at least one of the tags in the specified array.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>allTags</em></dt>
-			<dd><p>(Optional) Each matching result must contain all of the tags in this array.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getContainersContainingAnyTags:containingAllTags:success:failure:</code> succeeds. This block has no return value and takes one argument: the containers received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects).</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getContainersContainingAnyTags:containingAllTags:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -995,7 +1031,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1061,7 +1097,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1137,7 +1173,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1208,7 +1244,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1264,25 +1300,25 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/getSchemasContainingAnyTags:containingAllTags:success:failure:" title="getSchemasContainingAnyTags:containingAllTags:success:failure:"></a>
-	<h3 class="subsubtitle method-title">getSchemasContainingAnyTags:containingAllTags:success:failure:</h3>
+	<a name="//api/name/getSchemasWithLimit:offset:success:failure:" title="getSchemasWithLimit:offset:success:failure:"></a>
+	<h3 class="subsubtitle method-title">getSchemasWithLimit:offset:success:failure:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a list of the available schemas, filtered by the specified tags. Only one of the tag array arguments is required.</p>
+		<p>Returns a list of the available containers.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (void)getSchemasContainingAnyTags:(NSArray *)<em>anyTags</em> containingAllTags:(NSArray *)<em>allTags</em> success:(void ( ^ ) ( NSArray *schemas ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)getSchemasWithLimit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray *schemas , PWPagination *pagination , BOOL pagingEnabled ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
 
     
 	
@@ -1290,23 +1326,23 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>anyTags</em></dt>
-			<dd><p>(Optional) Each matching result must contain at least one of the tags in the specified array.</p></dd>
+			<dt><em>limit</em></dt>
+			<dd><p>Specifies the number of results to return. This is useful for pagination. Default value is 10 and maximum value is 100.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>allTags</em></dt>
-			<dd><p>(Optional) Each matching result must contain all of the tags in this array.</p></dd>
+			<dt><em>offset</em></dt>
+			<dd><p>Specifies the number of results to offset. This is useful for pagination. Default value is 0.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>success</em></dt>
-			<dd><p>A block object to be executed when <code>getSchemasContainingAnyTags:success:failure:</code> succeeds. This block has no return value and takes one argument: the containers received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWContainer.html"><code>PWContainer</code></a> objects).</p></dd>
+			<dd><p>A block object to be executed when <code>getSchemasWithLimit:limit:offset:success:failure:</code> succeeds. This block has no return value and takes one argument: the schemas received from the server (an <code>NSArray</code> object that contains <a href="../Classes/PWSchema.html"><code>PWSchema</code></a> objects).</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>failure</em></dt>
-			<dd><p>A block object to be executed when <code>getSchemasContainingAnyTags:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
+			<dd><p>A block object to be executed when <code>getSchemasWithLimit:limit:offset:success:failure:</code> fails. This block has no return value and takes one argument: an NSError object describing the error that occurred.</p></dd>
 		</dl>
 		
 	</div>
@@ -1325,7 +1361,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1396,7 +1432,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1462,7 +1498,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1498,7 +1534,104 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCacheTTL:" title="setCacheTTL:"></a>
+	<h3 class="subsubtitle method-title">setCacheTTL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the TTL in seconds for caching CME content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setCacheTTL:(NSTimeInterval)<em>timeToLive</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeToLive</em></dt>
+			<dd><p>The specified cache time to live in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If there is no network connectivity or the content fails to fetch from CME for another reason the cache will return the last valid piece of content regardless of the TTL.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCME.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/trimCacheToDate:" title="trimCacheToDate:"></a>
+	<h3 class="subsubtitle method-title">trimCacheToDate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes all objects from the cache that have not been used since the specified date.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)trimCacheToDate:(NSDate *)<em>date</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>date</em></dt>
+			<dd><p>Objects that haven&rsquo;t been accessed since this date are removed from the cache.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1574,7 +1707,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1645,7 +1778,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">MaaSCMS.h</code><br />
+		<code class="declared-in-ref">PWCME.h</code><br />
 	</div>				
 	
 	
@@ -1668,7 +1801,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Phunware, Inc.. All rights reserved. (Last updated: 2013-12-27)</span><br />
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-09-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
