@@ -8,6 +8,6 @@
 #ifndef MaaSCMS_MaaSCMSVersion_h
 #define MaaSCMS_MaaSCMSVersion_h
 
-#define MaaSCMS_VERSION  @"1.2.7"
+#define MaaSCMS_VERSION  @"1.3.0"
 
 #endif

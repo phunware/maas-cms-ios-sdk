@@ -1,7 +1,7 @@
-MaaS Content Management SDK for iOS
+Phunware Content Management SDK for iOS
 ================
 
-Version 1.2.7
+Version 1.3.0
 
 This is Phunware's iOS SDK for the Content Management module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -9,8 +9,8 @@ This is Phunware's iOS SDK for the Content Management module. Visit http://maas.
 Requirements
 ------------
 
-- MaaS Core v1.3.0 or greater
-- iOS 6.0 or greater
+- PWCore v2.0.0 or greater
+- iOS 7.0 or greater
 - Xcode 6 or greater
 
 
@@ -18,7 +18,7 @@ Requirements
 Getting Started
 ---------------
 
-- [Download MaaS Content Management](https://github.com/phunware/maas-content-management-ios-sdk/archive/master.zip) and run the included sample app.
+- [Download Phunware Content Management](https://github.com/phunware/maas-content-management-ios-sdk/archive/master.zip) and run the included sample app.
 - Continue reading below for installation and integration instructions.
 - Be sure to read the [documentation](http://phunware.github.io/maas-content-management-ios-sdk/) for additional details.
 
@@ -29,12 +29,12 @@ Installation
 
 The following frameworks are required:
 ````
-MaaSCore.framework
+PWCore.framework
 ````
 
-MaaS Content Management has a dependency on MaaSCore.framework, which is available here: https://github.com/phunware/maas-core-ios-sdk
+Phunware Content Management has a dependency on PWCore.framework, which is available here: https://github.com/phunware/maas-core-ios-sdk
 
-It's recommended that you add the MaaS frameworks to the 'Vendor/Phunware' directory. This directory should contain MaaSCore.framework and MaaSCMS.framework  as well as any other MaaS frameworks that you are using.
+It's recommended that you add the MaaS frameworks to the 'Vendor/Phunware' directory. This directory should contain PWCore.framework and PWCME.framework  as well as any other MaaS frameworks that you are using.
 
 
 
@@ -48,16 +48,16 @@ Documentation is included in the Documents folder in the repository as both HTML
 Overview
 -----------
 
-The MaaS Content Management SDK allows developers to fetch and manage the various pieces of data in the Content Management module, including containers, schemas, structure and content. Content Management spans across your entire organization, so different applications can potentially share the same content.
+The Phunware Content Management SDK allows developers to fetch and manage the various pieces of data in the Content Management module, including containers, schemas, structure and content. Content Management spans across your entire organization, so different applications can potentially share the same content.
 
 
 ### Container
 
-**Containers** hold a single structure. You can create any number of containers in the MaaS portal. You can also associate tags with containers to assist with fetching.
+**Containers** hold a single structure. You can create any number of containers in the Phunware portal. You can also associate tags with containers to assist with fetching.
 
 ### Schema
 
-**Schemas** are applied to **structure** items and define what fields of data a particular structure item can contain. You can create any number of schemas in the MaaS portal. You can also associate tags with schemas to assist with fetching.
+**Schemas** are applied to **structure** items and define what fields of data a particular structure item can contain. You can create any number of schemas in the Phunware portal. You can also associate tags with schemas to assist with fetching.
 
 ### Structure
 
@@ -78,7 +78,7 @@ The primary methods in Content Management revolve fetching, creating, updating a
 
 ````objective-c
 	// Get a specific piece of content for the specified content ID, container ID and structure ID. The contents are always returned as an NSDictionary object. It's recommended that you parse the dictionary into a model object.
-    [MaaSCMS getContentForContentID:@"CONTENT_ID" containerID:@"CONTAINER_ID" structureID:123 success:^(NSDictionary *content) {
+    [PWCME getContentForContentID:@"CONTENT_ID" containerID:@"CONTAINER_ID" structureID:123 success:^(NSDictionary *content) {
         ...
     } failure:^(NSError *error) {
         ...
@@ -91,7 +91,7 @@ The primary methods in Content Management revolve fetching, creating, updating a
 	// Update content for the specified content ID, container ID and structure ID. Any omitted fields will maintain their previous values.
     NSDictionary *updatedContent = @{@"user_name" : @"MaaS Test User"};
     
-    [MaaSCMS updateContentForContentID:@"CONTENT_ID" containerID:@"CONTAINER_ID" structureID:123 updatedContent:updatedContent success:^{
+    [PWCME updateContentForContentID:@"CONTENT_ID" containerID:@"CONTAINER_ID" structureID:123 updatedContent:updatedContent success:^{
         ...
     } failure:^(NSError *error) {
         ...
@@ -104,7 +104,7 @@ The primary methods in Content Management revolve fetching, creating, updating a
 	// Add content to the specified container ID, structure ID and parent content ID. Ideally, the new content dictionary has all the fields as specified by the structure and schema. If not, the required fields will be created for you with empty values.
     NSDictionary *newContent = @{@"user_name" : @"MaaS Test User"};
     
-    [MaaSCMS addContent:newContent containerID:@"CONTAINER_ID" structureID:123 parentContentID:@"PARENT_CONTENT_ID" success:^(NSString *newContentID) {
+    [PWCME addContent:newContent containerID:@"CONTAINER_ID" structureID:123 parentContentID:@"PARENT_CONTENT_ID" success:^(NSString *newContentID) {
         ...
     } failure:^(NSError *error) {
         ...
@@ -115,14 +115,14 @@ The primary methods in Content Management revolve fetching, creating, updating a
 
 ````objective-c
 	// Delete content for the specified content ID, as well as all content children.
-    [MaaSCMS deleteContentForContentID:@"CONTENT_ID" traverse:YES success:^{
+    [PWCME deleteContentForContentID:@"CONTENT_ID" traverse:YES success:^{
         ...
     } failure:^(NSError *error) {
         ...
     }];
     
     // Delete all content children for the specified content ID.
-    [MaaSCMS deleteContentChildrenForContentID:@"CONTENT_ID" success:^{
+    [PWCME deleteContentChildrenForContentID:@"CONTENT_ID" success:^{
         ...
     } failure:^(NSError *error) {
         ...
@@ -133,21 +133,21 @@ The primary methods in Content Management revolve fetching, creating, updating a
 
 ````objective-c
 	// Fetch all containers.
-    [MaaSCMS getAllContainersWithSuccess:^(NSArray *containers) {
+    [PWCME getAllContainersWithSuccess:^(NSArray *containers) {
         ...
     } failure:^(NSError *error) {
         ...
     }];
     
     // Fetch a specific container item.
-    [MaaSCMS getContainerWithContainerID:@"CONTAINER_ID" success:^(PWContainer *container) {
+    [PWCME getContainerWithContainerID:@"CONTAINER_ID" success:^(PWContainer *container) {
         ...
     } failure:^(NSError *error) {
         ...
     }];
     
     // Get an array of containers that match an array of tags.
-    [MaaSCMS getContainersContainingAnyTags:@[@"CONTAINER_TAG"] containingAllTags:nil success:^(NSArray *containers) {
+    [PWCME getContainersContainingAnyTags:@[@"CONTAINER_TAG"] containingAllTags:nil success:^(NSArray *containers) {
         ...
     } failure:^(NSError *error) {
         ...
@@ -158,21 +158,21 @@ The primary methods in Content Management revolve fetching, creating, updating a
 
 ````objective-c
 	// Fetch all schemas.
-    [MaaSCMS getAllSchemasWithSuccess:^(NSArray *schemas) {
+    [PWCME getAllSchemasWithSuccess:^(NSArray *schemas) {
         ...
     } failure:^(NSError *error) {
         ...
     }];
     
     // Fetch a specific schema item.
-    [MaaSCMS getSchemaWithSchemaID:@"SCHEMA_ID" success:^(PWSchema *schema) {
+    [PWCME getSchemaWithSchemaID:@"SCHEMA_ID" success:^(PWSchema *schema) {
         ...
     } failure:^(NSError *error) {
         ...
     }];
     
     // Get an array of schemas with the specificed pagination parameters
-    [MaaSCMS getSchemasWithLimit:10 offset:0 success:^(NSArray *schemas, PWPagination *pagination, BOOL pagingEnabled) {
+    [PWCME getSchemasWithLimit:10 offset:0 success:^(NSArray *schemas, PWPagination *pagination, BOOL pagingEnabled) {
         ...
     } failure:^(NSError *error) {
         ...
@@ -183,14 +183,14 @@ The primary methods in Content Management revolve fetching, creating, updating a
 
 ````objective-c
 	// Fetch a specific structure item with the specified stucture and container ID. In this example, we want to traverse into all child structures and exclude schemata.
-    [MaaSCMS getStructureWithID:123 containerID:@"CONTAINER_ID" depth:kMaaSCMSDepthFullHierarchy includeSchema:NO success:^(PWStructure *structure) {
+    [PWCME getStructureWithID:123 containerID:@"CONTAINER_ID" depth:kPWCMEDepthFullHierarchy includeSchema:NO success:^(PWStructure *structure) {
         ...
     } failure:^(NSError *error) {
         ...
     }];
     
     // Get an array of structures for the specified container ID. In this example, we want to traverse into all child structures and include schemata.
-    [MaaSCMS getStructuresForContainerID:@"CONTAINER_ID" depth:kMaaSCMSDepthFullHierarchy includeSchema:YES success:^(NSArray *structures) {
+    [PWCME getStructuresForContainerID:@"CONTAINER_ID" depth:kPWCMEDepthFullHierarchy includeSchema:YES success:^(NSArray *structures) {
         ...
     } failure:^(NSError *error) {
         ...

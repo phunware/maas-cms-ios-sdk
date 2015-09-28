@@ -1,0 +1,6 @@
+framework module PWCME {
+  umbrella header "PWCME.h"
+
+  export *
+  module * { export * }
+}

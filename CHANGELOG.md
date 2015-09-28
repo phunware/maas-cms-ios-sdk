@@ -14,6 +14,10 @@
 
 ---
 
+##1.3.0 (Friday, September 25th, 2015)
+ * Updating CME to use PWCore v2.0.0
+ * Renamed MaaSCMS to PWCME
+
 ##1.2.7 (Friday, March 13th, 2014)
  * Fixed issue where `deleteContentForContentID:traverse:success:failure:` would not actually delete the specified CME content.
 
