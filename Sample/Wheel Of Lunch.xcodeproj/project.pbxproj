@@ -44,6 +44,7 @@
 		B01404F417BC1D8100F3D703 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B01404EA17BC1D8100F3D703 /* UIImageView+AFNetworking.m */; };
 		B01404F617BC1DD700F3D703 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B01404F517BC1DD700F3D703 /* placeholder.png */; };
 		B0F29BAD1811B40D00864DFD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F29BAC1811B40D00864DFD /* AdSupport.framework */; };
+		FBE7EFBE1E71E6D900B98BE2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FBE7EFBD1E71E6D900B98BE2 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		B01404EA17BC1D8100F3D703 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		B01404F517BC1DD700F3D703 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		B0F29BAC1811B40D00864DFD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FBE7EFBD1E71E6D900B98BE2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				B014046917BBC79B00F3D703 /* InfoPlist.strings */,
 				B014046C17BBC79C00F3D703 /* main.m */,
 				B014046E17BBC79C00F3D703 /* Wheel Of Lunch-Prefix.pch */,
+				FBE7EFBD1E71E6D900B98BE2 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE7EFBE1E71E6D900B98BE2 /* Settings.bundle in Resources */,
 				B014046B17BBC79C00F3D703 /* InfoPlist.strings in Resources */,
 				B01404B917BBD8CE00F3D703 /* Default-568h@2x.png in Resources */,
 				B01404BA17BBD8CE00F3D703 /* Default.png in Resources */,
